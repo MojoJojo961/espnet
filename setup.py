@@ -47,7 +47,6 @@ requirements = {
         'PyYAML',
         'torch_complex@git+https://github.com/kamo-naoyuki/pytorch_complex.git',
         'pytorch_wpe@git+https://github.com/nttcslab-sp/dnn_wpe.git',
-        'sentencepiece>=0.1.82'
     ],
     'setup': ['numpy', 'pytest-runner'],
     'test': [
@@ -64,9 +63,7 @@ requirements = {
         'sphinx-argparse>=0.2.5',
         'commonmark==0.8.1',
         'recommonmark>=0.4.0',
-        'travis-sphinx>=2.0.1',
-        'nbsphinx>=0.4.2'
-    ]}
+        'travis-sphinx>=2.0.1']}
 install_requires = requirements['install']
 setup_requires = requirements['setup']
 tests_require = requirements['test']
@@ -75,7 +72,7 @@ extras_require = {k: v for k, v in requirements.items()
 
 dirname = os.path.dirname(__file__)
 setup(name='espnet',
-      version='0.5.0',
+      version='0.4.2',
       url='http://github.com/espnet/espnet',
       author='Shinji Watanabe',
       author_email='shinjiw@ieee.org',

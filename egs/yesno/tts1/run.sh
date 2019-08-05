@@ -1,7 +1,7 @@
 #!/bin/bash
 
-. ./path.sh || exit 1;
-. ./cmd.sh || exit 1;
+. ./path.sh
+. ./cmd.sh
 
 # general configuration
 backend=pytorch

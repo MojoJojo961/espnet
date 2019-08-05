@@ -44,8 +44,7 @@ class LoadInputsAndTargets(object):
                  sort_in_input_length=True,
                  use_speaker_embedding=False,
                  use_second_target=False,
-                 preprocess_args=None,
-                 keep_all_data_on_mem=False,
+                 preprocess_args=None
                  ):
         self._loaders = {}
         if mode not in ['asr', 'tts', 'mt']:
@@ -80,8 +79,6 @@ class LoadInputsAndTargets(object):
         else:
             assert isinstance(preprocess_args, dict), type(preprocess_args)
             self.preprocess_args = dict(preprocess_args)
-
-        self.keep_all_data_on_mem = keep_all_data_on_mem
 
     def __call__(self, batch):
         """Function to load inputs and targets from list of dicts
@@ -409,13 +406,8 @@ class LoadInputsAndTargets(object):
             #    {"input": [{"feat": "some/path.wav",
             #                "filetype": "sound"},
             # Assume PCM16
-            if not self.keep_all_data_on_mem:
-                array, _ = soundfile.read(filepath, dtype='int16')
-                return array
-            if filepath not in self._loaders:
-                array, _ = soundfile.read(filepath, dtype='int16')
-                self._loaders[filepath] = array
-            return self._loaders[filepath]
+            array, rate = soundfile.read(filepath, dtype='int16')
+            return array
         elif filetype == 'npz':
             # e.g.
             #    {"input": [{"feat": "some/path.npz:F01_050C0101_PED_REAL",
@@ -432,22 +424,14 @@ class LoadInputsAndTargets(object):
             # e.g.
             #    {"input": [{"feat": "some/path.npy",
             #                "filetype": "npy"},
-            if not self.keep_all_data_on_mem:
-                return np.load(filepath)
-            if filepath not in self._loaders:
-                self._loaders[filepath] = np.load(filepath)
-            return self._loaders[filepath]
+            return np.load(filepath)
         elif filetype in ['mat', 'vec']:
             # e.g.
             #    {"input": [{"feat": "some/path.ark:123",
             #                "filetype": "mat"}]},
             # In this case, "123" indicates the starting points of the matrix
             # load_mat can load both matrix and vector
-            if not self.keep_all_data_on_mem:
-                return kaldiio.load_mat(filepath)
-            if filepath not in self._loaders:
-                self._loaders[filepath] = kaldiio.load_mat(filepath)
-            return self._loaders[filepath]
+            return kaldiio.load_mat(filepath)
         elif filetype == 'scp':
             # e.g.
             #    {"input": [{"feat": "some/path.scp:F01_050C0101_PED_REAL",

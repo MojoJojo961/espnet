@@ -50,6 +50,13 @@ from espnet.utils.training.tensorboard_logger import TensorboardLogger
 from espnet.utils.training.train_utils import check_early_stop
 from espnet.utils.training.train_utils import set_early_stop
 
+from espnet.nets.pytorch_backend.e2e_asr import E2E
+from espnet.asr.asr_utils import PlotAttentionReport
+
+# rnnlm
+import espnet.lm.pytorch_backend.extlm as extlm_pytorch
+import espnet.lm.pytorch_backend.lm as lm_pytorch
+
 import matplotlib
 matplotlib.use('Agg')
 
@@ -322,13 +329,7 @@ def train(args):
 
     # specify model architecture
     model_class = dynamic_import(args.model_module)
-    # TODO(hirofumi0810) better to simplify the E2E model interface by only allowing idim, odim, and args
-    # the pre-trained ASR and MT model arguments should be removed here and we should implement an additional method
-    # to attach these models
-    if asr_model is None and mt_model is None:
-        model = model_class(idim, odim, args)
-    else:
-        model = model_class(idim, odim, args, asr_model=asr_model, mt_model=mt_model)
+    model = model_class(idim, odim, args, asr_model=asr_model, mt_model=mt_model)
     assert isinstance(model, ASRInterface)
     subsampling_factor = model.subsample[0]
 
@@ -854,3 +855,72 @@ def enhance(args):
             if num_images >= args.num_images and enh_writer is None:
                 logging.info('Breaking the process.')
                 break
+
+def align(args):
+    """Decode with the given args
+
+    :param Namespace args: The program arguments
+    """
+    set_deterministic_pytorch(args)
+    # read training config
+    idim, odim, train_args = get_model_conf(args.model, args.model_conf)
+
+    # load trained model parameters
+    logging.info('reading model parameters from ' + args.model)
+    model = E2E(idim, odim, train_args)
+    torch_load(args.model, model)
+    model.recog_args = args
+
+    # gpu
+    if args.ngpu == 1:
+        gpu_id = range(args.ngpu)
+        logging.info('gpu id: ' + str(gpu_id))
+        model.cuda()
+        if rnnlm:
+            rnnlm.cuda()
+
+    # read json data
+    with open(args.align_json, 'rb') as f:
+        js = json.load(f)['utts']
+    new_js = {}
+
+    load_inputs_and_targets = LoadInputsAndTargets(
+        mode='asr', load_output=True, sort_in_input_length=False,
+        preprocess_conf=train_args.preprocess_conf
+        if args.preprocess_conf is None else args.preprocess_conf)
+
+    subsample = model.subsample[0]
+    device = torch.device("cuda" if args.ngpu > 0 else "cpu")
+    ignore_id = -1
+
+    if hasattr(model, "module"):
+        att_vis_fn = model.module.calculate_all_attentions
+    else:
+        att_vis_fn = model.calculate_all_attentions
+    
+    converter = CustomConverter(subsampling_factor=subsample,
+                                preprocess_conf=args.preprocess_conf)
+
+    with torch.no_grad():
+        for idx, name in enumerate(js.keys(), 1):
+            logging.info('(%d/%d) decoding ' + name, idx, len(js.keys()))
+            batch = [(name, js[name])]
+            with using_transform_config({'train': True}):
+                feats = load_inputs_and_targets(batch)
+            xs, ys = feats[0], feats[1]
+
+            # perform subsampling
+            if subsample > 1:
+                xs = [x[::subsample, :] for x in xs]
+
+            # get batch of lengths of input sequences
+            ilens = np.array([x.shape[0] for x in xs])
+
+            # perform padding and convert to tensor
+            xs_pad = pad_list([torch.from_numpy(x).float() for x in xs], 0).to(device)
+            ilens = torch.from_numpy(ilens).to(device)
+            ys_pad = pad_list([torch.from_numpy(y).long() for y in ys], ignore_id).to(device)
+            att_reporter = PlotAttentionReport(att_vis_fn, (xs_pad, ilens, ys_pad), args.outdir + "/att_ws",
+            converter=converter, device=device)
+
+            model.align(xs_pad, ilens, ys_pad, args.outdir, att_reporter)

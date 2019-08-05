@@ -3,8 +3,8 @@
 # Copyright 2019 IIIT-Bangalore (Shreekantha Nadig)
 #  Apache 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
 
-. ./path.sh || exit 1;
-. ./cmd.sh || exit 1;
+. ./path.sh
+. ./cmd.sh
 
 # general configuration
 backend=pytorch
@@ -34,6 +34,9 @@ trans_type=char
 tag="" # tag for managing experiments.
 
 . utils/parse_options.sh || exit 1;
+
+. ./path.sh
+. ./cmd.sh
 
 # Set bash to 'debug' mode, it will exit on :
 # -e 'error', -u 'undefined variable', -o ... 'error in pipeline', -x 'print commands',
@@ -169,5 +172,31 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
         ) &
     done
     wait
+    echo "Finished"
+fi
+
+if [ ${stage} -le 5 ]; then
+    echo "stage 5: Forced alignment"
+    nj=8
+    batchsize=0       
+
+    #### use CPU for decoding
+    ngpu=0
+    mkdir -p ${expdir}/alignments
+    ${decode_cmd} ${expdir}/alignments/align.log \
+    asr_align.py \
+    --ngpu ${ngpu} \
+    --backend ${backend} \
+    --debugmode ${debugmode} \
+    --outdir ${expdir}/alignments/ \
+    --verbose ${verbose} \
+    --align-json ${align_json} \
+    --model ${expdir}/results/${recog_model}  \
+    --beam-size ${beam_size} \
+    --penalty ${penalty} \
+    --maxlenratio ${maxlenratio} \
+    --minlenratio ${minlenratio} \
+    --ctc-weight ${ctc_weight} \
+    --batchsize ${batchsize} 
     echo "Finished"
 fi
