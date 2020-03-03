@@ -46,13 +46,13 @@ use_lm_valbest_average=false # if true, the validation `lm_n_average`-best langu
 # Set this to somewhere where you want to put your data, or where
 # someone else has already put it.  You'll want to change this
 # if you're not on the CLSP grid.
-datadir=/export/a15/vpanayotov/data
+datadir=/backup/downloads
 
 # base url for downloads.
 data_url=www.openslr.org/resources/12
 
 # bpemode (unigram or bpe)
-nbpe=5000
+nbpe=10000
 bpemode=unigram
 
 # exp tag
@@ -66,9 +66,13 @@ set -e
 set -u
 set -o pipefail
 
-train_set=train_960
-train_dev=dev
-recog_set="test_clean test_other dev_clean dev_other"
+#train_set=train_960
+#train_dev=dev
+#recog_set="test_clean test_other dev_clean dev_other"
+
+train_set=train_clean_100
+train_dev=dev_clean
+recog_set="test_clean dev_other"
 
 if [ ${stage} -le -1 ] && [ ${stop_stage} -ge -1 ]; then
     echo "stage -1: Data Download"
@@ -81,7 +85,8 @@ if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
     ### Task dependent. You have to make data the following preparation part by yourself.
     ### But you can utilize Kaldi recipes in most cases
     echo "stage 0: Data preparation"
-    for part in dev-clean test-clean dev-other test-other train-clean-100 train-clean-360 train-other-500; do
+    #for part in dev-clean test-clean dev-other test-other train-clean-100 train-clean-360 train-other-500; do
+    for part in dev-clean test-clean dev-other test-other train-clean-100; do
         # use underscore-separated names in data directories.
         local/data_prep.sh ${datadir}/LibriSpeech/${part} data/${part//-/_}
     done
@@ -95,13 +100,13 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
     echo "stage 1: Feature Generation"
     fbankdir=fbank
     # Generate the fbank features; by default 80-dimensional fbanks with pitch on each frame
-    for x in dev_clean test_clean dev_other test_other train_clean_100 train_clean_360 train_other_500; do
+    for x in dev_clean test_clean dev_other test_other train_clean_100; do
         steps/make_fbank_pitch.sh --cmd "$train_cmd" --nj ${nj} --write_utt2num_frames true \
             data/${x} exp/make_fbank/${x} ${fbankdir}
         utils/fix_data_dir.sh data/${x}
     done
 
-    utils/combine_data.sh --extra_files utt2num_frames data/${train_set}_org data/train_clean_100 data/train_clean_360 data/train_other_500
+    utils/combine_data.sh --extra_files utt2num_frames data/${train_set}_org data/train_clean_100
     utils/combine_data.sh --extra_files utt2num_frames data/${train_dev}_org data/dev_clean data/dev_other
 
     # remove utt having more than 3000 frames
@@ -294,7 +299,7 @@ if [ ${stage} -le 5 ] && [ ${stop_stage} -ge 5 ]; then
             --recog-json ${feat_recog_dir}/split${nj}utt/data_${bpemode}${nbpe}.JOB.json \
             --result-label ${expdir}/${decode_dir}/data.JOB.json \
             --model ${expdir}/results/${recog_model}  \
-            --rnnlm ${lmexpdir}/${lang_model} \
+            #--rnnlm ${lmexpdir}/${lang_model} \
             --api v2
 
         score_sclite.sh --bpe ${nbpe} --bpemodel ${bpemodel}.model --wer true ${expdir}/${decode_dir} ${dict}
@@ -306,3 +311,19 @@ if [ ${stage} -le 5 ] && [ ${stop_stage} -ge 5 ]; then
     [ ${i} -gt 0 ] && echo "$0: ${i} background jobs are failed." && false
     echo "Finished"
 fi
+
+if [ ${stage} -le 6 ] && [ ${stop_stage} -ge 6 ]; then
+        echo "stage 6: Scatter plot"
+        for rtask in ${recog_set}; do
+        (
+            #decode_dir=decode_${rtask}_$(basename ${decode_config%.*})
+	    decode_dir=decode_${rtask}_${recog_model}_$(basename ${decode_config%.*})_${lmtag}
+            feat_recog_dir=${dumpdir}/${rtask}/delta${do_delta}
+            pkg/getScatterPlot.sh --dir ${expdir}/${decode_dir} \
+                    --feat_dir ${feat_recog_dir} \
+                    --input_json data_${bpemode}${nbpe}.json
+        ) &
+        done
+        wait
+fi
+

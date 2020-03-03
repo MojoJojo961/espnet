@@ -27,8 +27,9 @@ decode_config=conf/decode.yaml
 recog_model=model.acc.best # set a model to be used for decoding: 'model.acc.best' or 'model.loss.best'
 
 # data
-timit=/home/shree/TIMIT
-trans_type=char
+timit=/home/sumitc/TIMIT
+
+trans_type=phn
 
 # exp tag
 tag="" # tag for managing experiments.
@@ -43,7 +44,8 @@ set -o pipefail
 
 train_set=train_nodev
 train_dev=train_dev
-recog_set="train_dev test"
+#recog_set="train_dev test"
+recog_set=train_nodev
 
 if [ ${stage} -le -1 ] && [ ${stop_stage} -ge -1 ]; then
     local/timit_data_prep.sh ${timit} ${trans_type} || exit 1
@@ -170,4 +172,17 @@ if [ ${stage} -le 4 ] && [ ${stop_stage} -ge 4 ]; then
     done
     wait
     echo "Finished"
+fi
+
+if [ ${stage} -le 5 ] && [ ${stop_stage} -ge 5 ]; then
+	echo "stage 5: Scatter plot"
+	for rtask in ${recog_set}; do
+	(
+	    decode_dir=decode_${rtask}_$(basename ${decode_config%.*})
+            feat_recog_dir=${dumpdir}/${rtask}/delta${do_delta}
+	    pkg/getScatterPlot.sh --dir ${expdir}/${decode_dir} \
+		    --feat_dir ${feat_recog_dir} 
+	) &
+	done
+	wait
 fi
