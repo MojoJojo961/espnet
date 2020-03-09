@@ -47,6 +47,10 @@ def main(args):
     if len(input_data_json.keys()) == len(output_data_json.keys()):
         for key,value in sorted(output_data_json.items()):
             output_data_json[key]['input'] = input_data_json[key]['input']
+            output_data_json[key]['output'][0]['score_norm_on_frame'] = output_data_json[key]['output'][0]['score'] / output_data_json[key]['input'][0]['shape'][0]
+    else:
+        print("Input json and Output json length doesnot match. Exiting")
+        exit(0)
             
     with open(args.plot_dir+'/mergedDataJson.json' ,'wb') as f:
         f.write(json.dumps({'utts': output_data_json}, indent=4, ensure_ascii=False, sort_keys=True).encode('utf-8'))

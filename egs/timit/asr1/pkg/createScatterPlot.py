@@ -30,22 +30,19 @@ def readAndMergeCSV(args):
     #print(df.head())
     return df
 
-def plot(dataframe, args):
-    g = sns.jointplot(x=dataframe.score, y=dataframe.per, space=0)
-    g = g.plot_joint(sns.regplot)
-    g = g.set_axis_labels('Confidence Measure', 'PER')
-    """plot_name = re.search('_pytorch_train(.+?)\/decode', args.dir_name)
-    if plot_name:
-        plot_name = plot_name.group(1)
-        if plot_name.startswith("_"):
-            plot_name = plot_name[1:] + "_"
-    else:
-        plot_name = ""
-    """
+def getPlotName(dir_name):
     plot_name = ""
     try:
-        exp_name = re.search('_pytorch_train(.+?)\/decode', args.dir_name).group(1)
-        task_name = re.search('\/decode(.+?)_decode', args.dir_name).group(1)
+        exp_name = re.search('_pytorch_train(.+?)\/decode', dir_name)
+        if exp_name:
+            exp_name = exp_name.group(1)
+        else:
+            exp_name = ""
+        task_name = re.search('\/decode(.+?)_decode', dir_name)
+        if task_name:
+            task_name = task_name.group(1)
+        else:
+            task_name = ""
         if exp_name.startswith("_"):
             exp_name = exp_name[1:] + "_"
         if task_name.startswith("_"):
@@ -53,8 +50,13 @@ def plot(dataframe, args):
         plot_name = exp_name + task_name
     except:
         plot_name = ""
+    return plot_name
 
-    g.savefig(args.plot_dir+'/scatter_'+plot_name+'frame_norm.png')
+def plot(dataframe, args):
+    g = sns.jointplot(x=dataframe.score, y=dataframe.per, space=0)
+    g = g.plot_joint(sns.regplot)
+    g = g.set_axis_labels('Confidence Measure', 'PER')
+    g.savefig(args.plot_dir+'/scatter_'+getPlotName(args.dir_name)+'frame_norm.png')
 
 def main(args):
     parser = get_parser()

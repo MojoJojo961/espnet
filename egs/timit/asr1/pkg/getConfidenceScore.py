@@ -6,24 +6,6 @@ import re
 import csv
 import sys
 
-"""with open('./mergedDataJson.json' ,'r') as f:
-   data = (json.load(f))['utts']
-   score_list = []
-   for key, value in sorted(data.items()):
-       tmp = data[key]
-       score = tmp['output'][0]['score']
-       frame_size = tmp['input'][0]['shape'][0]
-       phone_size = tmp['output'][0]['shape'][0]
-       score_norm = score / frame_size
-       score_list.append([key, score_norm])
-       #break
-   #print(score_list)
-
-with open('confidence_score.csv', 'w') as f:
-    writer = csv.writer(f)
-    writer.writerows(score_list)
-"""
-
 def get_parser():
     parser = configargparse.ArgumentParser(
         description='Transcribe text from speech using a speech recognition model on one CPU or GPU',
@@ -39,8 +21,8 @@ def main(args):
     
     with open(args.plot_dir+'/mergedDataJson.json' ,'r') as f:
         data = (json.load(f))['utts']
-        score_list = []
-        for key, value in sorted(data.items()):
+        score_list = [[k, data[k]['output'][0]['score_norm_on_frame']]  for k, v in sorted(data.items())]
+        """for key, value in sorted(data.items()):
             tmp = data[key]
             score = tmp['output'][0]['score']
             frame_size = tmp['input'][0]['shape'][0]
@@ -48,7 +30,8 @@ def main(args):
             score_list.append([key, score_norm])
             #break
         #print(score_list)
-        
+        """
+
     with open(args.plot_dir+'/confidence_score.csv', 'w') as f:
         writer = csv.writer(f)
         writer.writerows(score_list)
