@@ -48,6 +48,7 @@ def main(args):
         for key,value in sorted(output_data_json.items()):
             output_data_json[key]['input'] = input_data_json[key]['input']
             output_data_json[key]['output'][0]['score_norm_on_frame'] = output_data_json[key]['output'][0]['score'] / output_data_json[key]['input'][0]['shape'][0]
+            output_data_json[key]['output'][0]['score_norm_on_phone'] = output_data_json[key]['output'][0]['score'] / output_data_json[key]['output'][0]['shape'][0]
     else:
         print("Input json and Output json length doesnot match. Exiting")
         exit(0)
