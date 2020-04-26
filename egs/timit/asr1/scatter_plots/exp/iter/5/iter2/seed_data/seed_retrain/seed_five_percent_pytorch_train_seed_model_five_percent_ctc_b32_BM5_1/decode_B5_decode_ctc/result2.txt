@@ -1,0 +1,356 @@
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mclm0
+id: (mclm0-mclm0_si2086)
+Scores: (#C #S #D #I) 22 0 2 0
+REF:  <space> S z <space> HH eh <space> k f w ih sh n <space> p aa r dx ih l ay <space> t <space> 
+HYP:  <space> * z <space> ** eh <space> k f w ih sh n <space> p aa r dx ih l ay <space> t <space> 
+Eval:         D           D                                                                       
+
+Correct               =   91.7%   22   ( 22)
+Substitutions         =    0.0%    0   (  0)
+Deletions             =    8.3%    2   (  2)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =    8.3%    2   (  2)
+
+Ref. words            =           24   ( 24)
+Hyp. words            =           22   ( 22)
+Aligned words         =           24   ( 24)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mdlh0
+id: (mdlh0-mdlh0_sx340)
+Scores: (#C #S #D #I) 30 1 3 0
+REF:  <space> dh eh <space> t s ae <space> l oy <space> d f EY iy <SPACE> <space> B ae <space> k er f s l s f ey dh ih 
+HYP:  <space> dh eh <space> t s ae <space> l oy <space> d f ** iy ******* <space> N ae <space> k er f s l s f ey dh ih 
+Eval:                                                       D     D               S                                    
+
+>> REF:  er F s <space> 
+>> HYP:  er * s <space> 
+>> Eval:    D           
+
+Correct               =   88.2%   30   ( 30)
+Substitutions         =    2.9%    1   (  1)
+Deletions             =    8.8%    3   (  3)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   11.8%    4   (  4)
+
+Ref. words            =           34   ( 34)
+Hyp. words            =           31   ( 31)
+Aligned words         =           34   ( 34)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mfrm0
+id: (mfrm0-mfrm0_si1785)
+Scores: (#C #S #D #I) 31 2 2 1
+REF:  <space> l ow <space> dh AH <space> b eh n er f l <space> w er z ih n ey ih n l ih ih f IH ih sh Z <space> d IH l 
+HYP:  <space> l ow <space> dh IH <space> b eh n er f l <space> w er z ih n ey ih n l ih ih f ** ih sh * <space> d EH l 
+Eval:                         S                                                              D        D           S    
+
+>> REF:  ** <space> 
+>> HYP:  ER <space> 
+>> Eval: I          
+
+Correct               =   88.6%   31   ( 31)
+Substitutions         =    5.7%    2   (  2)
+Deletions             =    5.7%    2   (  2)
+Insertions            =    2.9%    1   (  1)
+
+Errors                =   14.3%    5   (  5)
+
+Ref. words            =           35   ( 35)
+Hyp. words            =           34   ( 34)
+Aligned words         =           36   ( 36)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mjae0
+id: (mjae0-mjae0_si1524)
+Scores: (#C #S #D #I) 34 3 5 3
+REF:  <space> n AE SH s ih s <space> P ay n aw R ih f * ih sh * ih <space> p ey N  m N ae f er ih N <space> ** ih 
+HYP:  <space> n ** ** s ih s <space> K ay n aw * ih f S ih sh S ih <space> p ey IH m * ae f er ih * <space> UW ih 
+Eval:           D  D                 S         D      I       I                 S    D            D         I     
+
+>> REF:  <space> p r ah <space> D  ih dx ae f <space> 
+>> HYP:  <space> p r ah <space> AH ih dx ae f <space> 
+>> Eval:                        S                     
+
+Correct               =   81.0%   34   ( 34)
+Substitutions         =    7.1%    3   (  3)
+Deletions             =   11.9%    5   (  5)
+Insertions            =    7.1%    3   (  3)
+
+Errors                =   26.2%   11   ( 11)
+
+Ref. words            =           42   ( 42)
+Hyp. words            =           40   ( 40)
+Aligned words         =           45   ( 45)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mkrg0
+id: (mkrg0-mkrg0_sx231)
+Scores: (#C #S #D #I) 9 0 0 0
+REF:  <space> p l ow er l ow l <space> 
+HYP:  <space> p l ow er l ow l <space> 
+Eval:                                  
+
+Correct               =  100.0%    9   (  9)
+Substitutions         =    0.0%    0   (  0)
+Deletions             =    0.0%    0   (  0)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =    0.0%    0   (  0)
+
+Ref. words            =            9   (  9)
+Hyp. words            =            9   (  9)
+Aligned words         =            9   (  9)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mpar0
+id: (mpar0-mpar0_si1576)
+Scores: (#C #S #D #I) 16 1 1 0
+REF:  <space> W  ih <space> b UH l th eh dh eh ae n aa <space> er z <space> 
+HYP:  <space> DH ih <space> b ** l th eh dh eh ae n aa <space> er z <space> 
+Eval:         S               D                                             
+
+Correct               =   88.9%   16   ( 16)
+Substitutions         =    5.6%    1   (  1)
+Deletions             =    5.6%    1   (  1)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   11.1%    2   (  2)
+
+Ref. words            =           18   ( 18)
+Hyp. words            =           17   ( 17)
+Aligned words         =           18   ( 18)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mreh1
+id: (mreh1-mreh1_si2229)
+Scores: (#C #S #D #I) 17 0 3 0
+REF:  <space> ae l s SH y ih er SH s ow dh ah <space> er R n ey l <space> 
+HYP:  <space> ae l s ** y ih er ** s ow dh ah <space> er * n ey l <space> 
+Eval:                D          D                        D                
+
+Correct               =   85.0%   17   ( 17)
+Substitutions         =    0.0%    0   (  0)
+Deletions             =   15.0%    3   (  3)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   15.0%    3   (  3)
+
+Ref. words            =           20   ( 20)
+Hyp. words            =           17   ( 17)
+Aligned words         =           20   ( 20)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mrgm0
+id: (mrgm0-mrgm0_sx172)
+Scores: (#C #S #D #I) 34 3 8 0
+REF:  <space> dh ih <space> ch R ay m <space> t AH n <SPACE> <space> ih eh dx ih DX dx ih <space> z ih N m IH DX 
+HYP:  <space> dh ih <space> ch * ay m <space> t AA n ******* <space> ih eh dx ih ** dx ih <space> z ih * m ** ER 
+Eval:                          D                S    D                           D                     D   D  S  
+
+>> REF:  <space> B m ay IH iy uw ih N <space> ih N  m z ah m <space> 
+>> HYP:  <space> * m ay ** iy uw ih * <space> ih DX m z ah m <space> 
+>> Eval:         D      D           D            S                   
+
+Correct               =   75.6%   34   ( 34)
+Substitutions         =    6.7%    3   (  3)
+Deletions             =   17.8%    8   (  8)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   24.4%   11   ( 11)
+
+Ref. words            =           45   ( 45)
+Hyp. words            =           37   ( 37)
+Aligned words         =           45   ( 45)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mrlk0
+id: (mrlk0-mrlk0_si2140)
+Scores: (#C #S #D #I) 49 2 5 1
+REF:  <space> w R f IH dx ih er ih s <space> t eh dx f aa l uw ih f AH m uw ah aa <space> SH <space> t ih N ih er dx 
+HYP:  <space> w * f ** dx ih er ih s <space> t eh dx f aa l uw ih f R  m uw ah aa <space> S  <space> t ih * ih er dx 
+Eval:           D   D                                               S                     S               D          
+
+>> REF:  ih <space> jh IH uw ah s ih <space> W l <space> t w ih ih <space> f s ******* t ih <space> 
+>> HYP:  ih <space> jh ** uw ah s ih <space> * l <space> t w ih ih <space> f s <SPACE> t ih <space> 
+>> Eval:               D                     D                                 I                    
+
+Correct               =   87.5%   49   ( 49)
+Substitutions         =    3.6%    2   (  2)
+Deletions             =    8.9%    5   (  5)
+Insertions            =    1.8%    1   (  1)
+
+Errors                =   14.3%    8   (  8)
+
+Ref. words            =           56   ( 56)
+Hyp. words            =           52   ( 52)
+Aligned words         =           57   ( 57)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER msas0
+id: (msas0-msas0_sx26)
+Scores: (#C #S #D #I) 26 2 2 2
+REF:  <space> n aa N ih s <space> t ih l aa l N ng DX r jh er r l ih dx ** ih ** r ih n EH r n <space> 
+HYP:  <space> n aa L ih s <space> t ih l aa l * ng ** r jh er r l ih dx IH ih EH r ih n L  r n <space> 
+Eval:              S                          D    D                    I     I         S              
+
+Correct               =   86.7%   26   ( 26)
+Substitutions         =    6.7%    2   (  2)
+Deletions             =    6.7%    2   (  2)
+Insertions            =    6.7%    2   (  2)
+
+Errors                =   20.0%    6   (  6)
+
+Ref. words            =           30   ( 30)
+Hyp. words            =           30   ( 30)
+Aligned words         =           32   ( 32)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER msrr0
+id: (msrr0-msrr0_sx231)
+Scores: (#C #S #D #I) 13 0 1 0
+REF:  <space> ay dx ah M n ay n b ay l n <space> <space> 
+HYP:  <space> ay dx ah * n ay n b ay l n <space> <space> 
+Eval:                  D                                 
+
+Correct               =   92.9%   13   ( 13)
+Substitutions         =    0.0%    0   (  0)
+Deletions             =    7.1%    1   (  1)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =    7.1%    1   (  1)
+
+Ref. words            =           14   ( 14)
+Hyp. words            =           13   ( 13)
+Aligned words         =           14   ( 14)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_BM5_1/decode_B5_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER mtqc0
+id: (mtqc0-mtqc0_si2071)
+Scores: (#C #S #D #I) 20 0 2 0
+REF:  <space> dh ih ey <space> M ey l eh dx n hh er IH <space> d ah n ey dx ih <space> 
+HYP:  <space> dh ih ey <space> * ey l eh dx n hh er ** <space> d ah n ey dx ih <space> 
+Eval:                          D                    D                                  
+
+Correct               =   90.9%   20   ( 20)
+Substitutions         =    0.0%    0   (  0)
+Deletions             =    9.1%    2   (  2)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =    9.1%    2   (  2)
+
+Ref. words            =           22   ( 22)
+Hyp. words            =           20   ( 20)
+Aligned words         =           22   ( 22)
+
+-------------------------------------------------------------------------------
+

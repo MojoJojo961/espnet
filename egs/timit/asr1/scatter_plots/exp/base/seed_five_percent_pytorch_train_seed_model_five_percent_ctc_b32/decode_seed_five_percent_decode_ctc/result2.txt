@@ -1,0 +1,4287 @@
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER faem0
+id: (faem0-faem0_si1392)
+Scores: (#C #S #D #I) 47 9 3 5
+REF:  <space> ** AH s ** uw m f aa r IH <SPACE> z ae M <space> p UH l AH s ih <space> * ch uw * ey sh n w EH ER f aa r 
+HYP:  <space> DH EH s IH uw m f aa r ** DH      z ae * <space> p L  l IH s ih <space> T ch uw L ey sh n w ** R  f aa r 
+Eval:         I  S    I              D  S            D           S    S               I       I           D  S         
+
+>> REF:  m hh eh z ah <space> p ae <space> k IY NG sh eh <space> d <space> AE n <space> D f iy l <space> * s <space> 
+>> HYP:  m hh eh z ah <space> p ae <space> k IH N  sh eh <space> d <space> EH n <space> K f iy l <space> T s <space> 
+>> Eval:                                     S  S                          S            S                I           
+
+Correct               =   79.7%   47   ( 47)
+Substitutions         =   15.3%    9   (  9)
+Deletions             =    5.1%    3   (  3)
+Insertions            =    8.5%    5   (  5)
+
+Errors                =   28.8%   17   ( 17)
+
+Ref. words            =           59   ( 59)
+Hyp. words            =           61   ( 61)
+Aligned words         =           64   ( 64)
+
+-------------------------------------------------------------------------------
+
+id: (faem0-faem0_si2022)
+Scores: (#C #S #D #I) 12 5 3 0
+REF:  <space> w AH DX AW      f ih <space> D  UH sh IY <space> D r ay V f aa <space> 
+HYP:  <space> w ** EH <SPACE> f ih <space> DH IH sh IH <space> * r ay * f aa <space> 
+Eval:           D  S  S                    S  S     S          D      D              
+
+Correct               =   60.0%   12   ( 59)
+Substitutions         =   25.0%    5   ( 14)
+Deletions             =   15.0%    3   (  6)
+Insertions            =    0.0%    0   (  5)
+
+Errors                =   40.0%    8   ( 25)
+
+Ref. words            =           20   ( 79)
+Hyp. words            =           17   ( 78)
+Aligned words         =           20   ( 84)
+
+-------------------------------------------------------------------------------
+
+id: (faem0-faem0_si762)
+Scores: (#C #S #D #I) 22 3 1 0
+REF:  <space> f ih l s <space> m aa l HH OW l ih N <space> b OW l w ih th <space> k l ey <space> 
+HYP:  <space> f ih l s <space> m aa l ** L  l ih M <space> b L  l w ih th <space> k l ey <space> 
+Eval:                                 D  S       S           S                                   
+
+Correct               =   84.6%   22   ( 81)
+Substitutions         =   11.5%    3   ( 17)
+Deletions             =    3.8%    1   (  7)
+Insertions            =    0.0%    0   (  5)
+
+Errors                =   15.4%    4   ( 29)
+
+Ref. words            =           26   (105)
+Hyp. words            =           25   (103)
+Aligned words         =           26   (110)
+
+-------------------------------------------------------------------------------
+
+id: (faem0-faem0_sx132)
+Scores: (#C #S #D #I) 28 6 3 4
+REF:  <space> P ah * <space> B  l ih s ih DX iy EH n ** OW      DX er r ay IH dx iy ** <space> g ow * hh ae n <space> 
+HYP:  <space> K ah M <space> DH l ih s ih ** iy ** n EH <SPACE> G  er r ay EY dx iy IH <space> g ow L hh ae n <space> 
+Eval:         S    I         S            D     D    I  S       S          S        I               I                 
+
+>> REF:  d ih n hh AE n <space> D <space> 
+>> HYP:  d ih n hh ** n <space> T <space> 
+>> Eval:           D            S         
+
+Correct               =   75.7%   28   (109)
+Substitutions         =   16.2%    6   ( 23)
+Deletions             =    8.1%    3   ( 10)
+Insertions            =   10.8%    4   (  9)
+
+Errors                =   35.1%   13   ( 42)
+
+Ref. words            =           37   (142)
+Hyp. words            =           38   (141)
+Aligned words         =           41   (151)
+
+-------------------------------------------------------------------------------
+
+id: (faem0-faem0_sx222)
+Scores: (#C #S #D #I) 30 7 5 2
+REF:  <space> y uw * aa l W ih Z <space> k AH M AH <space> P w ih th <space> P ae ******* TH ah l AA <space> JH ih 
+HYP:  <space> y uw L aa l * ih * <space> k ** * L  <space> B w ih th <space> K ae <SPACE> K  ah l AY <space> T  ih 
+Eval:              I      D    D           D  D S          S                 S    I       S       S          S     
+
+>> REF:  <space> k l ih <space> G z ae m <space> P l s <space> 
+>> HYP:  <space> k l ih <space> D z ae m <space> * l s <space> 
+>> Eval:                        S                D             
+
+Correct               =   71.4%   30   (139)
+Substitutions         =   16.7%    7   ( 30)
+Deletions             =   11.9%    5   ( 15)
+Insertions            =    4.8%    2   ( 11)
+
+Errors                =   33.3%   14   ( 56)
+
+Ref. words            =           42   (184)
+Hyp. words            =           39   (180)
+Aligned words         =           44   (195)
+
+-------------------------------------------------------------------------------
+
+id: (faem0-faem0_sx312)
+Scores: (#C #S #D #I) 38 12 2 8
+REF:  <space> dh ow * z ** AE n S       ER Z  W l <space> b IY s <space> t r ey ** ******* * f aa w * er DX ih f ** Y  
+HYP:  <space> dh ow L z IH EH n <SPACE> SH IH S l <space> b IH s <space> t r ey IY <SPACE> K f aa w R er ** ih f IY IH 
+Eval:               I   I  S    S       S  S  S             S                   I  I       I        I    D       I  S  
+
+>> REF:  UW TH iy ng <space> K DH ih m th * r UW <space> K eh r f l iy f er s <space> t <space> 
+>> HYP:  F  EY iy ng <space> * T  ih m th S r ER <space> T eh r f l iy f er s <space> t <space> 
+>> Eval: S  S                D S          I   S          S                                      
+
+Correct               =   73.1%   38   (177)
+Substitutions         =   23.1%   12   ( 42)
+Deletions             =    3.8%    2   ( 17)
+Insertions            =   15.4%    8   ( 19)
+
+Errors                =   42.3%   22   ( 78)
+
+Ref. words            =           52   (236)
+Hyp. words            =           58   (238)
+Aligned words         =           60   (255)
+
+-------------------------------------------------------------------------------
+
+id: (faem0-faem0_sx402)
+Scores: (#C #S #D #I) 28 2 3 2
+REF:  <space> w IH l s er v r UW <space> b aa r * <space> p ay AE F <space> t er r ey <space> ch l Z <space> t aa 
+HYP:  <space> w ** l s er v r IH <space> b aa r M <space> p ay ** * <space> t er r ey <space> ch l S <space> t aa 
+Eval:           D             S                 I              D  D                                S              
+
+>> REF:  <space> k ** <space> 
+>> HYP:  <space> k ER <space> 
+>> Eval:           I          
+
+Correct               =   84.8%   28   (205)
+Substitutions         =    6.1%    2   ( 44)
+Deletions             =    9.1%    3   ( 20)
+Insertions            =    6.1%    2   ( 21)
+
+Errors                =   21.2%    7   ( 85)
+
+Ref. words            =           33   (269)
+Hyp. words            =           32   (270)
+Aligned words         =           35   (290)
+
+-------------------------------------------------------------------------------
+
+id: (faem0-faem0_sx42)
+Scores: (#C #S #D #I) 26 4 2 0
+REF:  <space> B  ih <space> b L ih <space> k l s <space> k aa l er z <space> aa r <space> G Y  uw HH ih s <space> t r 
+HYP:  <space> DH ih <space> b * ih <space> k l s <space> k aa l er z <space> aa r <space> D JH uw R  ih s <space> t r 
+Eval:         S               D                                                           S S     S                   
+
+>> REF:  IY <space> 
+>> HYP:  ** <space> 
+>> Eval: D          
+
+Correct               =   81.3%   26   (231)
+Substitutions         =   12.5%    4   ( 48)
+Deletions             =    6.3%    2   ( 22)
+Insertions            =    0.0%    0   ( 21)
+
+Errors                =   18.8%    6   ( 91)
+
+Ref. words            =           32   (301)
+Hyp. words            =           30   (300)
+Aligned words         =           32   (322)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fajw0
+id: (fajw0-fajw0_si1263)
+Scores: (#C #S #D #I) 42 12 4 10
+REF:  ******* * <space> b ** OW TH HH ae V eh <space> K s l eh n ih n ih <space> g R ey sh * ** n ** ah ******* DH ER 
+HYP:  <SPACE> S <space> b EH L  S  T  ae * eh <space> * s l eh n ih n ih <space> g * ey sh S IH n EH ah <SPACE> D  IH 
+Eval: I       I           I  S  S  S     D            D                            D       I I    I     I       S  S  
+
+>> REF:  f ih s <space> k l <space> t ae <space> * s <space> k l eh <space> * * SH n Y  IH er <space> k AE l IH n 
+>> HYP:  f ih s <space> k l <space> t ae <space> K s <space> k l eh <space> T S IH n IY UW er <space> k EH l ** n 
+>> Eval:                                         I                          I I S    S  S               S    D    
+
+>> REF:  <space> D ER Z <space> 
+>> HYP:  <space> T IH S <space> 
+>> Eval:         S S  S         
+
+Correct               =   72.4%   42   ( 42)
+Substitutions         =   20.7%   12   ( 12)
+Deletions             =    6.9%    4   (  4)
+Insertions            =   17.2%   10   ( 10)
+
+Errors                =   44.8%   26   ( 26)
+
+Ref. words            =           58   ( 58)
+Hyp. words            =           64   ( 64)
+Aligned words         =           68   ( 68)
+
+-------------------------------------------------------------------------------
+
+id: (fajw0-fajw0_si1893)
+Scores: (#C #S #D #I) 27 4 4 1
+REF:  <space> ih <space> t UH <space> k HH ih m AH l aa NG <space> t ay m <space> t AH <space> k m <SPACE> p ow z * m 
+HYP:  <space> ih <space> t IH <space> k T  ih m ** l aa N  <space> t ay m <space> t IH <space> k m ******* p ow z S m 
+Eval:                      S            S       D       S                           S              D              I   
+
+>> REF:  s <SPACE> eh l F <space> 
+>> HYP:  s ******* eh l * <space> 
+>> Eval:   D            D         
+
+Correct               =   77.1%   27   ( 69)
+Substitutions         =   11.4%    4   ( 16)
+Deletions             =   11.4%    4   (  8)
+Insertions            =    2.9%    1   ( 11)
+
+Errors                =   25.7%    9   ( 35)
+
+Ref. words            =           35   ( 93)
+Hyp. words            =           32   ( 96)
+Aligned words         =           36   (104)
+
+-------------------------------------------------------------------------------
+
+id: (fajw0-fajw0_si633)
+Scores: (#C #S #D #I) 42 10 7 5
+REF:  <space> hh iy l ay <space> t ih n IH <space> P ih ** r l ow * <space> * B Z  AH      V AH n s AH s <space> p eh 
+HYP:  <space> hh iy l ay <space> t ih n EH <space> * ih EH r l ow N <space> T S IH <SPACE> K AY n s ** s <space> p eh 
+Eval:                                   S          D    I         I         I S S  S       S S      D                 
+
+>> REF:  <space> t ih NG v ih z ih <SPACE> d ** ER z W ih ******* TH ih z N iy <space> D l sh aa R <space> t iy TH <space> 
+>> HYP:  <space> t ih M  v ih z ih ******* d IH R  z * ih <SPACE> T  ih z M iy <space> * l sh aa * <space> t iy ** <space> 
+>> Eval:              S            D         I  S    D    I       S       S            D         D              D          
+
+Correct               =   71.2%   42   (111)
+Substitutions         =   16.9%   10   ( 26)
+Deletions             =   11.9%    7   ( 15)
+Insertions            =    8.5%    5   ( 16)
+
+Errors                =   37.3%   22   ( 57)
+
+Ref. words            =           59   (152)
+Hyp. words            =           57   (153)
+Aligned words         =           64   (168)
+
+-------------------------------------------------------------------------------
+
+id: (fajw0-fajw0_sx183)
+Scores: (#C #S #D #I) 19 7 1 4
+REF:  <space> w ay eh l s * w * UH <space> * D  ae n iy AH l AW AH dh ER Z <space> t ih <space> G ow * <space> 
+HYP:  <space> w ay eh l s M w L IH <space> P EY ae n iy ** l AA L  dh IH S <space> t ih <space> M ow L <space> 
+Eval:                     I   I S          I S          D    S  S     S  S                      S    I         
+
+Correct               =   70.4%   19   (130)
+Substitutions         =   25.9%    7   ( 33)
+Deletions             =    3.7%    1   ( 16)
+Insertions            =   14.8%    4   ( 20)
+
+Errors                =   44.4%   12   ( 69)
+
+Ref. words            =           27   (179)
+Hyp. words            =           30   (183)
+Aligned words         =           31   (199)
+
+-------------------------------------------------------------------------------
+
+id: (fajw0-fajw0_sx273)
+Scores: (#C #S #D #I) 24 6 2 4
+REF:  <space> dh ih ae ng <space> G r iy ** <space> b * OY ae n ******* s ER <space> b ih <space> D ih <space> D  N l 
+HYP:  <space> dh ih ae ng <space> P r iy IH <space> b L EY ae n <SPACE> s IH <space> b ih <space> T ih <space> IH M l 
+Eval:                             S      I            I S       I         S                       S            S  S   
+
+>> REF:  UH <space> k AH <space> ** <space> 
+>> HYP:  ** <space> k ** <space> AH <space> 
+>> Eval: D            D          I          
+
+Correct               =   75.0%   24   (154)
+Substitutions         =   18.8%    6   ( 39)
+Deletions             =    6.3%    2   ( 18)
+Insertions            =   12.5%    4   ( 24)
+
+Errors                =   37.5%   12   ( 81)
+
+Ref. words            =           32   (211)
+Hyp. words            =           34   (217)
+Aligned words         =           36   (235)
+
+-------------------------------------------------------------------------------
+
+id: (fajw0-fajw0_sx3)
+Scores: (#C #S #D #I) 15 1 0 0
+REF:  <space> dh ih s w AH z iy z iy f aa r ah s <space> 
+HYP:  <space> dh ih s w IH z iy z iy f aa r ah s <space> 
+Eval:                   S                                
+
+Correct               =   93.8%   15   (169)
+Substitutions         =    6.3%    1   ( 40)
+Deletions             =    0.0%    0   ( 18)
+Insertions            =    0.0%    0   ( 24)
+
+Errors                =    6.3%    1   ( 82)
+
+Ref. words            =           16   (227)
+Hyp. words            =           16   (233)
+Aligned words         =           16   (251)
+
+-------------------------------------------------------------------------------
+
+id: (fajw0-fajw0_sx363)
+Scores: (#C #S #D #I) 27 7 6 2
+REF:  <space> dh ih <space> k ** AW W aa n d ER <SPACE> f ah * m DH ah f aa R  m l AE n <space> D ih N <SPACE> b ih 
+HYP:  <space> dh ih <space> k AE L  L aa n d ** IH      f ah N m ** ah f aa AY m l AY n <space> * ih * M       b ih 
+Eval:                         I  S  S        D  S            I   D          S      S            D    D S            
+
+>> REF:  <space> K ey m l AA s <SPACE> <space> 
+>> HYP:  <space> T ey m l ** s ******* <space> 
+>> Eval:         S        D    D               
+
+Correct               =   67.5%   27   (196)
+Substitutions         =   17.5%    7   ( 47)
+Deletions             =   15.0%    6   ( 24)
+Insertions            =    5.0%    2   ( 26)
+
+Errors                =   37.5%   15   ( 97)
+
+Ref. words            =           40   (267)
+Hyp. words            =           36   (269)
+Aligned words         =           42   (293)
+
+-------------------------------------------------------------------------------
+
+id: (fajw0-fajw0_sx93)
+Scores: (#C #S #D #I) 21 2 1 2
+REF:  <space> k ah <space> t ih s m * aa l <space> k AA n ER aa f iy <space> ch eh * <space> JH <space> 
+HYP:  <space> k ah <space> t ih s m L aa l <space> k L  n ** aa f iy <space> ch eh N <space> T  <space> 
+Eval:                               I                S    D                        I         S          
+
+Correct               =   87.5%   21   (217)
+Substitutions         =    8.3%    2   ( 49)
+Deletions             =    4.2%    1   ( 25)
+Insertions            =    8.3%    2   ( 28)
+
+Errors                =   20.8%    5   (102)
+
+Ref. words            =           24   (291)
+Hyp. words            =           25   (294)
+Aligned words         =           26   (319)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER falk0
+id: (falk0-falk0_si1086)
+Scores: (#C #S #D #I) 29 2 4 0
+REF:  <SPACE> <space> DH eh n DH ih <space> k aa r IY AA <space> g er f er m AH s <space> t aa r <space> b ih <space> 
+HYP:  ******* <space> ** eh n ** ih <space> k aa r ** EY <space> g er f er m EH s <space> t aa r <space> b ih <space> 
+Eval: D               D       D                    D  S                      S                                        
+
+>> REF:  t r ey <space> t <space> 
+>> HYP:  t r ey <space> t <space> 
+>> Eval:                          
+
+Correct               =   82.9%   29   ( 29)
+Substitutions         =    5.7%    2   (  2)
+Deletions             =   11.4%    4   (  4)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   17.1%    6   (  6)
+
+Ref. words            =           35   ( 35)
+Hyp. words            =           31   ( 31)
+Aligned words         =           35   ( 35)
+
+-------------------------------------------------------------------------------
+
+id: (falk0-falk0_si456)
+Scores: (#C #S #D #I) 26 7 1 2
+REF:  <space> t uw * AH      dh ER <space> k ey s ih Z aa l s OW w er AH n <space> D er ih <space> V ay z ******* m ih 
+HYP:  <space> t uw L <SPACE> dh IH <space> k ey s ih S aa l s L  w er EH n <space> G er ih <space> P ay z <SPACE> m ih 
+Eval:              I S          S                    S        S       S            S               S      I            
+
+>> REF:  N <space> t <space> 
+>> HYP:  * <space> t <space> 
+>> Eval: D                   
+
+Correct               =   76.5%   26   ( 55)
+Substitutions         =   20.6%    7   (  9)
+Deletions             =    2.9%    1   (  5)
+Insertions            =    5.9%    2   (  2)
+
+Errors                =   29.4%   10   ( 16)
+
+Ref. words            =           34   ( 69)
+Hyp. words            =           35   ( 66)
+Aligned words         =           36   ( 71)
+
+-------------------------------------------------------------------------------
+
+id: (falk0-falk0_si658)
+Scores: (#C #S #D #I) 43 12 5 1
+REF:  <space> dh ih s <space> t r ey <space> l ay n W ih <space> s ih m B AH l ay Z ih <space> S Y  UW N iy <space> n 
+HYP:  <space> dh ih s <space> t r ey <space> l ay n M ih <space> s ih m * ** l ay S ih <space> * SH IY M iy <space> n 
+Eval:                                               S                   D D       S            D S  S  S              
+
+>> REF:  eh s <space> dh ih s er <space> k l AH V  <space> JH Y  UW n ah * V ER s AE l AH <space> t iy <space> 
+>> HYP:  eh s <space> dh ih s er <space> k l ** IH <space> ** SH IH n ah F R IH s T  l IH <space> t iy <space> 
+>> Eval:                                     D  S          D  S  S       I S S    S    S                       
+
+Correct               =   71.7%   43   ( 98)
+Substitutions         =   20.0%   12   ( 21)
+Deletions             =    8.3%    5   ( 10)
+Insertions            =    1.7%    1   (  3)
+
+Errors                =   30.0%   18   ( 34)
+
+Ref. words            =           60   (129)
+Hyp. words            =           56   (122)
+Aligned words         =           61   (132)
+
+-------------------------------------------------------------------------------
+
+id: (falk0-falk0_sx186)
+Scores: (#C #S #D #I) 24 5 1 4
+REF:  <space> w UH <space> d ih <space> t aa m <space> b OY aa * f <space> t ih n * <space> p L  ey AW <space> d ** AA 
+HYP:  <space> w IH <space> d ih <space> t aa m <space> b AY aa L f <space> t ih n M <space> p AY ey ** <space> d OW R  
+Eval:           S                                        S     I                  I           S     D            I  S  
+
+>> REF:  er ** Z <space> 
+>> HYP:  er IH S <space> 
+>> Eval:    I  S         
+
+Correct               =   80.0%   24   (122)
+Substitutions         =   16.7%    5   ( 26)
+Deletions             =    3.3%    1   ( 11)
+Insertions            =   13.3%    4   (  7)
+
+Errors                =   33.3%   10   ( 44)
+
+Ref. words            =           30   (159)
+Hyp. words            =           33   (155)
+Aligned words         =           34   (166)
+
+-------------------------------------------------------------------------------
+
+id: (falk0-falk0_sx276)
+Scores: (#C #S #D #I) 24 7 1 5
+REF:  <space> JH AA n z * <space> B r ** AH dh ** er r iy <space> p * ey n ih <space> DH ih <space> g * ER AA <space> 
+HYP:  <space> ** T  n z S <space> P r EY N  dh EH er r iy <space> p K ey n ih <space> D  ih <space> g R AY N  <space> 
+Eval:         D  S      I         S   I  S     I                    I                 S               I S  S          
+
+>> REF:  jh <space> D aa er <space> 
+>> HYP:  jh <space> T aa er <space> 
+>> Eval:            S               
+
+Correct               =   75.0%   24   (146)
+Substitutions         =   21.9%    7   ( 33)
+Deletions             =    3.1%    1   ( 12)
+Insertions            =   15.6%    5   ( 12)
+
+Errors                =   40.6%   13   ( 57)
+
+Ref. words            =           32   (191)
+Hyp. words            =           36   (191)
+Aligned words         =           37   (203)
+
+-------------------------------------------------------------------------------
+
+id: (falk0-falk0_sx366)
+Scores: (#C #S #D #I) 35 14 4 3
+REF:  <space> w IH y UW <space> P l ** iy Z <space> K ih n f ER m <space> G AH V AH m IH n <space> p aa l AH s iy * r 
+HYP:  <space> w IY y IH <space> K l EY iy S <space> T ih n f R  m <space> * ** D AE m AH n <space> p aa l ** s iy M r 
+Eval:           S    S          S   I     S         S        S            D D  S S    S                   D       I   
+
+>> REF:  IH <space> g AA r dx iy ** NG W ey s <space> t r iy m UW V l <space> 
+>> HYP:  IY <space> g AE r dx iy IH N  L ey s <space> t r iy m ** L l <space> 
+>> Eval: S            S          I  S  S                       D  S           
+
+Correct               =   66.0%   35   (181)
+Substitutions         =   26.4%   14   ( 47)
+Deletions             =    7.5%    4   ( 16)
+Insertions            =    5.7%    3   ( 15)
+
+Errors                =   39.6%   21   ( 78)
+
+Ref. words            =           53   (244)
+Hyp. words            =           52   (243)
+Aligned words         =           56   (259)
+
+-------------------------------------------------------------------------------
+
+id: (falk0-falk0_sx6)
+Scores: (#C #S #D #I) 19 4 2 3
+REF:  <space> b r ay <space> s AH n sh ay n sh ih * m * ER Z aa n DH iy Y OW sh ** n <space> 
+HYP:  <space> b r ay <space> s EH n sh ay n sh ih N m R IH S aa n ** iy * L  sh IH n <space> 
+Eval:                          S                  I   I S  S      D     D S     I            
+
+Correct               =   76.0%   19   (200)
+Substitutions         =   16.0%    4   ( 51)
+Deletions             =    8.0%    2   ( 18)
+Insertions            =   12.0%    3   ( 18)
+
+Errors                =   36.0%    9   ( 87)
+
+Ref. words            =           25   (269)
+Hyp. words            =           26   (269)
+Aligned words         =           28   (287)
+
+-------------------------------------------------------------------------------
+
+id: (falk0-falk0_sx96)
+Scores: (#C #S #D #I) 30 7 1 5
+REF:  <space> m * ae s <space> K er r ey ** <space> p AA r DX iy Z <space> t ae <space> * s <space> * W AH n ******* Z 
+HYP:  <space> m N ae s <space> T er r ey IY <space> p ** r AY iy S <space> t ae <space> K s <space> M L EH n <SPACE> S 
+Eval:           I              S         I            D    S     S                      I           I S S    I       S 
+
+>> REF:  ih m ae <space> JH ih n ey sh ih n <space> 
+>> HYP:  ih m ae <space> T  ih n ey sh ih n <space> 
+>> Eval:                 S                          
+
+Correct               =   78.9%   30   (230)
+Substitutions         =   18.4%    7   ( 58)
+Deletions             =    2.6%    1   ( 19)
+Insertions            =   13.2%    5   ( 23)
+
+Errors                =   34.2%   13   (100)
+
+Ref. words            =           38   (307)
+Hyp. words            =           42   (311)
+Aligned words         =           43   (330)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER falr0
+id: (falr0-falr0_si1325)
+Scores: (#C #S #D #I) 34 8 6 2
+REF:  <space> K w ay DX aa f AH n HH ah n iy ** <space> b iy * Z       F aa r m AH m ih <space> jh UH r IH dx iy AA n 
+HYP:  <space> * w ay N  aa f IH n M  ah n iy IH <space> b iy S <SPACE> K aa r m N  m ih <space> jh ** r ** dx iy AH n 
+Eval:         D      S       S    S          I               I S       S        S                  D    D        S    
+
+>> REF:  DH ah W IH l OW <space> k ae <space> k ih n s <space> 
+>> HYP:  ** ah * ** l IH <space> k ae <space> k ih n s <space> 
+>> Eval: D     D D    S                                        
+
+Correct               =   70.8%   34   ( 34)
+Substitutions         =   16.7%    8   (  8)
+Deletions             =   12.5%    6   (  6)
+Insertions            =    4.2%    2   (  2)
+
+Errors                =   33.3%   16   ( 16)
+
+Ref. words            =           48   ( 48)
+Hyp. words            =           44   ( 44)
+Aligned words         =           50   ( 50)
+
+-------------------------------------------------------------------------------
+
+id: (falr0-falr0_si1955)
+Scores: (#C #S #D #I) 25 9 2 0
+REF:  <space> l ay <space> K IY n ah f W AH l aa l <space> b iy ah <space> P AA n <space> t AA <space> p AY s AH n 
+HYP:  <space> l ay <space> T IH n ah f * ** l aa l <space> b iy ah <space> K AH n <space> t AY <space> p IH s AY n 
+Eval:                      S S         D D                                 S S              S            S    S    
+
+>> REF:  <space> d AW N <space> 
+>> HYP:  <space> d EH M <space> 
+>> Eval:           S  S         
+
+Correct               =   69.4%   25   ( 59)
+Substitutions         =   25.0%    9   ( 17)
+Deletions             =    5.6%    2   (  8)
+Insertions            =    0.0%    0   (  2)
+
+Errors                =   30.6%   11   ( 27)
+
+Ref. words            =           36   ( 84)
+Hyp. words            =           34   ( 78)
+Aligned words         =           36   ( 86)
+
+-------------------------------------------------------------------------------
+
+id: (falr0-falr0_si695)
+Scores: (#C #S #D #I) 29 2 4 2
+REF:  <space> DH iy N y uw <space> b * er TH ih z ih m iy DX iy ih ******* EH n ih n s <SPACE> t ih n <space> t ey n 
+HYP:  <space> ** iy * y uw <space> b R er S  ih z ih m iy ** iy ih <SPACE> IH n ih n s ******* t ih n <space> t ey n 
+Eval:         D     D                I    S               D        I       S           D                             
+
+>> REF:  iy ih s <space> 
+>> HYP:  iy ih s <space> 
+>> Eval:                 
+
+Correct               =   82.9%   29   ( 88)
+Substitutions         =    5.7%    2   ( 19)
+Deletions             =   11.4%    4   ( 12)
+Insertions            =    5.7%    2   (  4)
+
+Errors                =   22.9%    8   ( 35)
+
+Ref. words            =           35   (119)
+Hyp. words            =           33   (111)
+Aligned words         =           37   (123)
+
+-------------------------------------------------------------------------------
+
+id: (falr0-falr0_sx155)
+Scores: (#C #S #D #I) 32 9 0 4
+REF:  <space> ** IY W AA dx ER <space> k ih n <space> t ey n <space> t uw m * AH <space> CH <space> k l aa r ** iy n 
+HYP:  <space> DH UW L AY dx IH <space> k ih n <space> t ey n <space> t uw m L EH <space> T  <space> k l aa r EY iy n 
+Eval:         I  S  S S     S                                               I S          S                   I       
+
+>> REF:  ih n s <space> t ah * NG      HH ih z ay Z <space> 
+>> HYP:  ih n s <space> t ah M <SPACE> T  ih z ay S <space> 
+>> Eval:                     I S       S          S         
+
+Correct               =   78.0%   32   (120)
+Substitutions         =   22.0%    9   ( 28)
+Deletions             =    0.0%    0   ( 12)
+Insertions            =    9.8%    4   (  8)
+
+Errors                =   31.7%   13   ( 48)
+
+Ref. words            =           41   (160)
+Hyp. words            =           45   (156)
+Aligned words         =           45   (168)
+
+-------------------------------------------------------------------------------
+
+id: (falr0-falr0_sx245)
+Scores: (#C #S #D #I) 19 6 1 2
+REF:  <space> D UH z HH ih n d ** UW ih dx iy AA l ih <space> jh iy aa n er <space> k ** AW Z <space> 
+HYP:  <space> T IH z S  ih n d IY IH ih dx iy ** l ih <space> jh iy aa n er <space> k AE L  S <space> 
+Eval:         S S    S         I  S           D                                       I  S  S         
+
+Correct               =   73.1%   19   (139)
+Substitutions         =   23.1%    6   ( 34)
+Deletions             =    3.8%    1   ( 13)
+Insertions            =    7.7%    2   ( 10)
+
+Errors                =   34.6%    9   ( 57)
+
+Ref. words            =           26   (186)
+Hyp. words            =           27   (183)
+Aligned words         =           28   (196)
+
+-------------------------------------------------------------------------------
+
+id: (falr0-falr0_sx335)
+Scores: (#C #S #D #I) 36 12 5 5
+REF:  <space> G  AH s aa * <space> p ay n ******* T  r iy z ih N r eh <space> w UH <space> Z aa ** n HH ih z <SPACE> W 
+HYP:  <space> EH AY s aa L <space> p ay n <SPACE> CH r iy z ih M r eh <space> w IH <space> T aa AY n ** ih z ******* L 
+Eval:         S  S       I                I       S            S                S          S    I    D       D       S 
+
+>> REF:  aa <space> k TH R UW s ih <space> k * OY ih n ** AE      sh n l f AA er s <SPACE> T <space> 
+>> HYP:  aa <space> k ** F IH s ih <space> k L EY ih n EH <SPACE> sh n l f W  er s ******* * <space> 
+>> Eval:              D  S S                 I S       I  S                S       D       D         
+
+Correct               =   67.9%   36   (175)
+Substitutions         =   22.6%   12   ( 46)
+Deletions             =    9.4%    5   ( 18)
+Insertions            =    9.4%    5   ( 15)
+
+Errors                =   41.5%   22   ( 79)
+
+Ref. words            =           53   (239)
+Hyp. words            =           53   (236)
+Aligned words         =           58   (254)
+
+-------------------------------------------------------------------------------
+
+id: (falr0-falr0_sx425)
+Scores: (#C #S #D #I) 21 1 2 1
+REF:  <space> m uw v iy z ******* n eh v er hh ae V ih n ah f V ih l AH n s <space> 
+HYP:  <space> m uw v iy z <SPACE> n eh v er hh ae M ih n ah f * ih l ** n s <space> 
+Eval:                     I                       S           D      D              
+
+Correct               =   87.5%   21   (196)
+Substitutions         =    4.2%    1   ( 47)
+Deletions             =    8.3%    2   ( 20)
+Insertions            =    4.2%    1   ( 16)
+
+Errors                =   16.7%    4   ( 83)
+
+Ref. words            =           24   (263)
+Hyp. words            =           23   (259)
+Aligned words         =           25   (279)
+
+-------------------------------------------------------------------------------
+
+id: (falr0-falr0_sx65)
+Scores: (#C #S #D #I) 23 6 3 2
+REF:  <space> ch AE l ih N       jh iy <space> ch * <space> * JH UH n er l Z ih n <space> t EH l IH <space> JH ih n 
+HYP:  <space> ch SH l ih <SPACE> jh iy <space> ch S <space> T IH EH n er l S ih n <space> t ** l ** <space> T  ih n 
+Eval:            S       S                        I         I S  S         S                D    D          S       
+
+>> REF:  <space> T s <space> 
+>> HYP:  <space> * s <space> 
+>> Eval:         D           
+
+Correct               =   71.9%   23   (219)
+Substitutions         =   18.8%    6   ( 53)
+Deletions             =    9.4%    3   ( 23)
+Insertions            =    6.3%    2   ( 18)
+
+Errors                =   34.4%   11   ( 94)
+
+Ref. words            =           32   (295)
+Hyp. words            =           31   (290)
+Aligned words         =           34   (313)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fapb0
+id: (fapb0-fapb0_si1063)
+Scores: (#C #S #D #I) 26 16 2 2
+REF:  <space> n OW <space> k W EH SH <space> CH ih N V r AH f l * Z hh IH m OW AH <space> k * AA s ih s hh IH m 
+HYP:  <space> n EH <space> k L EY S  <space> T  ih * M r AY f l S F hh EY m L  L  <space> k L IH s ih s hh EH m 
+Eval:           S            S S  S          S     D S   S      I S    S    S  S            I S            S    
+
+>> REF:  <space> t UW HH eh Z ih <space> t ey <SPACE> <space> 
+>> HYP:  <space> t IH AE eh S ih <space> t ey ******* <space> 
+>> Eval:           S  S     S                 D               
+
+Correct               =   59.1%   26   ( 26)
+Substitutions         =   36.4%   16   ( 16)
+Deletions             =    4.5%    2   (  2)
+Insertions            =    4.5%    2   (  2)
+
+Errors                =   45.5%   20   ( 20)
+
+Ref. words            =           44   ( 44)
+Hyp. words            =           44   ( 44)
+Aligned words         =           46   ( 46)
+
+-------------------------------------------------------------------------------
+
+id: (fapb0-fapb0_si1693)
+Scores: (#C #S #D #I) 19 3 2 3
+REF:  <space> ** ih <space> w ih Z aa * <space> k w AH <space> <space> V eh r iy * aa <space> k W er <SPACE> <space> 
+HYP:  <space> DH ih <space> w ih S aa L <space> k w ER <space> <space> M eh r iy L aa <space> k * er ******* <space> 
+Eval:         I                  S    I             S                  S         I              D    D               
+
+Correct               =   79.2%   19   ( 45)
+Substitutions         =   12.5%    3   ( 19)
+Deletions             =    8.3%    2   (  4)
+Insertions            =   12.5%    3   (  5)
+
+Errors                =   33.3%    8   ( 28)
+
+Ref. words            =           24   ( 68)
+Hyp. words            =           25   ( 69)
+Aligned words         =           27   ( 73)
+
+-------------------------------------------------------------------------------
+
+id: (fapb0-fapb0_si2323)
+Scores: (#C #S #D #I) 49 8 5 6
+REF:  <space> w ** EH      w iy l eh f <SPACE> W aa ** <space> sh <SPACE> NG <space> t ih n hh ih s * AH n <space> t 
+HYP:  <space> w OW <SPACE> w iy l eh f ******* L aa AY <space> sh ******* M  <space> t ih n hh ih s T EH n <space> t 
+Eval:           I  S                   D       S    I             D       S                         I S              
+
+>> REF:  ae ** <space> D <space> w * ih z ih * l ae N m ih s ih Z l IH NG <space> k EH n <space> HH ih s <space> t eh 
+>> HYP:  ae IH <space> K <space> w L ih z ih N l ae * m ih s ih S l ** EY <space> k EY n <space> ** ih s <space> t eh 
+>> Eval:    I          S           I         I      D           S   D  S            S            D                    
+
+>> REF:  r er <space> k l <space> 
+>> HYP:  r er <space> k l <space> 
+>> Eval:                          
+
+Correct               =   79.0%   49   ( 94)
+Substitutions         =   12.9%    8   ( 27)
+Deletions             =    8.1%    5   (  9)
+Insertions            =    9.7%    6   ( 11)
+
+Errors                =   30.6%   19   ( 47)
+
+Ref. words            =           62   (130)
+Hyp. words            =           63   (132)
+Aligned words         =           68   (141)
+
+-------------------------------------------------------------------------------
+
+id: (fapb0-fapb0_sx163)
+Scores: (#C #S #D #I) 32 3 4 3
+REF:  <space> DH ey * r iy m ey n <space> D  <space> * l ay f l AH ng <space> f r eh n <space> Z AE n <space> * K m 
+HYP:  <space> ** ey M r iy m ey n <space> IH <space> T l ay f l ** ng <space> f r eh n <space> * S  n <space> P R m 
+Eval:         D     I                     S          I          D                              D S            I S   
+
+>> REF:  <space> p ae n Y ih n <space> s <space> 
+>> HYP:  <space> p ae n * ih n <space> s <space> 
+>> Eval:                D                        
+
+Correct               =   82.1%   32   (126)
+Substitutions         =    7.7%    3   ( 30)
+Deletions             =   10.3%    4   ( 13)
+Insertions            =    7.7%    3   ( 14)
+
+Errors                =   25.6%   10   ( 57)
+
+Ref. words            =           39   (169)
+Hyp. words            =           38   (170)
+Aligned words         =           42   (183)
+
+-------------------------------------------------------------------------------
+
+id: (fapb0-fapb0_sx253)
+Scores: (#C #S #D #I) 26 2 1 2
+REF:  <space> b ay iy <space> d iy ng y OW <space> G er <space> <space> y uw m ey * l ** ih v l AA ng <space> g er <space> 
+HYP:  <space> b ay iy <space> d iy ng y EH <space> B er <space> <space> y uw m ey N l IY ih v l ** ng <space> g er <space> 
+Eval:                                   S          S                              I   I         D                          
+
+Correct               =   89.7%   26   (152)
+Substitutions         =    6.9%    2   ( 32)
+Deletions             =    3.4%    1   ( 14)
+Insertions            =    6.9%    2   ( 16)
+
+Errors                =   17.2%    5   ( 62)
+
+Ref. words            =           29   (198)
+Hyp. words            =           30   (200)
+Aligned words         =           31   (214)
+
+-------------------------------------------------------------------------------
+
+id: (fapb0-fapb0_sx343)
+Scores: (#C #S #D #I) 37 8 1 3
+REF:  <space> dh ih f r ay <space> n <space> CH ay l <space> w ih z <space> JH eh n <space> l iy s AH <space> * D  uw 
+HYP:  <space> dh ih f r ay <space> n <space> T  ay l <space> w ih z <space> T  eh n <space> l iy s IH <space> T IY uw 
+Eval:                                        S                              S                      S          I S     
+
+>> REF:  <space> d <space> B ay ** hh ih z <space> B ih <space> B r ** AH      DH er <space> 
+>> HYP:  <space> d <space> P ay EY hh ih z <space> * ih <space> P r EH <SPACE> B  er <space> 
+>> Eval:                   S    I                  D            S   I  S       S             
+
+Correct               =   80.4%   37   (189)
+Substitutions         =   17.4%    8   ( 40)
+Deletions             =    2.2%    1   ( 15)
+Insertions            =    6.5%    3   ( 19)
+
+Errors                =   26.1%   12   ( 74)
+
+Ref. words            =           46   (244)
+Hyp. words            =           48   (248)
+Aligned words         =           49   (263)
+
+-------------------------------------------------------------------------------
+
+id: (fapb0-fapb0_sx433)
+Scores: (#C #S #D #I) 35 9 1 3
+REF:  <space> dh iy OW V AH w ey <space> ch aa * R       m ah <space> k UW <space> D s <space> l ih <space> p * OY z 
+HYP:  <space> dh iy ** L L  w ey <space> ch aa M <SPACE> m ah <space> k IH <space> T s <space> l ih <space> p L EY z 
+Eval:               D  S S                     I S                      S          S                          I S    
+
+>> REF:  ih n ih n <space> t uw * EH n iy w AH n Z <space> t iy <space> 
+>> HYP:  ih n ih n <space> t uw L EY n iy w AY n S <space> t iy <space> 
+>> Eval:                        I S         S    S                      
+
+Correct               =   77.8%   35   (224)
+Substitutions         =   20.0%    9   ( 49)
+Deletions             =    2.2%    1   ( 16)
+Insertions            =    6.7%    3   ( 22)
+
+Errors                =   28.9%   13   ( 87)
+
+Ref. words            =           45   (289)
+Hyp. words            =           47   (295)
+Aligned words         =           48   (311)
+
+-------------------------------------------------------------------------------
+
+id: (fapb0-fapb0_sx73)
+Scores: (#C #S #D #I) 31 7 2 3
+REF:  <space> k l IH F       s <space> D ih s <space> P l ey <space> w AH s <space> m ih s <space> p l ey s <space> t 
+HYP:  <space> k l EY <SPACE> s <space> T ih s <space> * l ey <space> w IH s <space> m ih s <space> p l ey s <space> t 
+Eval:             S  S                 S              D                S                                              
+
+>> REF:  ** * AA n DH ih s <space> K r ** iy N <space> 
+>> HYP:  AH L AY n ** ih s <space> P r EY iy M <space> 
+>> Eval: I  I S    D               S   I     S         
+
+Correct               =   77.5%   31   (255)
+Substitutions         =   17.5%    7   ( 56)
+Deletions             =    5.0%    2   ( 18)
+Insertions            =    7.5%    3   ( 25)
+
+Errors                =   30.0%   12   ( 99)
+
+Ref. words            =           40   (329)
+Hyp. words            =           41   (336)
+Aligned words         =           43   (354)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fbas0
+id: (fbas0-fbas0_si1387)
+Scores: (#C #S #D #I) 33 6 2 2
+REF:  <space> s eh * v R AH l f AE <space> T er s <space> k ah n <space> t r ih <SPACE> b ih <space> * ih <space> D 
+HYP:  <space> s eh M v * ER l f AY <space> P er s <space> k ah n <space> t r ih ******* b ih <space> T ih <space> T 
+Eval:              I   D S      S          S                                    D                    I            S 
+
+>> REF:  <space> t ih DH ih sh <space> ch ay n <space> JH <space> 
+>> HYP:  <space> t ih P  ih sh <space> ch ay n <space> CH <space> 
+>> Eval:              S                                S          
+
+Correct               =   80.5%   33   ( 33)
+Substitutions         =   14.6%    6   (  6)
+Deletions             =    4.9%    2   (  2)
+Insertions            =    4.9%    2   (  2)
+
+Errors                =   24.4%   10   ( 10)
+
+Ref. words            =           41   ( 41)
+Hyp. words            =           41   ( 41)
+Aligned words         =           43   ( 43)
+
+-------------------------------------------------------------------------------
+
+id: (fbas0-fbas0_si1472)
+Scores: (#C #S #D #I) 36 13 9 4
+REF:  <space> sh iy <space> G r ** iy DX IH <space> D hh er hh AH Z <space> B N <SPACE> D Z <space> k * AA l ** iy 
+HYP:  <space> sh iy <space> P r EY iy ** ** <space> * hh er hh EH S <space> * T IH      M S <space> k P AY l EY iy 
+Eval:                       S   I     D  D          D          S  S         D S S       S S           I S    I     
+
+>> REF:  <space> G Z <space> w IH s ******* m AA L  ih NG <space> p l ay <space> N ih s <space> aa f r ih n AH TH ih 
+>> HYP:  <space> * S <space> w AH s <SPACE> m ** AY ih M  <space> p l ay <space> * ih s <space> aa f r ih n ** AE ih 
+>> Eval:         D S           S    I         D  S     S                         D                          D  S     
+
+>> REF:  NG <space> 
+>> HYP:  ** <space> 
+>> Eval: D          
+
+Correct               =   62.1%   36   ( 69)
+Substitutions         =   22.4%   13   ( 19)
+Deletions             =   15.5%    9   ( 11)
+Insertions            =    6.9%    4   (  6)
+
+Errors                =   44.8%   26   ( 36)
+
+Ref. words            =           58   ( 99)
+Hyp. words            =           53   ( 94)
+Aligned words         =           62   (105)
+
+-------------------------------------------------------------------------------
+
+id: (fbas0-fbas0_si2066)
+Scores: (#C #S #D #I) 46 12 3 10
+REF:  <space> hh iy s ** AA ih <space> p ay EH <space> * s ay Z <space> m AE n * <space> w IH th ih <space> G r ay ** 
+HYP:  <space> hh iy s AY AY ih <space> p ay ** <space> T s ay S <space> m AY n M <space> w ** th ih <space> P r ay EY 
+Eval:                 I  S                  D          I      S           S    I           D                S      I  
+
+>> REF:  IH NG s <space> * P  ey <space> b IH er <space> d <space> ** ae n AE N ah n y uw ** sh * l ** iy L aa r ** 
+>> HYP:  N  M  s <space> M AY ey <space> b IY er <space> d <space> HH ae n AH M ah n y uw IH sh M l EY iy N aa r ER 
+>> Eval: S  S            I S               S                       I       S  S           I     I   I     S      I  
+
+>> REF:  <space> JH HH eh <space> d <space> 
+>> HYP:  <space> ** T  eh <space> d <space> 
+>> Eval:         D  S                       
+
+Correct               =   75.4%   46   (115)
+Substitutions         =   19.7%   12   ( 31)
+Deletions             =    4.9%    3   ( 14)
+Insertions            =   16.4%   10   ( 16)
+
+Errors                =   41.0%   25   ( 61)
+
+Ref. words            =           61   (160)
+Hyp. words            =           68   (162)
+Aligned words         =           71   (176)
+
+-------------------------------------------------------------------------------
+
+id: (fbas0-fbas0_sx127)
+Scores: (#C #S #D #I) 20 0 4 0
+REF:  <space> dh ih eh m <space> p r AH hh ae DX AH m iy n <space> t eh M <space> p er <space> 
+HYP:  <space> dh ih eh m <space> p r ** hh ae ** ** m iy n <space> t eh * <space> p er <space> 
+Eval:                                D        D  D                      D                      
+
+Correct               =   83.3%   20   (135)
+Substitutions         =    0.0%    0   ( 31)
+Deletions             =   16.7%    4   ( 18)
+Insertions            =    0.0%    0   ( 16)
+
+Errors                =   16.7%    4   ( 65)
+
+Ref. words            =           24   (184)
+Hyp. words            =           20   (182)
+Aligned words         =           24   (200)
+
+-------------------------------------------------------------------------------
+
+id: (fbas0-fbas0_sx217)
+Scores: (#C #S #D #I) 19 5 2 2
+REF:  <space> hh aw <space> p er * m N ah N <space> T <space> aa r ******* DH EH r eh <space> k er <space> D Z <space> 
+HYP:  <space> hh aw <space> p er R m * ah * <space> K <space> aa r <SPACE> IH ER r eh <space> k er <space> T S <space> 
+Eval:                            I   D    D         S              I       S  S                            S S         
+
+Correct               =   73.1%   19   (154)
+Substitutions         =   19.2%    5   ( 36)
+Deletions             =    7.7%    2   ( 20)
+Insertions            =    7.7%    2   ( 18)
+
+Errors                =   34.6%    9   ( 74)
+
+Ref. words            =           26   (210)
+Hyp. words            =           26   (208)
+Aligned words         =           28   (228)
+
+-------------------------------------------------------------------------------
+
+id: (fbas0-fbas0_sx307)
+Scores: (#C #S #D #I) 16 1 3 1
+REF:  <space> dh ih m iy DX iy n ih z ******* n AW AH <space> jh er N <space> d <space> 
+HYP:  <space> dh ih m iy ** iy n ih z <SPACE> n ** ** <space> jh er M <space> d <space> 
+Eval:                    D            I         D  D                S                   
+
+Correct               =   80.0%   16   (170)
+Substitutions         =    5.0%    1   ( 37)
+Deletions             =   15.0%    3   ( 23)
+Insertions            =    5.0%    1   ( 19)
+
+Errors                =   25.0%    5   ( 79)
+
+Ref. words            =           20   (230)
+Hyp. words            =           18   (226)
+Aligned words         =           21   (249)
+
+-------------------------------------------------------------------------------
+
+id: (fbas0-fbas0_sx37)
+Scores: (#C #S #D #I) 34 5 3 2
+REF:  <space> k r ih dx ih <space> k AH l ******* * ah <space> k w IH <space> m IH N  <space> N iy <space> D Z <space> 
+HYP:  <space> k r ih dx ih <space> k AA l <SPACE> K ah <space> k w EH <space> m ** EH <space> M iy <space> * T <space> 
+Eval:                                S    I       I                S            D  S          S            D S         
+
+>> REF:  p r AA <space> p er m ay n <space> n ah n <space> s <space> 
+>> HYP:  p r ** <space> p er m ay n <space> n ah n <space> s <space> 
+>> Eval:     D                                                       
+
+Correct               =   81.0%   34   (204)
+Substitutions         =   11.9%    5   ( 42)
+Deletions             =    7.1%    3   ( 26)
+Insertions            =    4.8%    2   ( 21)
+
+Errors                =   23.8%   10   ( 89)
+
+Ref. words            =           42   (272)
+Hyp. words            =           41   (267)
+Aligned words         =           44   (293)
+
+-------------------------------------------------------------------------------
+
+id: (fbas0-fbas0_sx397)
+Scores: (#C #S #D #I) 26 7 1 2
+REF:  <space> t IH m <space> t ey <space> k sh iy * l ah <space> t ih s iy m ** UW v IY Z <space> T W ay s AH w iy 
+HYP:  <space> t EH m <space> t ey <space> k sh iy N l ah <space> t ih s iy m EH IH v IH S <space> K R ay s ** w iy 
+Eval:           S                                 I                          I  S    S  S         S S      D       
+
+>> REF:  <space> K <space> 
+>> HYP:  <space> T <space> 
+>> Eval:         S         
+
+Correct               =   76.5%   26   (230)
+Substitutions         =   20.6%    7   ( 49)
+Deletions             =    2.9%    1   ( 27)
+Insertions            =    5.9%    2   ( 23)
+
+Errors                =   29.4%   10   ( 99)
+
+Ref. words            =           34   (306)
+Hyp. words            =           35   (302)
+Aligned words         =           36   (329)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fbcg1
+id: (fbcg1-fbcg1_si1612)
+Scores: (#C #S #D #I) 12 3 2 0
+REF:  <space> DH ey V       n eh v er m EH <SPACE> <space> y ih n OW <space> 
+HYP:  <space> ** ey <SPACE> n eh v er m ** AE      <space> y ih n L  <space> 
+Eval:         D     S                   D  S                      S          
+
+Correct               =   70.6%   12   ( 12)
+Substitutions         =   17.6%    3   (  3)
+Deletions             =   11.8%    2   (  2)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   29.4%    5   (  5)
+
+Ref. words            =           17   ( 17)
+Hyp. words            =           15   ( 15)
+Aligned words         =           17   ( 17)
+
+-------------------------------------------------------------------------------
+
+id: (fbcg1-fbcg1_si2242)
+Scores: (#C #S #D #I) 22 3 0 1
+REF:  <space> t w eh n <space> t IY <space> t UW aa r <space> t W  eh n <space> t iy th r ** iy <space> 
+HYP:  <space> t w eh n <space> t IH <space> t EY aa r <space> t AY eh n <space> t iy th r EY iy <space> 
+Eval:                            S            S                 S                         I             
+
+Correct               =   88.0%   22   ( 34)
+Substitutions         =   12.0%    3   (  6)
+Deletions             =    0.0%    0   (  2)
+Insertions            =    4.0%    1   (  1)
+
+Errors                =   16.0%    4   (  9)
+
+Ref. words            =           25   ( 42)
+Hyp. words            =           26   ( 41)
+Aligned words         =           26   ( 43)
+
+-------------------------------------------------------------------------------
+
+id: (fbcg1-fbcg1_si982)
+Scores: (#C #S #D #I) 35 12 4 5
+REF:  <space> t EH n ih s <space> k ih <space> B IY AH v * OY dx ih <space> b ay <space> p AA R IH NG W aa R m * 
+HYP:  <space> t AE n ih s <space> k ih <space> G IH EH v L AY dx ih <space> b ay <space> p ** L AY N  L aa * m N 
+Eval:           S                              S S  S    I S                               D  S S  S  S    D   I 
+
+>> REF:  <space> t * er <space> P ih n <space> t ay ** n ow * v ER AH W UW n <space> d <space> 
+>> HYP:  <space> t R er <space> K ih n <space> t ay EY n ow L v ** ** R L  n <space> d <space> 
+>> Eval:           I            S                   I       I   D  D  S S                      
+
+Correct               =   68.6%   35   ( 69)
+Substitutions         =   23.5%   12   ( 18)
+Deletions             =    7.8%    4   (  6)
+Insertions            =    9.8%    5   (  6)
+
+Errors                =   41.2%   21   ( 30)
+
+Ref. words            =           51   ( 93)
+Hyp. words            =           52   ( 93)
+Aligned words         =           56   ( 99)
+
+-------------------------------------------------------------------------------
+
+id: (fbcg1-fbcg1_sx172)
+Scores: (#C #S #D #I) 27 11 1 1
+REF:  <space> dh AH <space> t r ae AH M       f * ih n W aa r IY er ih <space> z ih v ih DX IH      <space> <space> N 
+HYP:  <space> dh IH <space> t r ae N  <SPACE> f T ih n L aa r EH er ih <space> z ih v ih EY <SPACE> <space> <space> M 
+Eval:            S                 S  S         I      S      S                          S  S                       S 
+
+>> REF:  ay iy V  hh IH R  OW ih z m <space> 
+>> HYP:  ay iy NG hh ** EH L  ih z m <space> 
+>> Eval:       S     D  S  S                 
+
+Correct               =   69.2%   27   ( 96)
+Substitutions         =   28.2%   11   ( 29)
+Deletions             =    2.6%    1   (  7)
+Insertions            =    2.6%    1   (  7)
+
+Errors                =   33.3%   13   ( 43)
+
+Ref. words            =           39   (132)
+Hyp. words            =           39   (132)
+Aligned words         =           40   (139)
+
+-------------------------------------------------------------------------------
+
+id: (fbcg1-fbcg1_sx262)
+Scores: (#C #S #D #I) 21 7 3 2
+REF:  <space> K AE n DH iy ey <space> JH ih n s iy ** OW v er ******* TH r OW ey L iy IH n f aa r s ih Z <space> 
+HYP:  <space> T EY n ** iy ey <space> T  ih n s iy EH L  v er <SPACE> T  r ** ey N iy ** n f aa r s ih S <space> 
+Eval:         S S    D                S            I  S       I       S    D     S    D                S         
+
+Correct               =   67.7%   21   (117)
+Substitutions         =   22.6%    7   ( 36)
+Deletions             =    9.7%    3   ( 10)
+Insertions            =    6.5%    2   (  9)
+
+Errors                =   38.7%   12   ( 55)
+
+Ref. words            =           31   (163)
+Hyp. words            =           30   (162)
+Aligned words         =           33   (172)
+
+-------------------------------------------------------------------------------
+
+id: (fbcg1-fbcg1_sx352)
+Scores: (#C #S #D #I) 51 10 7 3
+REF:  <space> ih <space> k AA R  dx iy N <space> t ah m ay IH n <space> t er V       er <space> t ey sh ** n AH DH AH 
+HYP:  <space> ih <space> k L  AY dx iy * <space> t ah m ay ** n <space> t er <SPACE> er <space> t ey sh IH n ** EH N  
+Eval:                      S  S        D                   D                 S                          I    D  S  S  
+
+>> REF:  <space> p r AA <space> b l AH m <space> t ** UW l ay N z ******* m ah s <space> B iy <space> p er <space> p 
+>> HYP:  <space> p r AY <space> b l ** m <space> t IH M  l ay * z <SPACE> m ah s <space> T iy <space> p er <space> p 
+>> Eval:             S              D              I  S       D   I                      S                           
+
+>> REF:  ih n <SPACE> D ih <space> K Y ih l er <space> 
+>> HYP:  ih n ******* B ih <space> * T ih l er <space> 
+>> Eval:      D       S            D S                 
+
+Correct               =   75.0%   51   (168)
+Substitutions         =   14.7%   10   ( 46)
+Deletions             =   10.3%    7   ( 17)
+Insertions            =    4.4%    3   ( 12)
+
+Errors                =   29.4%   20   ( 75)
+
+Ref. words            =           68   (231)
+Hyp. words            =           64   (226)
+Aligned words         =           71   (243)
+
+-------------------------------------------------------------------------------
+
+id: (fbcg1-fbcg1_sx442)
+Scores: (#C #S #D #I) 28 9 4 1
+REF:  <space> s ih <space> b * er V ih n HH AW s <space> w ay Z AA f ih n s AH f er f r ah M DH ih <space> G ae 
+HYP:  <space> s ih <space> b R er M ih n ** AE s <space> w ay S AY f ih n s EH f er f r ah * N  ih <space> T ae 
+Eval:                        I    S      D  S                 S S           S              D S             S    
+
+>> REF:  <space> HH ae <SPACE> B ih <SPACE> <space> 
+>> HYP:  <space> N  ae ******* N ih ******* <space> 
+>> Eval:         S     D       S    D               
+
+Correct               =   68.3%   28   (196)
+Substitutions         =   22.0%    9   ( 55)
+Deletions             =    9.8%    4   ( 21)
+Insertions            =    2.4%    1   ( 13)
+
+Errors                =   34.1%   14   ( 89)
+
+Ref. words            =           41   (272)
+Hyp. words            =           38   (264)
+Aligned words         =           42   (285)
+
+-------------------------------------------------------------------------------
+
+id: (fbcg1-fbcg1_sx82)
+Scores: (#C #S #D #I) 27 4 1 1
+REF:  <space> G  UH <space> s ER v ih sh ih <space> b iy r iy w aa r DX ih <space> b AY <space> b ih <space> t ih ** 
+HYP:  <space> DH EH <space> s EH v ih sh ih <space> b iy r iy w aa r ** ih <space> b AE <space> b ih <space> t ih EH 
+Eval:         S  S            S                                      D               S                            I  
+
+>> REF:  <space> s <space> 
+>> HYP:  <space> s <space> 
+>> Eval:                   
+
+Correct               =   84.4%   27   (223)
+Substitutions         =   12.5%    4   ( 59)
+Deletions             =    3.1%    1   ( 22)
+Insertions            =    3.1%    1   ( 14)
+
+Errors                =   18.8%    6   ( 95)
+
+Ref. words            =           32   (304)
+Hyp. words            =           32   (296)
+Aligned words         =           33   (318)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fbch0
+id: (fbch0-fbch0_si1586)
+Scores: (#C #S #D #I) 28 8 3 2
+REF:  <space> y ER v * ** OY s ih Z <space> D AH l AY <space> f l hh iy ih <space> p r UW V  <space> D w ih DH ah w aa 
+HYP:  <space> y IH v L AY EH s ih S <space> * T  l EY <space> f l hh iy ih <space> p r IY IH <space> T w ih ** ah w aa 
+Eval:           S    I I  S       S         D S    S                                   S  S          S      D          
+
+>> REF:  R m s m ay l <space> 
+>> HYP:  * m s m ay l <space> 
+>> Eval: D                    
+
+Correct               =   71.8%   28   ( 28)
+Substitutions         =   20.5%    8   (  8)
+Deletions             =    7.7%    3   (  3)
+Insertions            =    5.1%    2   (  2)
+
+Errors                =   33.3%   13   ( 13)
+
+Ref. words            =           39   ( 39)
+Hyp. words            =           38   ( 38)
+Aligned words         =           41   ( 41)
+
+-------------------------------------------------------------------------------
+
+id: (fbch0-fbch0_si956)
+Scores: (#C #S #D #I) 27 8 4 1
+REF:  <space> t ER <space> B Y  ih l eh n <space> t ay <space> D Z r OW z AH z <SPACE> m AH <space> CH ih Z f ih F 
+HYP:  <space> t AE <space> * DH ih l eh n <space> t ay <space> * S r EH z IH z ******* m AY <space> T  ih S f ih * 
+Eval:           S          D S                                 D S   S    S    D         S          S     S      D 
+
+>> REF:  <space> t iy f iy <space> t * <space> 
+>> HYP:  <space> t iy f iy <space> t S <space> 
+>> Eval:                             I         
+
+Correct               =   69.2%   27   ( 55)
+Substitutions         =   20.5%    8   ( 16)
+Deletions             =   10.3%    4   (  7)
+Insertions            =    2.6%    1   (  3)
+
+Errors                =   33.3%   13   ( 26)
+
+Ref. words            =           39   ( 78)
+Hyp. words            =           36   ( 74)
+Aligned words         =           40   ( 81)
+
+-------------------------------------------------------------------------------
+
+id: (fbch0-fbch0_si959)
+Scores: (#C #S #D #I) 34 16 7 4
+REF:  <space> s ah m <space> t ay m Z <space> s OW <space> jh ** ER Z <space> * ** R  OW      l AE dx er ** Z <space> 
+HYP:  <space> s ah m <space> t ay m S <space> s L  <space> jh EH IH S <space> M EY AE <SPACE> l AY dx er IH S <space> 
+Eval:                               S           S             I  S  S         I I  S  S         S        I  S         
+
+>> REF:  W AA L  <space> b UH l ih <space> s <SPACE> W ER w ih Z ih n AH <space> b AW <space> DH eh R hh EH <space> D 
+>> HYP:  * M  AY <space> b ** l ih <space> s ******* * R  w ih S ih n IH <space> b AY <space> ** eh * hh AE <space> * 
+>> Eval: D S  S            D                 D       D S       S      S            S          D     D    S          D 
+
+>> REF:  Z <space> 
+>> HYP:  S <space> 
+>> Eval: S         
+
+Correct               =   59.6%   34   ( 89)
+Substitutions         =   28.1%   16   ( 32)
+Deletions             =   12.3%    7   ( 14)
+Insertions            =    7.0%    4   (  7)
+
+Errors                =   47.4%   27   ( 53)
+
+Ref. words            =           57   (135)
+Hyp. words            =           54   (128)
+Aligned words         =           61   (142)
+
+-------------------------------------------------------------------------------
+
+id: (fbch0-fbch0_sx146)
+Scores: (#C #S #D #I) 27 4 2 0
+REF:  <space> s ih <space> k l AH <space> k OW <space> p r OW <SPACE> er M Z w l n eh v er <space> k ah m <space> p ay 
+HYP:  <space> s ih <space> k l ** <space> k L  <space> p r ** W       er N S w l n eh v er <space> k ah m <space> p ay 
+Eval:                          D            S              D  S          S S                                           
+
+>> REF:  l <space> 
+>> HYP:  l <space> 
+>> Eval:           
+
+Correct               =   81.8%   27   (116)
+Substitutions         =   12.1%    4   ( 36)
+Deletions             =    6.1%    2   ( 16)
+Insertions            =    0.0%    0   (  7)
+
+Errors                =   18.2%    6   ( 59)
+
+Ref. words            =           33   (168)
+Hyp. words            =           31   (159)
+Aligned words         =           33   (175)
+
+-------------------------------------------------------------------------------
+
+id: (fbch0-fbch0_sx236)
+Scores: (#C #S #D #I) 25 3 5 1
+REF:  <space> k l IH R  <space> p r AH n AH n <SPACE> s IH ey sh ih n eh z * ih <space> p r ih sh ih ey DX ih <SPACE> <space> 
+HYP:  <space> k l ** EY <space> p r ** n EH n ******* s ** ey sh ih n eh z S ih <space> p r ih sh ih ey N  ih ******* <space> 
+Eval:             D  S              D    S    D         D                  I                            S     D               
+
+Correct               =   75.8%   25   (141)
+Substitutions         =    9.1%    3   ( 39)
+Deletions             =   15.2%    5   ( 21)
+Insertions            =    3.0%    1   (  8)
+
+Errors                =   27.3%    9   ( 68)
+
+Ref. words            =           33   (201)
+Hyp. words            =           29   (188)
+Aligned words         =           34   (209)
+
+-------------------------------------------------------------------------------
+
+id: (fbch0-fbch0_sx326)
+Scores: (#C #S #D #I) 21 7 2 2
+REF:  <space> s <space> t IY V  <space> k AH l EH <space> k s <space> r ** eh * er eh n AA V       l <space> k OY N  
+HYP:  <space> s <space> t ** EY <space> k ** l AE <space> k s <space> r EY eh R er eh n AW <SPACE> l <space> k L  EY 
+Eval:                     D  S            D    S                        I     I         S  S                   S  S  
+
+>> REF:  <SPACE> s <space> 
+>> HYP:  IH      s <space> 
+>> Eval: S                 
+
+Correct               =   70.0%   21   (162)
+Substitutions         =   23.3%    7   ( 46)
+Deletions             =    6.7%    2   ( 23)
+Insertions            =    6.7%    2   ( 10)
+
+Errors                =   36.7%   11   ( 79)
+
+Ref. words            =           30   (231)
+Hyp. words            =           30   (218)
+Aligned words         =           32   (241)
+
+-------------------------------------------------------------------------------
+
+id: (fbch0-fbch0_sx416)
+Scores: (#C #S #D #I) 21 4 1 2
+REF:  <space> ey hh Y UW <space> jh <space> p ** AW er AW DX ih <space> jh ** r eh l iy ih <space> k er s <space> 
+HYP:  <space> ey hh * IY <space> jh <space> p AE R  er AE N  ih <space> jh CH r eh l iy ih <space> k er s <space> 
+Eval:               D S                       I  S     S  S                I                                      
+
+Correct               =   80.8%   21   (183)
+Substitutions         =   15.4%    4   ( 50)
+Deletions             =    3.8%    1   ( 24)
+Insertions            =    7.7%    2   ( 12)
+
+Errors                =   26.9%    7   ( 86)
+
+Ref. words            =           26   (257)
+Hyp. words            =           27   (245)
+Aligned words         =           28   (269)
+
+-------------------------------------------------------------------------------
+
+id: (fbch0-fbch0_sx56)
+Scores: (#C #S #D #I) 31 9 3 2
+REF:  <space> ae <space> k ih <space> D ae m ** ih <space> k ae <space> t AH <space> t UW <SPACE> D  <space> G eh * er 
+HYP:  <space> ae <space> k ih <space> T ae m EH ih <space> k ae <space> t S  <space> t ** EY      IH <space> K eh R er 
+Eval:                                 S      I                            S            D  S       S          S    I    
+
+>> REF:  IH N <space> t iy z Y er <space> D ih <space> p l OW m AH <space> 
+>> HYP:  ** * <space> t iy z S er <space> T ih <space> p l AY m AY <space> 
+>> Eval: D  D                S            S                S    S          
+
+Correct               =   72.1%   31   (214)
+Substitutions         =   20.9%    9   ( 59)
+Deletions             =    7.0%    3   ( 27)
+Insertions            =    4.7%    2   ( 14)
+
+Errors                =   32.6%   14   (100)
+
+Ref. words            =           43   (300)
+Hyp. words            =           42   (287)
+Aligned words         =           45   (314)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fbjl0
+id: (fbjl0-fbjl0_si1552)
+Scores: (#C #S #D #I) 25 5 6 2
+REF:  <space> ** aw <space> s ay <space> D AH OW N  l * iy IH hh ae n f l AH V er <space> p aa r DX er Z  r ih m ey N 
+HYP:  <space> HH aw <space> s ay <space> * ** IH AA l M iy ** hh ae n f l ** F er <space> p aa r ** er SH r ih m ey * 
+Eval:         I                          D D  S  S    I    D              D  S                   D     S            D 
+
+>> REF:  <space> D <space> 
+>> HYP:  <space> T <space> 
+>> Eval:         S         
+
+Correct               =   69.4%   25   ( 25)
+Substitutions         =   13.9%    5   (  5)
+Deletions             =   16.7%    6   (  6)
+Insertions            =    5.6%    2   (  2)
+
+Errors                =   36.1%   13   ( 13)
+
+Ref. words            =           36   ( 36)
+Hyp. words            =           32   ( 32)
+Aligned words         =           38   ( 38)
+
+-------------------------------------------------------------------------------
+
+id: (fbjl0-fbjl0_si2182)
+Scores: (#C #S #D #I) 25 3 2 0
+REF:  <space> n ae <space> ch ER l iy <space> k er l iy hh eh er r AH n Z ih N m ay f AA m l iy <space> 
+HYP:  <space> n ae <space> ch ** l iy <space> k er l iy hh eh er r EH n S ih * m ay f EH m l iy <space> 
+Eval:                         D                                    S    S    D        S                 
+
+Correct               =   83.3%   25   ( 50)
+Substitutions         =   10.0%    3   (  8)
+Deletions             =    6.7%    2   (  8)
+Insertions            =    0.0%    0   (  2)
+
+Errors                =   16.7%    5   ( 18)
+
+Ref. words            =           30   ( 66)
+Hyp. words            =           28   ( 60)
+Aligned words         =           30   ( 68)
+
+-------------------------------------------------------------------------------
+
+id: (fbjl0-fbjl0_si922)
+Scores: (#C #S #D #I) 48 12 4 2
+REF:  <space> ** ih n ******* T  ER <space> D ih sh ih n eh n ih m <space> p OW ih <space> T  r iy <space> DH ih m eh 
+HYP:  <space> DH ih n <SPACE> SH IH <space> T ih sh ih n eh n ih m <space> p AY ih <space> SH r iy <space> P  ih m eh 
+Eval:         I       I       S  S          S                                S             S               S          
+
+>> REF:  r ih <space> jh <space> b EH <SPACE> ih Z AH <space> p l ey s ih V       Y UW n ih <space> t iy <SPACE> ih n 
+>> HYP:  r ih <space> jh <space> b ** AE      ih * S  <space> p l ey s ih <SPACE> T IY n ih <space> t iy ******* ih n 
+>> Eval:                           D  S          D S                      S       S S                    D            
+
+>> REF:  hh aa r m AH N  iy <space> 
+>> HYP:  hh aa r m ** IH iy <space> 
+>> Eval:           D  S             
+
+Correct               =   75.0%   48   ( 98)
+Substitutions         =   18.8%   12   ( 20)
+Deletions             =    6.3%    4   ( 12)
+Insertions            =    3.1%    2   (  4)
+
+Errors                =   28.1%   18   ( 36)
+
+Ref. words            =           64   (130)
+Hyp. words            =           62   (122)
+Aligned words         =           66   (134)
+
+-------------------------------------------------------------------------------
+
+id: (fbjl0-fbjl0_sx112)
+Scores: (#C #S #D #I) 23 7 6 3
+REF:  <space> t AH <space> b OW <space> T s ******* * er <space> k ey <space> ah <space> b l AH V hh AA l iy NG hh Y 
+HYP:  <space> t AY <space> b EY <space> * s <SPACE> R er <space> k ey <space> ah <space> b l ** * hh ** l iy N  hh * 
+Eval:           S            S          D   I       I                                        D  D    D       S     D 
+
+>> REF:  UW <space> JH l ** OW <space> D Z <space> 
+>> HYP:  IY <space> CH l EY ER <space> * S <space> 
+>> Eval: S          S    I  S          D S         
+
+Correct               =   63.9%   23   (121)
+Substitutions         =   19.4%    7   ( 27)
+Deletions             =   16.7%    6   ( 18)
+Insertions            =    8.3%    3   (  7)
+
+Errors                =   44.4%   16   ( 52)
+
+Ref. words            =           36   (166)
+Hyp. words            =           33   (155)
+Aligned words         =           39   (173)
+
+-------------------------------------------------------------------------------
+
+id: (fbjl0-fbjl0_sx202)
+Scores: (#C #S #D #I) 16 2 5 0
+REF:  <space> hh aa m UH <space> ch AH l AW IH n s <space> t UW Y uw <space> g eh <SPACE> <space> 
+HYP:  <space> hh aa m IH <space> ch ** l ** AY n s <space> t ** * uw <space> g eh ******* <space> 
+Eval:                 S             D    D  S                D  D                 D               
+
+Correct               =   69.6%   16   (137)
+Substitutions         =    8.7%    2   ( 29)
+Deletions             =   21.7%    5   ( 23)
+Insertions            =    0.0%    0   (  7)
+
+Errors                =   30.4%    7   ( 59)
+
+Ref. words            =           23   (189)
+Hyp. words            =           18   (173)
+Aligned words         =           23   (196)
+
+-------------------------------------------------------------------------------
+
+id: (fbjl0-fbjl0_sx22)
+Scores: (#C #S #D #I) 13 6 3 1
+REF:  <space> W EH n aa L EH l s F       ey l Z <space> y UW Z f * aa R  s <space> 
+HYP:  <space> * EY n aa * ** l s <SPACE> ey l S <space> y IY S f L aa ER s <space> 
+Eval:         D S       D D      S            S           S  S   I    S            
+
+Correct               =   59.1%   13   (150)
+Substitutions         =   27.3%    6   ( 35)
+Deletions             =   13.6%    3   ( 26)
+Insertions            =    4.5%    1   (  8)
+
+Errors                =   45.5%   10   ( 69)
+
+Ref. words            =           22   (211)
+Hyp. words            =           20   (193)
+Aligned words         =           23   (219)
+
+-------------------------------------------------------------------------------
+
+id: (fbjl0-fbjl0_sx292)
+Scores: (#C #S #D #I) 37 9 3 4
+REF:  <space> dh ** iy Z ih <space> K s <space> K l UW s ih V <space> d ** aa <space> K ih m eh N <space> s <space> m 
+HYP:  <space> dh EY iy S ih <space> T s <space> P l IH s ih * <space> d AE aa <space> T ih m eh * <space> s <space> m 
+Eval:            I     S            S           S   S       D           I             S         D                     
+
+>> REF:  ah s <space> B iy l aa <space> D AH <space> * eh DX aa l <space> t * ay m Z <space> 
+>> HYP:  ah s <space> Y iy l aa <space> T AE <space> B eh ** aa l <space> t L ay m S <space> 
+>> Eval:              S                 S S          I    D                 I      S         
+
+Correct               =   75.5%   37   (187)
+Substitutions         =   18.4%    9   ( 44)
+Deletions             =    6.1%    3   ( 29)
+Insertions            =    8.2%    4   ( 12)
+
+Errors                =   32.7%   16   ( 85)
+
+Ref. words            =           49   (260)
+Hyp. words            =           50   (243)
+Aligned words         =           53   (272)
+
+-------------------------------------------------------------------------------
+
+id: (fbjl0-fbjl0_sx382)
+Scores: (#C #S #D #I) 28 8 3 4
+REF:  <space> <SPACE> JH aa r <space> jh ih Z <space> p ** EH ER n * ** OY <space> d ah <space> b AW DX AH f ** UW 
+HYP:  <space> CH      UW aa r <space> jh ih S <space> p AE R  IH n L AY EY <space> d ah <space> b ** ** AE f SH IY 
+Eval:         S       S                     S           I  S  S    I I  S                         D  D  S    I  S  
+
+>> REF:  <space> ch er <space> g ae sh aa r DX ih <space> jh <space> 
+>> HYP:  <space> ch er <space> g ae sh aa r ** ih <space> jh <space> 
+>> Eval:                                    D                        
+
+Correct               =   71.8%   28   (215)
+Substitutions         =   20.5%    8   ( 52)
+Deletions             =    7.7%    3   ( 32)
+Insertions            =   10.3%    4   ( 16)
+
+Errors                =   38.5%   15   (100)
+
+Ref. words            =           39   (299)
+Hyp. words            =           40   (283)
+Aligned words         =           43   (315)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fblv0
+id: (fblv0-fblv0_si1058)
+Scores: (#C #S #D #I) 31 7 2 1
+REF:  <space> r eh <space> D IY n ih s eh <space> S  ER s ay ** z ih Z aa r AA l m UH s <space> t <space> K ih n 
+HYP:  <space> r eh <space> * IH n ih s eh <space> CH IH s ay EY z ih S aa r ** l m L  s <space> t <space> T ih n 
+Eval:                      D S                    S  S       I       S      D      S                      S      
+
+>> REF:  <space> t ih n y uw IH s <space> 
+>> HYP:  <space> t ih n y uw L  s <space> 
+>> Eval:                     S            
+
+Correct               =   77.5%   31   ( 31)
+Substitutions         =   17.5%    7   (  7)
+Deletions             =    5.0%    2   (  2)
+Insertions            =    2.5%    1   (  1)
+
+Errors                =   25.0%   10   ( 10)
+
+Ref. words            =           40   ( 40)
+Hyp. words            =           39   ( 39)
+Aligned words         =           41   ( 41)
+
+-------------------------------------------------------------------------------
+
+id: (fblv0-fblv0_si1688)
+Scores: (#C #S #D #I) 47 12 6 3
+REF:  <space> * s ah m <space> TH ih NG eh l s <space> Z AH s <space> t R ae <space> t ih <space> D HH IH m ******* 
+HYP:  <space> T s ah m <space> T  ih N  eh l s <space> * ** s <space> t * ae <space> t ih <space> T IY AE m <SPACE> 
+Eval:         I                S     S                 D D              D                         S S  S    I       
+
+>> REF:  <space> hh Y  eh <space> DH ih W ih Z <space> n ** OW s AW N <space> d OW N l iy <space> t uw m l ay <space> 
+>> HYP:  <space> hh IH eh <space> D  ih L ih S <space> n EY EH s ** M <space> d ** * l iy <space> t uw m l ay <space> 
+>> Eval:            S             S     S    S           I  S    D  S           D  D                                  
+
+>> REF:  k s ay l N  <space> t s <space> 
+>> HYP:  k s ay l IH <space> t s <space> 
+>> Eval:          S                      
+
+Correct               =   72.3%   47   ( 78)
+Substitutions         =   18.5%   12   ( 19)
+Deletions             =    9.2%    6   (  8)
+Insertions            =    4.6%    3   (  4)
+
+Errors                =   32.3%   21   ( 31)
+
+Ref. words            =           65   (105)
+Hyp. words            =           62   (101)
+Aligned words         =           68   (109)
+
+-------------------------------------------------------------------------------
+
+id: (fblv0-fblv0_si2318)
+Scores: (#C #S #D #I) 30 14 3 1
+REF:  <space> D  OW n <space> DH ey s <space> t ih L <space> k AA l Y  UW <space> JH UW n y ** ER eh Z <space> DH OW y 
+HYP:  <space> DH EH n <space> T  ey s <space> t ih * <space> k ** l IY IH <space> T  IH n y IH R  eh S <space> T  EY y 
+Eval:         S  S            S                    D           D    S  S          S  S      I  S     S         S  S    
+
+>> REF:  er <space> b AH <space> t ih n y ih r Z OW l <space> D <space> 
+>> HYP:  er <space> b AE <space> t ih n y ih r * S  l <space> T <space> 
+>> Eval:              S                        D S            S         
+
+Correct               =   63.8%   30   (108)
+Substitutions         =   29.8%   14   ( 33)
+Deletions             =    6.4%    3   ( 11)
+Insertions            =    2.1%    1   (  5)
+
+Errors                =   38.3%   18   ( 49)
+
+Ref. words            =           47   (152)
+Hyp. words            =           45   (146)
+Aligned words         =           48   (157)
+
+-------------------------------------------------------------------------------
+
+id: (fblv0-fblv0_sx158)
+Scores: (#C #S #D #I) 18 8 3 1
+REF:  <space> dh ih <space> D R AH NG <space> K ER <SPACE> d ih Z AH s * OW sh ih l AW <space> k ae s <space> t <space> 
+HYP:  <space> dh ih <space> * * T  EH <space> * P  IH      d ih S IH s L EY sh ih l AY <space> k ae s <space> t <space> 
+Eval:                       D D S  S          D S  S            S S    I S          S                                   
+
+Correct               =   62.1%   18   (126)
+Substitutions         =   27.6%    8   ( 41)
+Deletions             =   10.3%    3   ( 14)
+Insertions            =    3.4%    1   (  6)
+
+Errors                =   41.4%   12   ( 61)
+
+Ref. words            =           29   (181)
+Hyp. words            =           27   (173)
+Aligned words         =           30   (187)
+
+-------------------------------------------------------------------------------
+
+id: (fblv0-fblv0_sx248)
+Scores: (#C #S #D #I) 25 4 1 2
+REF:  <space> * r iy dx IY NG ih n <space> p aa r ** l ay <space> t <space> G ih V       sh uw ay s <space> t R ey n <space> 
+HYP:  <space> M r iy dx IH N  ih n <space> p aa r IH l ay <space> t <space> T ih <SPACE> sh uw ay s <space> t * ey n <space> 
+Eval:         I         S  S                      I                         S    S                            D              
+
+Correct               =   83.3%   25   (151)
+Substitutions         =   13.3%    4   ( 45)
+Deletions             =    3.3%    1   ( 15)
+Insertions            =    6.7%    2   (  8)
+
+Errors                =   23.3%    7   ( 68)
+
+Ref. words            =           30   (211)
+Hyp. words            =           31   (204)
+Aligned words         =           32   (219)
+
+-------------------------------------------------------------------------------
+
+id: (fblv0-fblv0_sx338)
+Scores: (#C #S #D #I) 32 6 3 3
+REF:  <space> dh AH <space> d aa r <space> k <space> m * er <space> k iy l ih <space> g ** * UW n W AW N  <space> d AH 
+HYP:  <space> dh IH <space> d aa r <space> k <space> m R er <space> k iy l ih <space> g EY R IH n * L  AY <space> d IH 
+Eval:            S                                     I                                I  I S    D S  S            S  
+
+>> REF:  r AW n <space> D f aa r m ay l <SPACE> s <space> 
+>> HYP:  r AY n <space> * f aa r m ay l ******* s <space> 
+>> Eval:   S            D               D                 
+
+Correct               =   78.0%   32   (183)
+Substitutions         =   14.6%    6   ( 51)
+Deletions             =    7.3%    3   ( 18)
+Insertions            =    7.3%    3   ( 11)
+
+Errors                =   29.3%   12   ( 80)
+
+Ref. words            =           41   (252)
+Hyp. words            =           41   (245)
+Aligned words         =           44   (263)
+
+-------------------------------------------------------------------------------
+
+id: (fblv0-fblv0_sx428)
+Scores: (#C #S #D #I) 36 8 6 2
+REF:  <space> EY <space> k R ae <space> CH ae l AH n <space> JH <space> D <SPACE> m ** iy <space> b eh dx ih <space> k 
+HYP:  <space> IH <space> k * ae <space> T  ae l ** n <space> S  <space> * T       m EY iy <space> b eh dx ih <space> k 
+Eval:         S            D            S       D            S          D S         I                                  
+
+>> REF:  W ih <space> k s <space> t ae * <space> B V AE ng <space> k w IH sh <space> t HH IH m <space> 
+>> HYP:  L ih <space> k s <space> t ae M <space> * P EY ng <space> k w ** sh <space> t ** EH m <space> 
+>> Eval: S                             I         D S S                 D               D  S            
+
+Correct               =   72.0%   36   (219)
+Substitutions         =   16.0%    8   ( 59)
+Deletions             =   12.0%    6   ( 24)
+Insertions            =    4.0%    2   ( 13)
+
+Errors                =   32.0%   16   ( 96)
+
+Ref. words            =           50   (302)
+Hyp. words            =           46   (291)
+Aligned words         =           52   (315)
+
+-------------------------------------------------------------------------------
+
+id: (fblv0-fblv0_sx68)
+Scores: (#C #S #D #I) 27 4 3 0
+REF:  <space> ah <space> G R ey <space> jh ER s <space> t ey <space> d ih s <space> t UW r ih f l eh <space> CH IH r w 
+HYP:  <space> ah <space> * P ey <space> jh IH s <space> t ey <space> d ih s <space> t ** r ih f l eh <space> ** T  r w 
+Eval:                    D S               S                                          D                      D  S      
+
+>> REF:  eh l TH <space> 
+>> HYP:  eh l S  <space> 
+>> Eval:      S          
+
+Correct               =   79.4%   27   (246)
+Substitutions         =   11.8%    4   ( 63)
+Deletions             =    8.8%    3   ( 27)
+Insertions            =    0.0%    0   ( 13)
+
+Errors                =   20.6%    7   (103)
+
+Ref. words            =           34   (336)
+Hyp. words            =           31   (322)
+Aligned words         =           34   (349)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fbmh0
+id: (fbmh0-fbmh0_si1136)
+Scores: (#C #S #D #I) 42 14 2 3
+REF:  <space> w IY s <space> k ** AW er L ih dx er <space> ch ** er f ih ******* DH eh m <space> hh IH R w iy f ay n 
+HYP:  <space> w IH s <space> k AE R  er N ih dx er <space> ch SH er f ih <SPACE> IH eh m <space> hh UW M w iy f ay n 
+Eval:           S              I  S     S                     I          I       S                  S  S             
+
+>> REF:  <space> s <space> t AA r <space> DH IH w ih Z <space> D AH m ah V <space> G r ey <space> m ay n <SPACE> Z <space> 
+>> HYP:  <space> s <space> t ** r <space> D  L  w ih S <space> T IH m ah F <space> K r ey <space> m ay n ******* S <space> 
+>> Eval:                     D            S  S       S         S S       S         S                     D       S         
+
+Correct               =   72.4%   42   ( 42)
+Substitutions         =   24.1%   14   ( 14)
+Deletions             =    3.4%    2   (  2)
+Insertions            =    5.2%    3   (  3)
+
+Errors                =   32.8%   19   ( 19)
+
+Ref. words            =           58   ( 58)
+Hyp. words            =           59   ( 59)
+Aligned words         =           61   ( 61)
+
+-------------------------------------------------------------------------------
+
+id: (fbmh0-fbmh0_si1766)
+Scores: (#C #S #D #I) 25 7 2 1
+REF:  <space> w iy HH eh V <space> b eh dx er r UW m z V ey <space> k ih N n AW HH iy ** <space> b ae <space> B l 
+HYP:  <space> w iy ** eh F <space> b eh dx er r IH m z S ey <space> k ih * n AE V  iy IH <space> b ae <space> K l 
+Eval:              D     S                      S      S                 D   S  S     I                       S   
+
+>> REF:  <space> D <space> 
+>> HYP:  <space> K <space> 
+>> Eval:         S         
+
+Correct               =   73.5%   25   ( 67)
+Substitutions         =   20.6%    7   ( 21)
+Deletions             =    5.9%    2   (  4)
+Insertions            =    2.9%    1   (  4)
+
+Errors                =   29.4%   10   ( 29)
+
+Ref. words            =           34   ( 92)
+Hyp. words            =           33   ( 92)
+Aligned words         =           35   ( 96)
+
+-------------------------------------------------------------------------------
+
+id: (fbmh0-fbmh0_si970)
+Scores: (#C #S #D #I) 42 14 2 10
+REF:  <space> w iy f l UW W ih n ** AH r IH <space> k ih DX iy ** <space> P l ey n s ** OW ow v * ** ER l ** OW DX ih 
+HYP:  <space> w iy f l ** L ih n IH M  r EH <space> k ih ** iy IH <space> K l ey n s EH L  ow v R IH N  l EY V  D  ih 
+Eval:                  D  S      I  S    S               D     I          S          I  S       I I  S    I  S  S     
+
+>> REF:  <space> DH EH w ih w ah n <space> d er * <space> W ay ******* DH EY <space> d ih <space> n ** <space> K r ** 
+>> HYP:  <space> B  IH w ih w ah n <space> d er M <space> B ay <SPACE> B  IH <space> d ih <space> n IH <space> P r EY 
+>> Eval:         S  S                           I         S    I       S  S                         I          S   I  
+
+>> REF:  ae sh <space> 
+>> HYP:  ae sh <space> 
+>> Eval:               
+
+Correct               =   72.4%   42   (109)
+Substitutions         =   24.1%   14   ( 35)
+Deletions             =    3.4%    2   (  6)
+Insertions            =   17.2%   10   ( 14)
+
+Errors                =   44.8%   26   ( 55)
+
+Ref. words            =           58   (150)
+Hyp. words            =           66   (158)
+Aligned words         =           68   (164)
+
+-------------------------------------------------------------------------------
+
+id: (fbmh0-fbmh0_sx146)
+Scores: (#C #S #D #I) 31 2 1 2
+REF:  <space> s ay ** <space> k l ih <space> k l <space> p r OW <space> G r ** ae m Z w l n eh v er <space> k m 
+HYP:  <space> s ay EY <space> k l ih <space> k l <space> p r EH <space> * r AY ae m S w l n eh v er <space> k m 
+Eval:              I                                         S          D   I       S                           
+
+>> REF:  <space> p ay l <space> 
+>> HYP:  <space> p ay l <space> 
+>> Eval:                        
+
+Correct               =   91.2%   31   (140)
+Substitutions         =    5.9%    2   ( 37)
+Deletions             =    2.9%    1   (  7)
+Insertions            =    5.9%    2   ( 16)
+
+Errors                =   14.7%    5   ( 60)
+
+Ref. words            =           34   (184)
+Hyp. words            =           35   (193)
+Aligned words         =           36   (200)
+
+-------------------------------------------------------------------------------
+
+id: (fbmh0-fbmh0_sx236)
+Scores: (#C #S #D #I) 24 4 4 1
+REF:  <space> k L IH R  <space> p er n AH n ******* s iy ey sh ih n ih z AH <space> p r IY sh iy ey dx ih <SPACE> D <space> 
+HYP:  <space> k * ** EY <space> p er n EH n <SPACE> s iy ey sh ih n ih z IH <space> p r IH sh iy ey dx ih ******* * <space> 
+Eval:           D D  S                 S    I                            S              S                 D       D         
+
+Correct               =   75.0%   24   (164)
+Substitutions         =   12.5%    4   ( 41)
+Deletions             =   12.5%    4   ( 11)
+Insertions            =    3.1%    1   ( 17)
+
+Errors                =   28.1%    9   ( 69)
+
+Ref. words            =           32   (216)
+Hyp. words            =           29   (222)
+Aligned words         =           33   (233)
+
+-------------------------------------------------------------------------------
+
+id: (fbmh0-fbmh0_sx326)
+Scores: (#C #S #D #I) 22 3 3 1
+REF:  <space> s <space> t iy V <space> k AH l eh <space> k s r ** eh R ih n AA V       l <space> k OY n s <space> 
+HYP:  <space> s <space> t iy * <space> k ** l eh <space> k s r EY eh * ih n AY <SPACE> l <space> k L  n s <space> 
+Eval:                        D           D                     I     D      S  S                   S              
+
+Correct               =   78.6%   22   (186)
+Substitutions         =   10.7%    3   ( 44)
+Deletions             =   10.7%    3   ( 14)
+Insertions            =    3.6%    1   ( 18)
+
+Errors                =   25.0%    7   ( 76)
+
+Ref. words            =           28   (244)
+Hyp. words            =           26   (248)
+Aligned words         =           29   (262)
+
+-------------------------------------------------------------------------------
+
+id: (fbmh0-fbmh0_sx416)
+Scores: (#C #S #D #I) 19 7 1 3
+REF:  <space> AH hh Y  uw ** <space> JH <space> p ** AW ER AW DX ih <space> jh r eh R l iy ih <space> k ** er z <space> 
+HYP:  <space> EY hh IY uw IH <space> CH <space> p AE L  R  HH AE ih <space> jh r eh * l iy ih <space> k IH er z <space> 
+Eval:         S     S     I          S            I  S  S  S  S                     D                   I               
+
+Correct               =   70.4%   19   (205)
+Substitutions         =   25.9%    7   ( 51)
+Deletions             =    3.7%    1   ( 15)
+Insertions            =   11.1%    3   ( 21)
+
+Errors                =   40.7%   11   ( 87)
+
+Ref. words            =           27   (271)
+Hyp. words            =           29   (277)
+Aligned words         =           30   (292)
+
+-------------------------------------------------------------------------------
+
+id: (fbmh0-fbmh0_sx56)
+Scores: (#C #S #D #I) 38 1 1 0
+REF:  <space> ae <space> k ih <space> D eh m ih <space> k ae <space> t ih <space> t uw <space> g eh r ih n <space> t 
+HYP:  <space> ae <space> k ih <space> G eh m ih <space> k ae <space> t ih <space> t uw <space> g eh r ih n <space> t 
+Eval:                                 S                                                                              
+
+>> REF:  iy sh er <space> d ih <space> p l OW m ah <space> 
+>> HYP:  iy sh er <space> d ih <space> p l ** m ah <space> 
+>> Eval:                                   D               
+
+Correct               =   95.0%   38   (243)
+Substitutions         =    2.5%    1   ( 52)
+Deletions             =    2.5%    1   ( 16)
+Insertions            =    0.0%    0   ( 21)
+
+Errors                =    5.0%    2   ( 89)
+
+Ref. words            =           40   (311)
+Hyp. words            =           39   (316)
+Aligned words         =           40   (332)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fbmj0
+id: (fbmj0-fbmj0_si1776)
+Scores: (#C #S #D #I) 32 11 4 6
+REF:  <space> ah f r ** ey * <space> d ih <space> y ** ** UH l uw ** z <space> y AA r <space> jh aa <space> B  ih 
+HYP:  <space> ah f r AY ey N <space> d ih <space> y IY UW L  l uw IH z <space> y UW r <space> jh aa <space> IY ih 
+Eval:                I     I                        I  I  S       I              S                          S     
+
+>> REF:  ******* F Y  uw <space> d OW N <space> K iy <space> p Y AA r m AW TH sh AH <SPACE> T  <space> 
+>> HYP:  <SPACE> T IY uw <space> d EH L <space> T iy <space> p * UW r m ** EH sh ** ******* EH <space> 
+>> Eval: I       S S               S  S         S              D S      D  S     D  D       S          
+
+Correct               =   68.1%   32   ( 32)
+Substitutions         =   23.4%   11   ( 11)
+Deletions             =    8.5%    4   (  4)
+Insertions            =   12.8%    6   (  6)
+
+Errors                =   44.7%   21   ( 21)
+
+Ref. words            =           47   ( 47)
+Hyp. words            =           49   ( 49)
+Aligned words         =           53   ( 53)
+
+-------------------------------------------------------------------------------
+
+id: (fbmj0-fbmj0_si516)
+Scores: (#C #S #D #I) 37 17 5 5
+REF:  <space> s AH m * ah <space> B  z ** er ******* V er s <space> p EH <space> k Y IH L  ey dx ih <space> DH ih 
+HYP:  <space> s ** m L ah <space> DH z EH er <SPACE> P er s <space> p AE <space> k * ** IY ey dx ih <space> D  ih 
+Eval:           D    I            S    I     I       S                S            D D  S                   S     
+
+>> REF:  <space> DH ih s <space> m * ay <space> t <space> B iy HH ih * Z er v IH n <space> jh aa N IH Z  HH OW m 
+>> HYP:  <space> ** ih s <space> m L ay <space> t <space> Y iy IY ih F R er v EY n <space> jh aa R M  IY F  L  m 
+>> Eval:         D                 I                      S    S     I S      S                  S S  S  S  S    
+
+>> REF:  <SPACE> T  AW N <space> 
+>> HYP:  ******* HH EY M <space> 
+>> Eval: D       S  S  S         
+
+Correct               =   62.7%   37   ( 69)
+Substitutions         =   28.8%   17   ( 28)
+Deletions             =    8.5%    5   (  9)
+Insertions            =    8.5%    5   ( 11)
+
+Errors                =   45.8%   27   ( 48)
+
+Ref. words            =           59   (106)
+Hyp. words            =           59   (108)
+Aligned words         =           64   (117)
+
+-------------------------------------------------------------------------------
+
+id: (fbmj0-fbmj0_si815)
+Scores: (#C #S #D #I) 14 6 3 1
+REF:  <space> P UH sh <space> <space> B ae ******* <space> k AH <space> P IH N  r IH <space> P iy <space> t <space> 
+HYP:  <space> K L  sh <space> <space> * ae <SPACE> <space> k ** <space> * K  EH r ER <space> K iy <space> t <space> 
+Eval:         S S                     D    I                 D          D S  S    S          S                      
+
+Correct               =   60.9%   14   ( 83)
+Substitutions         =   26.1%    6   ( 34)
+Deletions             =   13.0%    3   ( 12)
+Insertions            =    4.3%    1   ( 12)
+
+Errors                =   43.5%   10   ( 58)
+
+Ref. words            =           23   (129)
+Hyp. words            =           21   (129)
+Aligned words         =           24   (141)
+
+-------------------------------------------------------------------------------
+
+id: (fbmj0-fbmj0_sx156)
+Scores: (#C #S #D #I) 31 8 7 1
+REF:  <space> ** AW er <space> k s <space> P IH r IH m EH N  <space> s <space> p AA z IH DX ih V AW <space> k ah m 
+HYP:  <space> AA R  er <space> k s <space> Y EH r ** m ** IH <space> s <space> p AY z ** ** ih M AE <space> k ah m 
+Eval:         I  S                         S S    D    D  S                      S    D  D     S S                 
+
+>> REF:  <space> w AH z ah n ih <SPACE> s <space> P eh <space> t ih <SPACE> <space> 
+>> HYP:  <space> w ** z ah n ih ******* s <space> B eh <space> t ih ******* <space> 
+>> Eval:           D            D                 S                 D               
+
+Correct               =   67.4%   31   (114)
+Substitutions         =   17.4%    8   ( 42)
+Deletions             =   15.2%    7   ( 19)
+Insertions            =    2.2%    1   ( 13)
+
+Errors                =   34.8%   16   ( 74)
+
+Ref. words            =           46   (175)
+Hyp. words            =           40   (169)
+Aligned words         =           47   (188)
+
+-------------------------------------------------------------------------------
+
+id: (fbmj0-fbmj0_sx246)
+Scores: (#C #S #D #I) 23 5 3 2
+REF:  <space> hh aw * ey n sh ih n <SPACE> ih ** z <space> DH ih s ah <space> B W ey EH s <space> K Y ih l ey DX er <space> 
+HYP:  <space> hh aw L ey n sh ih n ******* ih IY z <space> T  ih s ah <space> P L ey ** s <space> * T ih l ey V  er <space> 
+Eval:               I              D          I            S                  S S    D            D S         S             
+
+Correct               =   74.2%   23   (137)
+Substitutions         =   16.1%    5   ( 47)
+Deletions             =    9.7%    3   ( 22)
+Insertions            =    6.5%    2   ( 15)
+
+Errors                =   32.3%   10   ( 84)
+
+Ref. words            =           31   (206)
+Hyp. words            =           30   (199)
+Aligned words         =           33   (221)
+
+-------------------------------------------------------------------------------
+
+id: (fbmj0-fbmj0_sx336)
+Scores: (#C #S #D #I) 39 14 5 4
+REF:  <space> * r AA <space> B <space> m ey <space> D HH ah NG <SPACE> G  eh r IH IH n <space> G  UW l aa SH f * AH 
+HYP:  <space> W r AY <space> K <space> m ey <space> K R  ah ** N       DH eh r ** EY n <space> IH IY l aa ** f L IH 
+Eval:         I   S          S                      S S     D  S       S       D  S            S  S       D    I S  
+
+>> REF:  <space> d IH n er <space> IH NG <space> g UW s <space> b eh r ih <space> * p ay ** f aa <space> d ih z er 
+>> HYP:  <space> d EH n er <space> EH N  <space> g IH s <space> b eh r ih <space> K p ay AE f aa <space> d ih z er 
+>> Eval:           S               S  S            S                              I      I                         
+
+>> REF:  <SPACE> T <space> 
+>> HYP:  ******* * <space> 
+>> Eval: D       D         
+
+Correct               =   67.2%   39   (176)
+Substitutions         =   24.1%   14   ( 61)
+Deletions             =    8.6%    5   ( 27)
+Insertions            =    6.9%    4   ( 19)
+
+Errors                =   39.7%   23   (107)
+
+Ref. words            =           58   (264)
+Hyp. words            =           57   (256)
+Aligned words         =           62   (283)
+
+-------------------------------------------------------------------------------
+
+id: (fbmj0-fbmj0_sx426)
+Scores: (#C #S #D #I) 20 9 6 6
+REF:  <space> ah m * aa * * * TH Z ih <space> G Z AE <space> d ah l AA NG DH AH <space> p ae ******* * TH r UW aa T OW 
+HYP:  <space> ah m L aa L F S IH S ih <space> * S EY <space> d ah l ** ** W  IH <space> p ae <SPACE> F ER r ** aa F L  
+Eval:              I    I I I S  S            D S S                 D  D  S  S               I       I S    D     S S  
+
+>> REF:  z <space> aa r DX N <space> 
+>> HYP:  z <space> aa r ** * <space> 
+>> Eval:                D  D         
+
+Correct               =   57.1%   20   (196)
+Substitutions         =   25.7%    9   ( 70)
+Deletions             =   17.1%    6   ( 33)
+Insertions            =   17.1%    6   ( 25)
+
+Errors                =   60.0%   21   (128)
+
+Ref. words            =           35   (299)
+Hyp. words            =           35   (291)
+Aligned words         =           41   (324)
+
+-------------------------------------------------------------------------------
+
+id: (fbmj0-fbmj0_sx66)
+Scores: (#C #S #D #I) 25 5 7 1
+REF:  <space> w iy <space> G AA <SPACE> <space> D r EH N  <space> ch <space> T f r ah m DH IH ah n ih n IH r AH 
+HYP:  <space> w iy <space> * K  AE      <space> T r ** EY <space> ch <space> * f r ah m ** IY ah n ih n ** r ** 
+Eval:                      D S  S               S   D  S                     D          D  S            D    D  
+
+>> REF:  <space> t ih <space> * r ey N <space> 
+>> HYP:  <space> t ih <space> G r ey * <space> 
+>> Eval:                      I      D         
+
+Correct               =   67.6%   25   (221)
+Substitutions         =   13.5%    5   ( 75)
+Deletions             =   18.9%    7   ( 40)
+Insertions            =    2.7%    1   ( 26)
+
+Errors                =   35.1%   13   (141)
+
+Ref. words            =           37   (336)
+Hyp. words            =           31   (322)
+Aligned words         =           38   (362)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcag0
+id: (fcag0-fcag0_si1503)
+Scores: (#C #S #D #I) 18 11 3 2
+REF:  <space> b AA DH AH l UH <space> k AH V  ih M HH IH w AH z ih N <space> DH ae <space> f aa r * <space> G aa * N <space> 
+HYP:  <space> b ** AY N  l IH <space> k ** AE ih * N  IY w L  z ih M <space> T  ae <space> f aa r M <space> B aa L M <space> 
+Eval:           D  S  S    S            D  S     D S  S    S       S         S                    I         S    I S         
+
+Correct               =   56.3%   18   ( 18)
+Substitutions         =   34.4%   11   ( 11)
+Deletions             =    9.4%    3   (  3)
+Insertions            =    6.3%    2   (  2)
+
+Errors                =   50.0%   16   ( 16)
+
+Ref. words            =           32   ( 32)
+Hyp. words            =           31   ( 31)
+Aligned words         =           34   ( 34)
+
+-------------------------------------------------------------------------------
+
+id: (fcag0-fcag0_si1641)
+Scores: (#C #S #D #I) 12 4 3 1
+REF:  <space> w * ER y UW ih n l AH V W  AH th ae <space> g ER l <space> 
+HYP:  <space> w R IY y ** ih n l ** * AY L  th ae <space> g R  l <space> 
+Eval:           I S    D         D  D S  S                  S            
+
+Correct               =   63.2%   12   ( 30)
+Substitutions         =   21.1%    4   ( 15)
+Deletions             =   15.8%    3   (  6)
+Insertions            =    5.3%    1   (  3)
+
+Errors                =   42.1%    8   ( 24)
+
+Ref. words            =           19   ( 51)
+Hyp. words            =           17   ( 48)
+Aligned words         =           20   ( 54)
+
+-------------------------------------------------------------------------------
+
+id: (fcag0-fcag0_si2133)
+Scores: (#C #S #D #I) 20 5 3 2
+REF:  <space> hh ** ih R DH eh dx ih <space> n AA <SPACE> n ** iy <space> T ih <space> b IY ng <space> g eh DX OW z <space> 
+HYP:  <space> hh EY ih * N  eh dx ih <space> n ** AE      n IH iy <space> * ih <space> b EY ng <space> g eh N  EH z <space> 
+Eval:            I     D S                     D  S         I             D              S                  S  S            
+
+Correct               =   71.4%   20   ( 50)
+Substitutions         =   17.9%    5   ( 20)
+Deletions             =   10.7%    3   (  9)
+Insertions            =    7.1%    2   (  5)
+
+Errors                =   35.7%   10   ( 34)
+
+Ref. words            =           28   ( 79)
+Hyp. words            =           27   ( 75)
+Aligned words         =           30   ( 84)
+
+-------------------------------------------------------------------------------
+
+id: (fcag0-fcag0_sx153)
+Scores: (#C #S #D #I) 33 10 2 1
+REF:  <space> s <space> k AH l AE s <space> t ih <space> k ae <space> t ih <space> t UW DX ih z <space> JH AH <space> 
+HYP:  <space> s <space> k ** l ** s <space> t ih <space> k ae <space> t ih <space> t EY N  ih z <space> T  AE <space> 
+Eval:                     D    D                                                     S  S               S  S          
+
+>> REF:  jh ** <space> b ay s <space> t AE N ER DX ay Z <space> t EH s <space> 
+>> HYP:  jh CH <space> b ay s <space> t EH M IH N  ay S <space> t AE s <space> 
+>> Eval:    I                           S  S S  S     S           S            
+
+Correct               =   73.3%   33   ( 83)
+Substitutions         =   22.2%   10   ( 30)
+Deletions             =    4.4%    2   ( 11)
+Insertions            =    2.2%    1   (  6)
+
+Errors                =   28.9%   13   ( 47)
+
+Ref. words            =           45   (124)
+Hyp. words            =           44   (119)
+Aligned words         =           46   (130)
+
+-------------------------------------------------------------------------------
+
+id: (fcag0-fcag0_sx243)
+Scores: (#C #S #D #I) 32 4 4 0
+REF:  <space> DH ey AA l ah <space> g r IY DH ih <space> dh ih eh s ey ih z <space> b eh R l iy ih n <space> t EH l AH 
+HYP:  <space> ** ey ** l ah <space> g r EY N  ih <space> dh ih eh s ey ih z <space> b eh N l iy ih n <space> t AE l ** 
+Eval:         D     D                   S  S                                             S                     S    D  
+
+>> REF:  <space> jh ih <space> B l <space> 
+>> HYP:  <space> jh ih <space> * l <space> 
+>> Eval:                       D           
+
+Correct               =   80.0%   32   (115)
+Substitutions         =   10.0%    4   ( 34)
+Deletions             =   10.0%    4   ( 15)
+Insertions            =    0.0%    0   (  6)
+
+Errors                =   20.0%    8   ( 55)
+
+Ref. words            =           40   (164)
+Hyp. words            =           36   (155)
+Aligned words         =           40   (170)
+
+-------------------------------------------------------------------------------
+
+id: (fcag0-fcag0_sx333)
+Scores: (#C #S #D #I) 36 8 4 4
+REF:  <space> eh n ih <space> d ah l <space> * M ey l <space> b ae <space> b ** UW n Z <space> t IY TH aa r n * AA s 
+HYP:  <space> eh n ih <space> d ah l <space> B N ey l <space> b ae <space> b EH M  n S <space> t EY F  aa r n M AY s 
+Eval:                                        I S                             I  S    S           S  S         I S    
+
+>> REF:  UW DX ih <SPACE> B l f * ER iy dx ih NG sh eh l f ih sh <space> 
+>> HYP:  ** ** ih ******* M l f R IH iy dx ih ** sh eh l f ih sh <space> 
+>> Eval: D  D     D       S     I S           D                          
+
+Correct               =   75.0%   36   (151)
+Substitutions         =   16.7%    8   ( 42)
+Deletions             =    8.3%    4   ( 19)
+Insertions            =    8.3%    4   ( 10)
+
+Errors                =   33.3%   16   ( 71)
+
+Ref. words            =           48   (212)
+Hyp. words            =           48   (203)
+Aligned words         =           52   (222)
+
+-------------------------------------------------------------------------------
+
+id: (fcag0-fcag0_sx423)
+Scores: (#C #S #D #I) 29 12 3 6
+REF:  <space> s ******* m ** ae sh l ay <space> * b * AH <space> B Z ah N DH ER <space> k ae sh V AE y uw W l ** 
+HYP:  <space> s <SPACE> m EY ae sh l ay <space> M b L N  <space> T S ah * M  IH <space> k ae sh M AY y uw * l AH 
+Eval:           I         I                     I   I S          S S    D S  S                  S S       D   I  
+
+>> REF:  <space> D AH m ih n ih sh * <space> t ih N AH TH ih NG <space> 
+>> HYP:  <space> * DH m ih n ih sh S <space> t ih M AY F  ih N  <space> 
+>> Eval:         D S               I              S S  S     S          
+
+Correct               =   65.9%   29   (180)
+Substitutions         =   27.3%   12   ( 54)
+Deletions             =    6.8%    3   ( 22)
+Insertions            =   13.6%    6   ( 16)
+
+Errors                =   47.7%   21   ( 92)
+
+Ref. words            =           44   (256)
+Hyp. words            =           47   (250)
+Aligned words         =           50   (272)
+
+-------------------------------------------------------------------------------
+
+id: (fcag0-fcag0_sx63)
+Scores: (#C #S #D #I) 27 5 2 3
+REF:  <space> k aa n EH n l <space> d r IH f <space> t ih z ih <space> JH iy ih * l AA <space> jh ih <space> k l * 
+HYP:  <space> k aa n IH n l <space> d r ** f <space> t ih z ih <space> T  iy ih N l AY <space> jh ih <space> k l Z 
+Eval:                S                  D                              S        I   S                            I 
+
+>> REF:  ******* TH IY er IH <space> 
+>> HYP:  <SPACE> T  EY er ** <space> 
+>> Eval: I       S  S     D          
+
+Correct               =   79.4%   27   (207)
+Substitutions         =   14.7%    5   ( 59)
+Deletions             =    5.9%    2   ( 24)
+Insertions            =    8.8%    3   ( 19)
+
+Errors                =   29.4%   10   (102)
+
+Ref. words            =           34   (290)
+Hyp. words            =           35   (285)
+Aligned words         =           37   (309)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcaj0
+id: (fcaj0-fcaj0_si1479)
+Scores: (#C #S #D #I) 15 5 5 1
+REF:  <space> HH ih V UW <space> ** G  AA      DX IH n ah f <space> b L AE NG <space> k ih <space> t s <space> 
+HYP:  <space> ** ih * ** <space> IY IH <SPACE> K  AE n ah f <space> b * ** AY <space> k ih <space> t s <space> 
+Eval:         D     D D          I  S  S       S  S                   D D  S                                   
+
+Correct               =   60.0%   15   ( 15)
+Substitutions         =   20.0%    5   (  5)
+Deletions             =   20.0%    5   (  5)
+Insertions            =    4.0%    1   (  1)
+
+Errors                =   44.0%   11   ( 11)
+
+Ref. words            =           25   ( 25)
+Hyp. words            =           21   ( 21)
+Aligned words         =           26   ( 26)
+
+-------------------------------------------------------------------------------
+
+id: (fcaj0-fcaj0_si1804)
+Scores: (#C #S #D #I) 16 5 0 0
+REF:  <space> IH DX EH <space> g aa N l ay <space> k l AA <space> k w er <space> k <space> 
+HYP:  <space> DH EY EY <space> g aa M l ay <space> k l AY <space> k w er <space> k <space> 
+Eval:         S  S  S               S                  S                                   
+
+Correct               =   76.2%   16   ( 31)
+Substitutions         =   23.8%    5   ( 10)
+Deletions             =    0.0%    0   (  5)
+Insertions            =    0.0%    0   (  1)
+
+Errors                =   23.8%    5   ( 16)
+
+Ref. words            =           21   ( 46)
+Hyp. words            =           21   ( 42)
+Aligned words         =           21   ( 47)
+
+-------------------------------------------------------------------------------
+
+id: (fcaj0-fcaj0_si849)
+Scores: (#C #S #D #I) 43 7 13 0
+REF:  <space> W UH DX IH <space> k AE m R AH <space> k l AH <space> b iy y UW s F AH      l ah n <space> t ey <space> 
+HYP:  <space> * ** DH EY <space> k EH m * ** <space> k l ** <space> b iy y IH s * <SPACE> l ah n <space> t ey <space> 
+Eval:         D D  S  S            S    D D              D                 S    D S                                   
+
+>> REF:  k ih ng <space> P ih <space> CH er z <space> p er N ih N <space> t AH <space> p L ae n <space> T s ey F 
+>> HYP:  k ih ng <space> T ih <space> T  er z <space> p er * ih * <space> t ** <space> p * ae n <space> * s ey * 
+>> Eval:                 S            S                    D    D           D            D              D      D 
+
+>> REF:  <space> T iy <space> 
+>> HYP:  <space> * iy <space> 
+>> Eval:         D            
+
+Correct               =   68.3%   43   ( 74)
+Substitutions         =   11.1%    7   ( 17)
+Deletions             =   20.6%   13   ( 18)
+Insertions            =    0.0%    0   (  1)
+
+Errors                =   31.7%   20   ( 36)
+
+Ref. words            =           63   (109)
+Hyp. words            =           50   ( 92)
+Aligned words         =           63   (110)
+
+-------------------------------------------------------------------------------
+
+id: (fcaj0-fcaj0_sx129)
+Scores: (#C #S #D #I) 20 6 1 0
+REF:  <space> AE N <space> G aa ER <space> k ae <space> s er f ER iy er DH ih n s ay IH m iy z <space> 
+HYP:  <space> EY M <space> P aa R  <space> k ae <space> s er f R  iy er IH ih n s ay ** m iy z <space> 
+Eval:         S  S         S    S                              S        S            D                 
+
+Correct               =   74.1%   20   ( 94)
+Substitutions         =   22.2%    6   ( 23)
+Deletions             =    3.7%    1   ( 19)
+Insertions            =    0.0%    0   (  1)
+
+Errors                =   25.9%    7   ( 43)
+
+Ref. words            =           27   (136)
+Hyp. words            =           26   (118)
+Aligned words         =           27   (137)
+
+-------------------------------------------------------------------------------
+
+id: (fcaj0-fcaj0_sx219)
+Scores: (#C #S #D #I) 30 11 5 2
+REF:  <space> n AA N <space> p R AA f AH DX aa r <SPACE> g ih n ih * z ** ey sh N z HH AE V  f r iy <space> k W ih n 
+HYP:  <space> n AE M <space> p * AY f ** M  aa r ******* g ih n ih N z IY ey sh M z ** ** EH f r iy <space> k L ih n 
+Eval:           S  S           D S    D  S       D                 I   I        S   D  D  S                   S      
+
+>> REF:  <space> t f AH n D r ey Z  er Z <space> 
+>> HYP:  <space> t f AY n M r ey SH er S <space> 
+>> Eval:             S    S      S     S         
+
+Correct               =   65.2%   30   (124)
+Substitutions         =   23.9%   11   ( 34)
+Deletions             =   10.9%    5   ( 24)
+Insertions            =    4.3%    2   (  3)
+
+Errors                =   39.1%   18   ( 61)
+
+Ref. words            =           46   (182)
+Hyp. words            =           43   (161)
+Aligned words         =           48   (185)
+
+-------------------------------------------------------------------------------
+
+id: (fcaj0-fcaj0_sx309)
+Scores: (#C #S #D #I) 31 9 2 4
+REF:  <space> dh AH <space> p r ** UW f ih <space> * jh uw AA r s * iy <space> k iy NG ih ** Z <space> N AA <space> ah 
+HYP:  <space> dh IH <space> p r IH S  f ih <space> T jh uw ** r s T iy <space> k iy L  ih EH S <space> M AE <space> ah 
+Eval:            S              I  S               I       D      I                 S     I  S         S S             
+
+>> REF:  V EY l <space> b l ih N <space> b UH <space> k s <space> 
+>> HYP:  N IH l <space> b l ih * <space> b L  <space> k s <space> 
+>> Eval: S S                   D           S                      
+
+Correct               =   73.8%   31   (155)
+Substitutions         =   21.4%    9   ( 43)
+Deletions             =    4.8%    2   ( 26)
+Insertions            =    9.5%    4   (  7)
+
+Errors                =   35.7%   15   ( 76)
+
+Ref. words            =           42   (224)
+Hyp. words            =           44   (205)
+Aligned words         =           46   (231)
+
+-------------------------------------------------------------------------------
+
+id: (fcaj0-fcaj0_sx39)
+Scores: (#C #S #D #I) 29 10 4 0
+REF:  <space> b aa r <space> B Z <space> G OW l <space> b r ey s <space> l IH <space> w AH Z ih <space> G r AE <space> 
+HYP:  <space> b aa r <space> T S <space> * K  l <space> b r ey s <space> l ** <space> w IH S ih <space> P r EY <space> 
+Eval:                        S S         D S                               D            S  S            S   S          
+
+>> REF:  JH UW ey sh N <space> p r eh z ah N <SPACE> <space> 
+>> HYP:  K  L  ey sh M <space> p r eh z ah * ******* <space> 
+>> Eval: S  S        S                     D D               
+
+Correct               =   67.4%   29   (184)
+Substitutions         =   23.3%   10   ( 53)
+Deletions             =    9.3%    4   ( 30)
+Insertions            =    0.0%    0   (  7)
+
+Errors                =   32.6%   14   ( 90)
+
+Ref. words            =           43   (267)
+Hyp. words            =           39   (244)
+Aligned words         =           43   (274)
+
+-------------------------------------------------------------------------------
+
+id: (fcaj0-fcaj0_sx399)
+Scores: (#C #S #D #I) 24 2 4 3
+REF:  <space> DH ey IH s UW m n ow * <space> b er <space> G l ** er W l eh v * er eh n <space> t er HH ih er <space> 
+HYP:  <space> ** ey ** s IH m n ow L <space> b er <space> K l EH er * l eh v R er eh n <space> t er ** ih er <space> 
+Eval:         D     D    S         I                      S   I     D        I                      D                
+
+Correct               =   80.0%   24   (208)
+Substitutions         =    6.7%    2   ( 55)
+Deletions             =   13.3%    4   ( 34)
+Insertions            =   10.0%    3   ( 10)
+
+Errors                =   30.0%    9   ( 99)
+
+Ref. words            =           30   (297)
+Hyp. words            =           29   (273)
+Aligned words         =           33   (307)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcdr1
+id: (fcdr1-fcdr1_si1186)
+Scores: (#C #S #D #I) 39 13 3 4
+REF:  <space> k * w EH sh <space> CH AH N Z <space> k EY m <space> t UW m ** iy f ah m aa l s ay Z ah <space> b ** 
+HYP:  <space> k L w EY sh <space> T  IH M S <space> k AE m <space> t IH m EY iy f ah m aa l s ay F ah <space> b AY 
+Eval:           I   S             S  S  S S           S              S    I                      S              I  
+
+>> REF:  AW      m ay w ER s ih DX IH Z ih N sh ih <space> * AE <space> t ih v ih DX iy s <space> 
+>> HYP:  <SPACE> m ay w R  s ih ** UW S ih * sh ih <space> B EH <space> t ih v ih ** iy s <space> 
+>> Eval: S              S       D  S  S    D               I S                    D               
+
+Correct               =   70.9%   39   ( 39)
+Substitutions         =   23.6%   13   ( 13)
+Deletions             =    5.5%    3   (  3)
+Insertions            =    7.3%    4   (  4)
+
+Errors                =   36.4%   20   ( 20)
+
+Ref. words            =           55   ( 55)
+Hyp. words            =           56   ( 56)
+Aligned words         =           59   ( 59)
+
+-------------------------------------------------------------------------------
+
+id: (fcdr1-fcdr1_si1816)
+Scores: (#C #S #D #I) 22 8 2 5
+REF:  <space> ** EH n iy hh ** AW <space> ih ******* w AH Z  HH ay <space> t ay * m ******* DH ah <space> B oy w AH s 
+HYP:  <space> HH EY n iy hh AE AA <space> ih <SPACE> w L  IH S  ay <space> t ay R m <SPACE> B  ah <space> W oy w IH s 
+Eval:         I  S          I  S             I         S  S  S                  I   I       S             S      S    
+
+>> REF:  AA l <space> t ih <SPACE> <space> 
+>> HYP:  ** l <space> t ih ******* <space> 
+>> Eval: D                 D               
+
+Correct               =   68.8%   22   ( 61)
+Substitutions         =   25.0%    8   ( 21)
+Deletions             =    6.3%    2   (  5)
+Insertions            =   15.6%    5   (  9)
+
+Errors                =   46.9%   15   ( 35)
+
+Ref. words            =           32   ( 87)
+Hyp. words            =           35   ( 91)
+Aligned words         =           37   ( 96)
+
+-------------------------------------------------------------------------------
+
+id: (fcdr1-fcdr1_si556)
+Scores: (#C #S #D #I) 40 17 1 3
+REF:  <space> w iy <space> D ih <SPACE> n AA dx AH <space> k s eh <space> DH AH <space> D ay <space> N AA s ih s 
+HYP:  <space> w iy <space> T ih M       n AY dx IH <space> k s eh <space> P  IH <space> P ay <space> M AY s ih s 
+Eval:                      S    S         S     S                         S  S          S            S S         
+
+>> REF:  ******* ** AE      w AH N s <space> <space> B ah <space> g r AE SH AH l IY <space> w iy aa <space> k ah m ih 
+>> HYP:  <SPACE> EY <SPACE> w L  L s <space> <space> P ah <space> g r EY Z  IH l IH <space> w iy aa <space> k ah m ih 
+>> Eval: I       I  S         S  S                   S                S  S  S    S                                    
+
+>> REF:  NG <space> t uw * <space> 
+>> HYP:  ** <space> t uw M <space> 
+>> Eval: D               I         
+
+Correct               =   69.0%   40   (101)
+Substitutions         =   29.3%   17   ( 38)
+Deletions             =    1.7%    1   (  6)
+Insertions            =    5.2%    3   ( 12)
+
+Errors                =   36.2%   21   ( 56)
+
+Ref. words            =           58   (145)
+Hyp. words            =           60   (151)
+Aligned words         =           61   (157)
+
+-------------------------------------------------------------------------------
+
+id: (fcdr1-fcdr1_sx106)
+Scores: (#C #S #D #I) 25 5 0 8
+REF:  <space> ** ey hh Y  uw * ******* SH <space> t ae * <space> p AH s <space> t r ** iy hh ** AH NG      ih n hh er 
+HYP:  <space> DH ey hh IY uw L <SPACE> S  <space> t ae M <space> p ER s <space> t r IY iy hh AA L  <SPACE> ih n hh er 
+Eval:         I        S     I I       S               I           S                I        I  S  S                  
+
+>> REF:  * hh aa l w ey ** <space> 
+>> HYP:  R hh aa l w ey IY <space> 
+>> Eval: I              I          
+
+Correct               =   83.3%   25   (126)
+Substitutions         =   16.7%    5   ( 43)
+Deletions             =    0.0%    0   (  6)
+Insertions            =   26.7%    8   ( 20)
+
+Errors                =   43.3%   13   ( 69)
+
+Ref. words            =           30   (175)
+Hyp. words            =           38   (189)
+Aligned words         =           38   (195)
+
+-------------------------------------------------------------------------------
+
+id: (fcdr1-fcdr1_sx16)
+Scores: (#C #S #D #I) 17 4 1 3
+REF:  <space> ** ey * r ow l ow <space> w ay R HH l ey n ** ih ER      DH ah w AA l <space> 
+HYP:  <space> DH ey V r ow l ow <space> w ay M F  l ey n IY ih <SPACE> D  ah w ** l <space> 
+Eval:         I     I                        S S         I     S       S       D            
+
+Correct               =   77.3%   17   (143)
+Substitutions         =   18.2%    4   ( 47)
+Deletions             =    4.5%    1   (  7)
+Insertions            =   13.6%    3   ( 23)
+
+Errors                =   36.4%    8   ( 77)
+
+Ref. words            =           22   (197)
+Hyp. words            =           24   (213)
+Aligned words         =           25   (220)
+
+-------------------------------------------------------------------------------
+
+id: (fcdr1-fcdr1_sx196)
+Scores: (#C #S #D #I) 15 4 1 3
+REF:  <space> hh aw <space> D uw * OY s <space> t ** AH Z m ey <space> p * er L s <space> 
+HYP:  <space> hh aw <space> P uw L AA s <space> t ER IH S m ey <space> p R er * s <space> 
+Eval:                       S    I S              I  S  S                I    D           
+
+Correct               =   75.0%   15   (158)
+Substitutions         =   20.0%    4   ( 51)
+Deletions             =    5.0%    1   (  8)
+Insertions            =   15.0%    3   ( 26)
+
+Errors                =   40.0%    8   ( 85)
+
+Ref. words            =           20   (217)
+Hyp. words            =           22   (235)
+Aligned words         =           23   (243)
+
+-------------------------------------------------------------------------------
+
+id: (fcdr1-fcdr1_sx286)
+Scores: (#C #S #D #I) 35 12 1 8
+REF:  <space> ** ih ******* N  eh * v r IY m ey <space> jh er ** <space> * K l OW V  ah * L  iy f <space> t r AE f ih 
+HYP:  <space> DH ih <SPACE> EY eh M v r IH m ey <space> jh er IH <space> P R l ** TH ah M IY iy f <space> t r EH f ih 
+Eval:         I     I       S     I     S                     I          I S   D  S     I S                   S       
+
+>> REF:  <space> k s AH m <space> t ay NG <space> G EH s <space> * b AE <space> t AH <space> * <space> 
+>> HYP:  <space> k s R  m <space> t ay EY <space> D IH s <space> M b AY <space> t EH <space> K <space> 
+>> Eval:             S                 S          S S            I   S            S          I         
+
+Correct               =   72.9%   35   (193)
+Substitutions         =   25.0%   12   ( 63)
+Deletions             =    2.1%    1   (  9)
+Insertions            =   16.7%    8   ( 34)
+
+Errors                =   43.8%   21   (106)
+
+Ref. words            =           48   (265)
+Hyp. words            =           55   (290)
+Aligned words         =           56   (299)
+
+-------------------------------------------------------------------------------
+
+id: (fcdr1-fcdr1_sx376)
+Scores: (#C #S #D #I) 35 6 2 1
+REF:  <space> w ih m ih N m ey n eh v * ah <space> b IY <space> k AH m <space> k ah m <space> p l iy <space> T L iy iy 
+HYP:  <space> w ih m ih * m ey n eh v M ah <space> b IH <space> k AA m <space> k ah m <space> p l iy <space> * K iy iy 
+Eval:                   D             I              S            S                                          D S       
+
+>> REF:  <space> k w UH <space> t uw m EH N  <space> 
+>> HYP:  <space> k w ER <space> t uw m IY IH <space> 
+>> Eval:             S                 S  S          
+
+Correct               =   81.4%   35   (228)
+Substitutions         =   14.0%    6   ( 69)
+Deletions             =    4.7%    2   ( 11)
+Insertions            =    2.3%    1   ( 35)
+
+Errors                =   20.9%    9   (115)
+
+Ref. words            =           43   (308)
+Hyp. words            =           42   (332)
+Aligned words         =           44   (343)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fceg0
+id: (fceg0-fceg0_si1248)
+Scores: (#C #S #D #I) 43 8 4 2
+REF:  <space> dh iy <space> t r AH <space> l ih z * TH      ae l ay <space> m ih n iy s ih m <SPACE> l * Z ih <space> 
+HYP:  <space> dh iy <space> t r ** <space> l ih z S <SPACE> ae l ay <space> m ih n iy s ih m ******* l S T ih <space> 
+Eval:                           D                 I S                                        D         I S            
+
+>> REF:  D AH Z n <space> s iy m ey v EH R  IY r ih l ih s <space> t ih <space> k W AH n <space> 
+>> HYP:  K EH S n <space> s iy m ey v ** EY DX r ih l ih s <space> t ih <space> k * AA n <space> 
+>> Eval: S S  S                       D  S  S                                     D S            
+
+Correct               =   78.2%   43   ( 43)
+Substitutions         =   14.5%    8   (  8)
+Deletions             =    7.3%    4   (  4)
+Insertions            =    3.6%    2   (  2)
+
+Errors                =   25.5%   14   ( 14)
+
+Ref. words            =           55   ( 55)
+Hyp. words            =           53   ( 53)
+Aligned words         =           57   ( 57)
+
+-------------------------------------------------------------------------------
+
+id: (fceg0-fceg0_si1878)
+Scores: (#C #S #D #I) 15 2 4 0
+REF:  <space> y uh L HH ae f <space> t ih <space> t r ay IH DX ah l OW N <space> 
+HYP:  <space> y uh * ** ae f <space> t ih <space> t r ay ** D  ah l ** M <space> 
+Eval:              D D                                   D  S       D  S         
+
+Correct               =   71.4%   15   ( 58)
+Substitutions         =    9.5%    2   ( 10)
+Deletions             =   19.0%    4   (  8)
+Insertions            =    0.0%    0   (  2)
+
+Errors                =   28.6%    6   ( 20)
+
+Ref. words            =           21   ( 76)
+Hyp. words            =           17   ( 70)
+Aligned words         =           21   ( 78)
+
+-------------------------------------------------------------------------------
+
+id: (fceg0-fceg0_si618)
+Scores: (#C #S #D #I) 31 6 1 3
+REF:  <space> hh iy <space> t aa * <space> t ih <SPACE> b aw <space> T ah N AA th EH n <space> t ih <space> * s 
+HYP:  <space> hh iy <space> t aa L <space> t ih M       b aw <space> K ah M L  th IH n <space> t ih <space> T s 
+Eval:                            I              S                    S    S S     S                         I   
+
+>> REF:  <space> t AA r ih l ay n Z <space> t uw * <space> 
+>> HYP:  <space> t ** r ih l ay n S <space> t uw M <space> 
+>> Eval:           D              S              I         
+
+Correct               =   81.6%   31   ( 89)
+Substitutions         =   15.8%    6   ( 16)
+Deletions             =    2.6%    1   (  9)
+Insertions            =    7.9%    3   (  5)
+
+Errors                =   26.3%   10   ( 30)
+
+Ref. words            =           38   (114)
+Hyp. words            =           40   (110)
+Aligned words         =           41   (119)
+
+-------------------------------------------------------------------------------
+
+id: (fceg0-fceg0_sx168)
+Scores: (#C #S #D #I) 18 7 1 0
+REF:  <space> hh UW <space> t UH <space> DH ih <space> k ay Y ae <space> d AW N dh AH <space> b ay y UW <space> 
+HYP:  <space> hh EY <space> t EH <space> T  ih <space> k ay * ae <space> d AH M dh IH <space> b ay y IH <space> 
+Eval:            S            S          S                  D              S  S    S                 S          
+
+Correct               =   69.2%   18   (107)
+Substitutions         =   26.9%    7   ( 23)
+Deletions             =    3.8%    1   ( 10)
+Insertions            =    0.0%    0   (  5)
+
+Errors                =   30.8%    8   ( 38)
+
+Ref. words            =           26   (140)
+Hyp. words            =           25   (135)
+Aligned words         =           26   (145)
+
+-------------------------------------------------------------------------------
+
+id: (fceg0-fceg0_sx258)
+Scores: (#C #S #D #I) 30 3 3 2
+REF:  <space> dh iy eh s ey ah n <space> d n ay ah <space> b l IY R iy f l eh * <space> K s AA r * V       y UW ey 
+HYP:  <space> dh iy eh s ey ah n <space> d n ay ah <space> b l ** * iy f l eh N <space> T s ** r M <SPACE> y IY ey 
+Eval:                                                          D  D           I         S   D    I S         S     
+
+>> REF:  <space> b l iy <space> 
+>> HYP:  <space> b l iy <space> 
+>> Eval:                        
+
+Correct               =   83.3%   30   (137)
+Substitutions         =    8.3%    3   ( 26)
+Deletions             =    8.3%    3   ( 13)
+Insertions            =    5.6%    2   (  7)
+
+Errors                =   22.2%    8   ( 46)
+
+Ref. words            =           36   (176)
+Hyp. words            =           35   (170)
+Aligned words         =           38   (183)
+
+-------------------------------------------------------------------------------
+
+id: (fceg0-fceg0_sx348)
+Scores: (#C #S #D #I) 33 10 3 2
+REF:  <space> AA l hh ae V IH s <space> K uw <space> p AH V       dh ae <space> * ih <space> G z AA DX ih <space> p * 
+HYP:  <space> HH l hh ae * N  s <space> T uw <space> p IH <SPACE> dh ae <space> K ih <space> D z ** AY ih <space> p R 
+Eval:         S          D S            S              S  S                     I            S   D  S               I 
+
+>> REF:  er <space> P l ih n <space> t er <space> K OY sh er <space> b ih <SPACE> <space> 
+>> HYP:  er <space> K l ih n <space> t er <space> P EY sh er <space> b ih ******* <space> 
+>> Eval:            S                             S S                     D               
+
+Correct               =   71.7%   33   (170)
+Substitutions         =   21.7%   10   ( 36)
+Deletions             =    6.5%    3   ( 16)
+Insertions            =    4.3%    2   (  9)
+
+Errors                =   32.6%   15   ( 61)
+
+Ref. words            =           46   (222)
+Hyp. words            =           45   (215)
+Aligned words         =           48   (231)
+
+-------------------------------------------------------------------------------
+
+id: (fceg0-fceg0_sx438)
+Scores: (#C #S #D #I) 33 11 6 5
+REF:  <space> ** sh EH l sh aa <space> k ** AA z <space> b AY sh r AE <space> * n AH l ih s ah m <space> t * ay M Z 
+HYP:  <space> CH sh ** l sh aa <space> k AY L  z <space> b EY sh r ** <space> M n ** l ih s ah m <space> t P ay N S 
+Eval:         I     D                    I  S              S       D          I   D                        I    S S 
+
+>> REF:  <space> K Y ER <space> TH R UW <space> g R uw ** <space> P TH eh er <space> P iy <space> 
+>> HYP:  <space> T R IH <space> ** T ER <space> g * uw IH <space> * T  eh er <space> K iy <space> 
+>> Eval:         S S S          D  S S            D    I          D S                S            
+
+Correct               =   66.0%   33   (203)
+Substitutions         =   22.0%   11   ( 47)
+Deletions             =   12.0%    6   ( 22)
+Insertions            =   10.0%    5   ( 14)
+
+Errors                =   44.0%   22   ( 83)
+
+Ref. words            =           50   (272)
+Hyp. words            =           49   (264)
+Aligned words         =           55   (286)
+
+-------------------------------------------------------------------------------
+
+id: (fceg0-fceg0_sx78)
+Scores: (#C #S #D #I) 23 5 3 0
+REF:  <space> D aa <space> t er Z <space> p er s <space> K R ay <space> D R ah <space> G Z <space> t ih f r iy l iy <space> 
+HYP:  <space> * aa <space> t er S <space> p er s <space> * P ay <space> * P ah <space> T S <space> t ih f r iy l iy <space> 
+Eval:         D                 S                        D S            D S            S S                                  
+
+Correct               =   74.2%   23   (226)
+Substitutions         =   16.1%    5   ( 52)
+Deletions             =    9.7%    3   ( 25)
+Insertions            =    0.0%    0   ( 14)
+
+Errors                =   25.8%    8   ( 91)
+
+Ref. words            =           31   (303)
+Hyp. words            =           28   (292)
+Aligned words         =           31   (317)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcjf0
+id: (fcjf0-fcjf0_si1027)
+Scores: (#C #S #D #I) 31 7 5 1
+REF:  <space> iy V ih n eh n ******* ih F sh IH <space> t UH <space> K w AH n s <space> t ih <space> f OW W ih <space> 
+HYP:  <space> iy * ih n eh n <SPACE> ih * sh ** <space> t IH <space> P w AY n s <space> t ih <space> f L  L ih <space> 
+Eval:            D           I          D    D            S          S   S                             S  S            
+
+>> REF:  D HH iy <space> k ih <space> K ae <space> ch <SPACE> er <space> 
+>> HYP:  * K  iy <space> k ih <space> T ae <space> ch ******* er <space> 
+>> Eval: D S                          S               D                  
+
+Correct               =   72.1%   31   ( 31)
+Substitutions         =   16.3%    7   (  7)
+Deletions             =   11.6%    5   (  5)
+Insertions            =    2.3%    1   (  1)
+
+Errors                =   30.2%   13   ( 13)
+
+Ref. words            =           43   ( 43)
+Hyp. words            =           39   ( 39)
+Aligned words         =           44   ( 44)
+
+-------------------------------------------------------------------------------
+
+id: (fcjf0-fcjf0_si1657)
+Scores: (#C #S #D #I) 23 12 2 2
+REF:  <space> AA R  <space> B aa r AH s m * AH n ih f m s ah W AH n EH NG <space> g ow HH ow M <space> b ** AY <space> 
+HYP:  <space> W  AH <space> P aa r ** s m L AY n ih f m s ah L M  n IH N  <space> g ow L  ow * <space> b AH IH <space> 
+Eval:         S  S          S      D      I S                S S    S  S               S     D           I  S          
+
+>> REF:  b AH <space> TH <space> 
+>> HYP:  b L  <space> S  <space> 
+>> Eval:   S          S          
+
+Correct               =   62.2%   23   ( 54)
+Substitutions         =   32.4%   12   ( 19)
+Deletions             =    5.4%    2   (  7)
+Insertions            =    5.4%    2   (  3)
+
+Errors                =   43.2%   16   ( 29)
+
+Ref. words            =           37   ( 80)
+Hyp. words            =           37   ( 76)
+Aligned words         =           39   ( 83)
+
+-------------------------------------------------------------------------------
+
+id: (fcjf0-fcjf0_si648)
+Scores: (#C #S #D #I) 38 7 7 4
+REF:  <space> AH S ey ** l V OW m ey HH ae V ah <space> b * OW n ih n hh er ** <space> t iy DH W ah N m ih n IH ih n * 
+HYP:  <space> ** F ey IH l * ** m ey N  ae M ah <space> b L M  n ih n hh er IH <space> t iy V  L ah * m ih n ** ih n M 
+Eval:         D  S    I    D D       S     S              I S               I               S  S    D        D       I 
+
+>> REF:  l ay <space> B AH <space> k aa m DH ih n eh <space> s <space> t <space> 
+>> HYP:  l ay <space> * T  <space> k aa m ** ih n eh <space> s <space> t <space> 
+>> Eval:              D S                 D                                      
+
+Correct               =   73.1%   38   ( 92)
+Substitutions         =   13.5%    7   ( 26)
+Deletions             =   13.5%    7   ( 14)
+Insertions            =    7.7%    4   (  7)
+
+Errors                =   34.6%   18   ( 47)
+
+Ref. words            =           52   (132)
+Hyp. words            =           49   (125)
+Aligned words         =           56   (139)
+
+-------------------------------------------------------------------------------
+
+id: (fcjf0-fcjf0_sx127)
+Scores: (#C #S #D #I) 22 0 2 0
+REF:  <space> dh iy eh m <space> p r ih HH ae DX ih m iy n <space> t eh m <space> p er <space> 
+HYP:  <space> dh iy eh m <space> p r ih ** ae ** ih m iy n <space> t eh m <space> p er <space> 
+Eval:                                   D     D                                                
+
+Correct               =   91.7%   22   (114)
+Substitutions         =    0.0%    0   ( 26)
+Deletions             =    8.3%    2   ( 16)
+Insertions            =    0.0%    0   (  7)
+
+Errors                =    8.3%    2   ( 49)
+
+Ref. words            =           24   (156)
+Hyp. words            =           22   (147)
+Aligned words         =           24   (163)
+
+-------------------------------------------------------------------------------
+
+id: (fcjf0-fcjf0_sx217)
+Scores: (#C #S #D #I) 18 4 1 1
+REF:  <space> hh AW <space> p er m IH n eh n ** AA      dh eh r eh <space> k ih <space> D Z <space> 
+HYP:  <space> hh AA <space> p er m ** n eh n AW <SPACE> dh eh r eh <space> k ih <space> T S <space> 
+Eval:            S                 D         I  S                                       S S         
+
+Correct               =   78.3%   18   (132)
+Substitutions         =   17.4%    4   ( 30)
+Deletions             =    4.3%    1   ( 17)
+Insertions            =    4.3%    1   (  8)
+
+Errors                =   26.1%    6   ( 55)
+
+Ref. words            =           23   (179)
+Hyp. words            =           23   (170)
+Aligned words         =           24   (187)
+
+-------------------------------------------------------------------------------
+
+id: (fcjf0-fcjf0_sx307)
+Scores: (#C #S #D #I) 16 2 3 1
+REF:  <space> DH ih m iy DX iy NG ih z <space> n ** AW ih <space> jh ER n <space> d <space> 
+HYP:  <space> ** ih m iy ** iy N  ih z <space> n AA L  ih <space> jh ** n <space> d <space> 
+Eval:         D          D     S                 I  S                D                      
+
+Correct               =   76.2%   16   (148)
+Substitutions         =    9.5%    2   ( 32)
+Deletions             =   14.3%    3   ( 20)
+Insertions            =    4.8%    1   (  9)
+
+Errors                =   28.6%    6   ( 61)
+
+Ref. words            =           21   (200)
+Hyp. words            =           19   (189)
+Aligned words         =           22   (209)
+
+-------------------------------------------------------------------------------
+
+id: (fcjf0-fcjf0_sx37)
+Scores: (#C #S #D #I) 31 4 6 1
+REF:  <space> K r IH dx ih <space> k l AH <space> k w ih M ih n iy ** <space> D Z <space> p R aa <space> p ER m ey n 
+HYP:  <space> P r EY dx ih <space> k l ** <space> k w ih * ih n iy IH <space> * T <space> p * aa <space> p R  m ey n 
+Eval:         S   S                    D                 D         I          D S           D              S         
+
+>> REF:  <space> t IH N ih n <space> t s <space> 
+>> HYP:  <space> t ** * ih n <space> t s <space> 
+>> Eval:           D  D                          
+
+Correct               =   75.6%   31   (179)
+Substitutions         =    9.8%    4   ( 36)
+Deletions             =   14.6%    6   ( 26)
+Insertions            =    2.4%    1   ( 10)
+
+Errors                =   26.8%   11   ( 72)
+
+Ref. words            =           41   (241)
+Hyp. words            =           36   (225)
+Aligned words         =           42   (251)
+
+-------------------------------------------------------------------------------
+
+id: (fcjf0-fcjf0_sx397)
+Scores: (#C #S #D #I) 27 2 3 1
+REF:  <space> t ih m <space> t ey <space> ** sh iy l ih <space> T s ih m UW V ih Z <space> t w ay s AH w iy <space> k <space> 
+HYP:  <space> t ih m <space> t ey <space> CH sh iy l ih <space> * s ih m ** L ih S <space> t w ay s ** w iy <space> k <space> 
+Eval:                                     I                     D        D  S    S                  D                         
+
+Correct               =   84.4%   27   (206)
+Substitutions         =    6.3%    2   ( 38)
+Deletions             =    9.4%    3   ( 29)
+Insertions            =    3.1%    1   ( 11)
+
+Errors                =   18.8%    6   ( 78)
+
+Ref. words            =           32   (273)
+Hyp. words            =           30   (255)
+Aligned words         =           33   (284)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcjs0
+id: (fcjs0-fcjs0_si1607)
+Scores: (#C #S #D #I) 17 3 3 0
+REF:  <space> hh iy <space> t r AE V  l DX aa l OW v ih dh AH w er l <space> D <space> 
+HYP:  <space> hh iy <space> t r ** AY l ** aa l ** v ih dh IH w er l <space> T <space> 
+Eval:                           D  S    D       D          S                 S         
+
+Correct               =   73.9%   17   ( 17)
+Substitutions         =   13.0%    3   (  3)
+Deletions             =   13.0%    3   (  3)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   26.1%    6   (  6)
+
+Ref. words            =           23   ( 23)
+Hyp. words            =           20   ( 20)
+Aligned words         =           23   ( 23)
+
+-------------------------------------------------------------------------------
+
+id: (fcjs0-fcjs0_si2237)
+Scores: (#C #S #D #I) 14 3 1 0
+REF:  <space> b ey s <space> B AA l Z <space> N ow s ih n <space> ch <space> 
+HYP:  <space> b ey s <space> * P  l S <space> M ow s ih n <space> ch <space> 
+Eval:                        D S    S         S                              
+
+Correct               =   77.8%   14   ( 31)
+Substitutions         =   16.7%    3   (  6)
+Deletions             =    5.6%    1   (  4)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   22.2%    4   ( 10)
+
+Ref. words            =           18   ( 41)
+Hyp. words            =           17   ( 37)
+Aligned words         =           18   ( 41)
+
+-------------------------------------------------------------------------------
+
+id: (fcjs0-fcjs0_si977)
+Scores: (#C #S #D #I) 30 3 2 3
+REF:  <space> * n eh <space> k s <space> t HH iy ih <space> d r eh s <space> t HH ih m ******* s eh l ******* F 
+HYP:  <space> M n eh <space> k s <space> t ** iy ih <space> d r eh s <space> t ** ih m <SPACE> s eh l <SPACE> S 
+Eval:         I                            D                                   D       I              I       S 
+
+>> REF:  <space> t UW aa r s ow l Z <space> 
+>> HYP:  <space> t R  aa r s ow l S <space> 
+>> Eval:           S              S         
+
+Correct               =   85.7%   30   ( 61)
+Substitutions         =    8.6%    3   (  9)
+Deletions             =    5.7%    2   (  6)
+Insertions            =    8.6%    3   (  3)
+
+Errors                =   22.9%    8   ( 18)
+
+Ref. words            =           35   ( 76)
+Hyp. words            =           36   ( 73)
+Aligned words         =           38   ( 79)
+
+-------------------------------------------------------------------------------
+
+id: (fcjs0-fcjs0_sx167)
+Scores: (#C #S #D #I) 43 6 4 5
+REF:  <space> ** EH m <space> p l OY iy l ey aa * f s <space> k ow * ah N s ay dx ih <space> D w ih TH ih <space> k ah 
+HYP:  <space> DH IH m <space> p l EY iy l ey aa L f s <space> k ow L ah M s ay dx ih <space> G w ih DH ih <space> k ah 
+Eval:         I  S                S             I                  I    S                    S      S                  
+
+>> REF:  m <space> p ih N  iy z * r iy ** aa r <SPACE> g IH N ih z ey sh ih N <space> 
+>> HYP:  m <space> p ih EY iy z F r iy EH aa r ******* g ** * ih z ey sh ih * <space> 
+>> Eval:                S       I      I       D         D  D               D         
+
+Correct               =   81.1%   43   (104)
+Substitutions         =   11.3%    6   ( 15)
+Deletions             =    7.5%    4   ( 10)
+Insertions            =    9.4%    5   (  8)
+
+Errors                =   28.3%   15   ( 33)
+
+Ref. words            =           53   (129)
+Hyp. words            =           54   (127)
+Aligned words         =           58   (137)
+
+-------------------------------------------------------------------------------
+
+id: (fcjs0-fcjs0_sx257)
+Scores: (#C #S #D #I) 20 3 2 1
+REF:  <space> w iy er OW <space> p ah n eh v r IY m ah n <space> d iy ** iy V N ih NG <space> 
+HYP:  <space> w iy er L  <space> p ah n eh v r IH m ah n <space> d iy DX iy * * ih N  <space> 
+Eval:                 S                        S                      I     D D    S          
+
+Correct               =   80.0%   20   (124)
+Substitutions         =   12.0%    3   ( 18)
+Deletions             =    8.0%    2   ( 12)
+Insertions            =    4.0%    1   (  9)
+
+Errors                =   24.0%    6   ( 39)
+
+Ref. words            =           25   (154)
+Hyp. words            =           24   (151)
+Aligned words         =           26   (163)
+
+-------------------------------------------------------------------------------
+
+id: (fcjs0-fcjs0_sx347)
+Scores: (#C #S #D #I) 46 8 5 6
+REF:  <space> dh ih <space> p ey sh ih N       d ih n DH ah s * er <space> jh ih n * er <space> b * OW th r IY <space> 
+HYP:  <space> dh ih <space> p ey sh ih <SPACE> d ih n ** ah s R er <space> jh ih n R er <space> b L F  th r IH <space> 
+Eval:                                  S              D       I                    I              I S       S          
+
+>> REF:  k * UW <space> p ER ey dx ih ng ******* F r ah m DH AH l eh NG <space> k TH iy aa <space> p er * ey sh AH N <space> 
+>> HYP:  k P IH <space> p R  ey dx ih ng <SPACE> T r ah m ** ** l eh ** <space> k ** iy aa <space> p er R ey sh IH M <space> 
+>> Eval:   I S            S              I       S        D  D       D            D                     I       S  S         
+
+Correct               =   78.0%   46   (170)
+Substitutions         =   13.6%    8   ( 26)
+Deletions             =    8.5%    5   ( 17)
+Insertions            =   10.2%    6   ( 15)
+
+Errors                =   32.2%   19   ( 58)
+
+Ref. words            =           59   (213)
+Hyp. words            =           60   (211)
+Aligned words         =           65   (228)
+
+-------------------------------------------------------------------------------
+
+id: (fcjs0-fcjs0_sx437)
+Scores: (#C #S #D #I) 38 10 3 2
+REF:  <space> dh ey y UW z <space> D ih N IH <space> G r eh s ih V <space> p AH l iy s <space> m ah n <space> t ** AH 
+HYP:  <space> dh ey y IY z <space> T ih M EH <space> V r eh s ih * <space> p ** l iy s <space> m ah n <space> t IH S  
+Eval:                 S            S    S S          S           D           D                                  I  S  
+
+>> REF:  f l ay <space> G TH AA l AH s <space> m * ow DX er ih s <space> s <space> 
+>> HYP:  f l ay <space> * K  S  l L  s <space> m L ow G  er ih s <space> s <space> 
+>> Eval:                D S  S    S              I    S                            
+
+Correct               =   74.5%   38   (208)
+Substitutions         =   19.6%   10   ( 36)
+Deletions             =    5.9%    3   ( 20)
+Insertions            =    3.9%    2   ( 17)
+
+Errors                =   29.4%   15   ( 73)
+
+Ref. words            =           51   (264)
+Hyp. words            =           50   (261)
+Aligned words         =           53   (281)
+
+-------------------------------------------------------------------------------
+
+id: (fcjs0-fcjs0_sx77)
+Scores: (#C #S #D #I) 32 5 7 1
+REF:  <space> B ae <space> p ay <space> P s ah N <space> b aa NG <space> g ow * z er m Y UW z ih <space> k AH l IH N  
+HYP:  <space> * ae <space> p ay <space> T s ah M <space> b aa ** <space> g ow L z er m * IY z ih <space> k ** l ** EH 
+Eval:         D                         S      S              D               I        D S                 D    D  S  
+
+>> REF:  <space> s <space> t R IH m ah N <space> t s <space> 
+>> HYP:  <space> s <space> t * ER m ah * <space> t s <space> 
+>> Eval:                     D S       D                     
+
+Correct               =   72.7%   32   (240)
+Substitutions         =   11.4%    5   ( 41)
+Deletions             =   15.9%    7   ( 27)
+Insertions            =    2.3%    1   ( 18)
+
+Errors                =   29.5%   13   ( 86)
+
+Ref. words            =           44   (308)
+Hyp. words            =           38   (299)
+Aligned words         =           45   (326)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcke0
+id: (fcke0-fcke0_si1111)
+Scores: (#C #S #D #I) 13 2 0 1
+REF:  <space> hh AH dx ** UW w iy <space> d ih f ay n ih <space> 
+HYP:  <space> hh AY dx IH M  w iy <space> d ih f ay n ih <space> 
+Eval:            S     I  S                                      
+
+Correct               =   86.7%   13   ( 13)
+Substitutions         =   13.3%    2   (  2)
+Deletions             =    0.0%    0   (  0)
+Insertions            =    6.7%    1   (  1)
+
+Errors                =   20.0%    3   (  3)
+
+Ref. words            =           15   ( 15)
+Hyp. words            =           16   ( 16)
+Aligned words         =           16   ( 16)
+
+-------------------------------------------------------------------------------
+
+id: (fcke0-fcke0_si1741)
+Scores: (#C #S #D #I) 37 14 6 4
+REF:  <space> ** sh UW aa W iy z <space> D ih <space> b iy f * aa er <space> ih N sh ** OW <space> DH IY AH M OW s 
+HYP:  <space> CH sh ** aa R iy z <space> T ih <space> b iy f L aa er <space> ih * sh EH IH <space> D  EH V  R IH s 
+Eval:         I     D     S              S                   I                  D    I  S          S  S  S  S S    
+
+>> REF:  <space> k aa N f IH DX ih n s ih N w AH DX eh ******* v er w iy ih <space> D V  ay Z <space> D <space> 
+>> HYP:  <space> k aa * f ** ** ih n s ih M w ** EY eh <SPACE> v er w iy ih <space> K AY ay S <space> T <space> 
+>> Eval:              D   D  D            S   D  S     I                            S S     S         S         
+
+Correct               =   64.9%   37   ( 50)
+Substitutions         =   24.6%   14   ( 16)
+Deletions             =   10.5%    6   (  6)
+Insertions            =    7.0%    4   (  5)
+
+Errors                =   42.1%   24   ( 27)
+
+Ref. words            =           57   ( 72)
+Hyp. words            =           55   ( 71)
+Aligned words         =           61   ( 77)
+
+-------------------------------------------------------------------------------
+
+id: (fcke0-fcke0_si481)
+Scores: (#C #S #D #I) 39 11 7 1
+REF:  <space> dh ih s <space> HH iy AE DX ih <space> b r AA DX AH <space> b AW <space> p EH DX iy <space> JH eh l AH s 
+HYP:  <space> dh ih s <space> IH iy ** N  ih <space> b r ** AY IH <space> b AY <space> p AE N  iy <space> T  eh l ** s 
+Eval:                         S     D  S                 D  S  S            S            S  S             S       D    
+
+>> REF:  iy z ih N <space> p eh DX iy <space> p er s ******* n AH L <space> G r iy V ih n s ih Z <space> 
+>> HYP:  iy z ih * <space> p eh ** iy <space> p er s <SPACE> n ** R <space> P r iy * ih n s ih S <space> 
+>> Eval:         D              D                    I         D  S         S      D           S         
+
+Correct               =   68.4%   39   ( 89)
+Substitutions         =   19.3%   11   ( 27)
+Deletions             =   12.3%    7   ( 13)
+Insertions            =    1.8%    1   (  6)
+
+Errors                =   33.3%   19   ( 46)
+
+Ref. words            =           57   (129)
+Hyp. words            =           51   (122)
+Aligned words         =           58   (135)
+
+-------------------------------------------------------------------------------
+
+id: (fcke0-fcke0_sx121)
+Scores: (#C #S #D #I) 35 3 1 4
+REF:  <space> t r eh s <space> p ae s ih NG ih Z f * er <space> b ** ih DX n * ih n s ah <space> JH ih <space> t ih 
+HYP:  <space> t r eh s <space> p ae s ih N  ih S f R er <space> b EY ih ** n M ih n s ah <space> T  ih <space> t ih 
+Eval:                                    S     S   I              I     D    I                   S                  
+
+>> REF:  <space> p ** eh n l <space> t iy <space> 
+>> HYP:  <space> p AE eh n l <space> t iy <space> 
+>> Eval:           I                              
+
+Correct               =   89.7%   35   (124)
+Substitutions         =    7.7%    3   ( 30)
+Deletions             =    2.6%    1   ( 14)
+Insertions            =   10.3%    4   ( 10)
+
+Errors                =   20.5%    8   ( 54)
+
+Ref. words            =           39   (168)
+Hyp. words            =           42   (164)
+Aligned words         =           43   (178)
+
+-------------------------------------------------------------------------------
+
+id: (fcke0-fcke0_sx211)
+Scores: (#C #S #D #I) 29 5 2 0
+REF:  <space> OW N  l ih DH      ih <space> b eh s <space> p l ey er z ih n <space> JH OY <space> p aa <space> p Y ih 
+HYP:  <space> ** AH l ih <SPACE> ih <space> b eh s <space> p l ey er z ih n <space> T  R  <space> p aa <space> p * ih 
+Eval:         D  S       S                                                          S  S                         D    
+
+>> REF:  l eh er <space> T iy <space> 
+>> HYP:  l eh er <space> K iy <space> 
+>> Eval:                 S            
+
+Correct               =   80.6%   29   (153)
+Substitutions         =   13.9%    5   ( 35)
+Deletions             =    5.6%    2   ( 16)
+Insertions            =    0.0%    0   ( 10)
+
+Errors                =   19.4%    7   ( 61)
+
+Ref. words            =           36   (204)
+Hyp. words            =           34   (198)
+Aligned words         =           36   (214)
+
+-------------------------------------------------------------------------------
+
+id: (fcke0-fcke0_sx301)
+Scores: (#C #S #D #I) 27 5 3 1
+REF:  <space> w * iy L ay <space> b L UW <space> ch iy z <SPACE> ih <space> V ih <space> t er <space> p er f er s W ih 
+HYP:  <space> w R iy N ay <space> b * IH <space> ch iy z ******* ih <space> K ih <space> t er <space> p er f er s * ih 
+Eval:           I    S              D S                  D                  S                                     D    
+
+>> REF:  s <space> CH iy Z <space> 
+>> HYP:  s <space> T  iy S <space> 
+>> Eval:           S     S         
+
+Correct               =   77.1%   27   (180)
+Substitutions         =   14.3%    5   ( 40)
+Deletions             =    8.6%    3   ( 19)
+Insertions            =    2.9%    1   ( 11)
+
+Errors                =   25.7%    9   ( 70)
+
+Ref. words            =           35   (239)
+Hyp. words            =           33   (231)
+Aligned words         =           36   (250)
+
+-------------------------------------------------------------------------------
+
+id: (fcke0-fcke0_sx31)
+Scores: (#C #S #D #I) 20 2 4 0
+REF:  <space> EY <space> g UH DX ae dx ih <space> t uw DX IH z ah n <space> b iy DX ih <space> b l <space> 
+HYP:  <space> IH <space> g ** IH ae dx ih <space> t uw ** ** z ah n <space> b iy ** ih <space> b l <space> 
+Eval:         S            D  S                        D  D                      D                         
+
+Correct               =   76.9%   20   (200)
+Substitutions         =    7.7%    2   ( 42)
+Deletions             =   15.4%    4   ( 23)
+Insertions            =    0.0%    0   ( 11)
+
+Errors                =   23.1%    6   ( 76)
+
+Ref. words            =           26   (265)
+Hyp. words            =           22   (253)
+Aligned words         =           26   (276)
+
+-------------------------------------------------------------------------------
+
+id: (fcke0-fcke0_sx391)
+Scores: (#C #S #D #I) 13 5 2 1
+REF:  <space> dh ey AA l ay <space> k l aa * NG      HH AA <space> T  sh AW er Z <space> 
+HYP:  <space> dh ey ** l ay <space> k l aa N <SPACE> P  AY <space> CH sh ** er S <space> 
+Eval:               D                      I S       S  S          S     D     S         
+
+Correct               =   65.0%   13   (213)
+Substitutions         =   25.0%    5   ( 47)
+Deletions             =   10.0%    2   ( 25)
+Insertions            =    5.0%    1   ( 12)
+
+Errors                =   40.0%    8   ( 84)
+
+Ref. words            =           20   (285)
+Hyp. words            =           19   (272)
+Aligned words         =           21   (297)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fclt0
+id: (fclt0-fclt0_si1438)
+Scores: (#C #S #D #I) 29 4 4 0
+REF:  <space> dh iy Z AA l W ih Z <space> K ih n <space> t ey N m ih <space> t ae l ih <space> k ih ng <space> k l OW 
+HYP:  <space> dh iy * S  l * ih S <space> T ih n <space> t ey * m ih <space> t ae l ih <space> k ih ng <space> k l ** 
+Eval:               D S    D    S         S                   D                                                    D  
+
+>> REF:  sh ih n Z <space> 
+>> HYP:  sh ih n S <space> 
+>> Eval:         S         
+
+Correct               =   78.4%   29   ( 29)
+Substitutions         =   10.8%    4   (  4)
+Deletions             =   10.8%    4   (  4)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   21.6%    8   (  8)
+
+Ref. words            =           37   ( 37)
+Hyp. words            =           33   ( 33)
+Aligned words         =           37   ( 37)
+
+-------------------------------------------------------------------------------
+
+id: (fclt0-fclt0_si2068)
+Scores: (#C #S #D #I) 11 3 1 0
+REF:  <space> w IY <space> D OW n OW dh ih s <space> g ay <space> 
+HYP:  <space> w EY <space> K AH n ** dh ih s <space> g ay <space> 
+Eval:           S          S S    D                               
+
+Correct               =   73.3%   11   ( 40)
+Substitutions         =   20.0%    3   (  7)
+Deletions             =    6.7%    1   (  5)
+Insertions            =    0.0%    0   (  0)
+
+Errors                =   26.7%    4   ( 12)
+
+Ref. words            =           15   ( 52)
+Hyp. words            =           14   ( 47)
+Aligned words         =           15   ( 52)
+
+-------------------------------------------------------------------------------
+
+id: (fclt0-fclt0_si808)
+Scores: (#C #S #D #I) 40 9 7 1
+REF:  <space> ah s ay <space> m ey AA l s UH <space> b iy ih <space> t r ** ae <space> t ih V <space> JH UH s TH R  
+HYP:  <space> ah s ay <space> m ey ** l s AH <space> b iy ih <space> t r AY ae <space> t ih * <space> T  IH s T  IH 
+Eval:                              D      S                              I                  D         S  S    S  S  
+
+>> REF:  UW      DH ih <space> b Y UW dx iy ih V ih <SPACE> s <space> t r iy z N  sh r AH <space> B s <space> 
+>> HYP:  <SPACE> B  ih <space> b * IY dx iy ih * ih ******* s <space> t r iy z IH sh r ** <space> * s <space> 
+>> Eval: S       S               D S           D    D                          S       D          D           
+
+Correct               =   71.4%   40   ( 80)
+Substitutions         =   16.1%    9   ( 16)
+Deletions             =   12.5%    7   ( 12)
+Insertions            =    1.8%    1   (  1)
+
+Errors                =   30.4%   17   ( 29)
+
+Ref. words            =           56   (108)
+Hyp. words            =           50   ( 97)
+Aligned words         =           57   (109)
+
+-------------------------------------------------------------------------------
+
+id: (fclt0-fclt0_sx178)
+Scores: (#C #S #D #I) 27 17 4 0
+REF:  <space> sh iy IH NG <space> k ER IH JH <space> D HH er <space> ch IH L  <SPACE> AH N  <space> t AH m ey <space> 
+HYP:  <space> sh iy EH N  <space> k R  EY SH <space> * T  er <space> ch T  UW OW      M  IH <space> t ** m ey <space> 
+Eval:               S  S            S  S  S          D S                S  S  S       S  S            D               
+
+>> REF:  DH ER OW n hh AE l AH w ih ng <space> k AA s <space> t UW m Z <space> 
+>> HYP:  P  R  M  n hh ** l ** w ih ng <space> k AY s <space> t ER m S <space> 
+>> Eval: S  S  S       D    D                    S              S    S         
+
+Correct               =   56.3%   27   (107)
+Substitutions         =   35.4%   17   ( 33)
+Deletions             =    8.3%    4   ( 16)
+Insertions            =    0.0%    0   (  1)
+
+Errors                =   43.8%   21   ( 50)
+
+Ref. words            =           48   (156)
+Hyp. words            =           44   (141)
+Aligned words         =           48   (157)
+
+-------------------------------------------------------------------------------
+
+id: (fclt0-fclt0_sx268)
+Scores: (#C #S #D #I) 37 5 0 3
+REF:  <space> dh ih <space> JH aa * * aa <space> p ER ey <space> t s <space> B ay ** y UW z ih NG ae n <space> t ae 
+HYP:  <space> dh ih <space> T  aa L L aa <space> p R  ey <space> t s <space> P ay EY y IH z ih N  ae n <space> t ae 
+Eval:                       S     I I              S                         S    I    S       S                    
+
+>> REF:  <space> ih n ih s <space> t ih <space> m ah s l s <space> 
+>> HYP:  <space> ih n ih s <space> t ih <space> m ah s l s <space> 
+>> Eval:                                                           
+
+Correct               =   88.1%   37   (144)
+Substitutions         =   11.9%    5   ( 38)
+Deletions             =    0.0%    0   ( 16)
+Insertions            =    7.1%    3   (  4)
+
+Errors                =   19.0%    8   ( 58)
+
+Ref. words            =           42   (198)
+Hyp. words            =           45   (186)
+Aligned words         =           45   (202)
+
+-------------------------------------------------------------------------------
+
+id: (fclt0-fclt0_sx358)
+Scores: (#C #S #D #I) 25 2 4 0
+REF:  <space> jh aa r <space> JH s EH l <space> d ah m W aa <space> CH ih z <space> D ey <space> t ay m uw V ih s <space> 
+HYP:  <space> jh aa r <space> ** s ** l <space> d ah m * aa <space> T  ih z <space> T ey <space> t ay m uw * ih s <space> 
+Eval:                         D    D                   D            S               S                      D              
+
+Correct               =   80.6%   25   (169)
+Substitutions         =    6.5%    2   ( 40)
+Deletions             =   12.9%    4   ( 20)
+Insertions            =    0.0%    0   (  4)
+
+Errors                =   19.4%    6   ( 64)
+
+Ref. words            =           31   (229)
+Hyp. words            =           27   (213)
+Aligned words         =           31   (233)
+
+-------------------------------------------------------------------------------
+
+id: (fclt0-fclt0_sx448)
+Scores: (#C #S #D #I) 26 5 1 0
+REF:  <space> s F       IH r er <space> k l <space> g ih f s er <space> D ih f ah <space> k AH l <space> t er r AE 
+HYP:  <space> s <SPACE> EH r er <space> k l <space> g ih f s er <space> T ih f ah <space> k ** l <space> t er r AY 
+Eval:           S       S                                               S                   D                   S  
+
+>> REF:  <space> P <space> 
+>> HYP:  <space> K <space> 
+>> Eval:         S         
+
+Correct               =   81.3%   26   (195)
+Substitutions         =   15.6%    5   ( 45)
+Deletions             =    3.1%    1   ( 21)
+Insertions            =    0.0%    0   (  4)
+
+Errors                =   18.8%    6   ( 70)
+
+Ref. words            =           32   (261)
+Hyp. words            =           31   (244)
+Aligned words         =           32   (265)
+
+-------------------------------------------------------------------------------
+
+id: (fclt0-fclt0_sx88)
+Scores: (#C #S #D #I) 37 8 4 1
+REF:  <space> F l ay IH NG      s <space> t ae m <space> b ay <space> k * ae n <space> b IY <space> p r AE <space> t 
+HYP:  <space> S l ay ** <SPACE> s <space> t ae m <space> b ay <space> k T ae n <space> b IH <space> p r AY <space> t 
+Eval:         S      D  S                                               I                S              S            
+
+>> REF:  ih <space> K AH l AH      F Y  uw w ah n ah s ey V <space> m AH n ih <space> 
+>> HYP:  ih <space> * ** l <SPACE> T IY uw w ah n ah s ey * <space> m AY n ih <space> 
+>> Eval:            D D    S       S S                    D           S               
+
+Correct               =   75.5%   37   (232)
+Substitutions         =   16.3%    8   ( 53)
+Deletions             =    8.2%    4   ( 25)
+Insertions            =    2.0%    1   (  5)
+
+Errors                =   26.5%   13   ( 83)
+
+Ref. words            =           49   (310)
+Hyp. words            =           46   (290)
+Aligned words         =           50   (315)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcmg0
+id: (fcmg0-fcmg0_si1142)
+Scores: (#C #S #D #I) 48 14 3 3
+REF:  <space> r iy s * er <space> ch ih n <space> T  UW s eh V R l <space> k l <space> ch * er ** Z HH ih Z <space> p 
+HYP:  <space> r iy s R er <space> ch ih n <space> CH IH s eh * M l <space> k l <space> ch R er IH S T  ih S <space> p 
+Eval:                I                            S  S       D S                          I    I  S S     S           
+
+>> REF:  r uw V IH n hh er <space> P ih Z ih sh ih n <space> t UW <space> B iy ih m AH s <space> T ey <space> k ih n W 
+>> HYP:  r uw * EH n hh er <space> K ih S ih sh ih n <space> t IH <space> K iy ih m IH s <space> K ey <space> k ih n * 
+>> Eval:      D S                  S    S                      S          S         S            S                   D 
+
+>> REF:  AH n <space> 
+>> HYP:  M  n <space> 
+>> Eval: S            
+
+Correct               =   73.8%   48   ( 48)
+Substitutions         =   21.5%   14   ( 14)
+Deletions             =    4.6%    3   (  3)
+Insertions            =    4.6%    3   (  3)
+
+Errors                =   30.8%   20   ( 20)
+
+Ref. words            =           65   ( 65)
+Hyp. words            =           65   ( 65)
+Aligned words         =           68   ( 68)
+
+-------------------------------------------------------------------------------
+
+id: (fcmg0-fcmg0_si1242)
+Scores: (#C #S #D #I) 27 7 1 0
+REF:  <space> b AH dx ih <space> d ih <space> p r IH N       g UH <space> D V er s ih n <space> g UH <space> D f ih 
+HYP:  <space> b EY dx ih <space> d ih <space> p r EY <SPACE> g IH <space> * P er s ih n <space> g IH <space> K f ih 
+Eval:           S                                 S  S         S          D S                     S          S      
+
+>> REF:  <space> k sh ih n <space> 
+>> HYP:  <space> k sh ih n <space> 
+>> Eval:                           
+
+Correct               =   77.1%   27   ( 75)
+Substitutions         =   20.0%    7   ( 21)
+Deletions             =    2.9%    1   (  4)
+Insertions            =    0.0%    0   (  3)
+
+Errors                =   22.9%    8   ( 28)
+
+Ref. words            =           35   (100)
+Hyp. words            =           34   ( 99)
+Aligned words         =           35   (103)
+
+-------------------------------------------------------------------------------
+
+id: (fcmg0-fcmg0_si1872)
+Scores: (#C #S #D #I) 24 5 4 1
+REF:  <space> HH iy <space> K ih s <space> t HH er AA l s ** OW eh N W ih TH <space> D iy <space> t eh n d er n eh s <space> 
+HYP:  <space> ** iy <space> T ih s <space> t ** er ** l s AH L  eh M R ih ** <space> T iy <space> t eh n d er n eh s <space> 
+Eval:         D             S                D     D      I  S     S S    D          S                                       
+
+Correct               =   72.7%   24   ( 99)
+Substitutions         =   15.2%    5   ( 26)
+Deletions             =   12.1%    4   (  8)
+Insertions            =    3.0%    1   (  4)
+
+Errors                =   30.3%   10   ( 38)
+
+Ref. words            =           33   (133)
+Hyp. words            =           30   (129)
+Aligned words         =           34   (137)
+
+-------------------------------------------------------------------------------
+
+id: (fcmg0-fcmg0_sx162)
+Scores: (#C #S #D #I) 27 5 2 4
+REF:  <space> hh er aa <space> B er n hh eh er r er m * ay n d ih <SPACE> hh ** ih AH m ah * V aa DX AH m l ** iy V  s <space> 
+HYP:  <space> hh er aa <space> P er n hh eh er r er m L ay n d ih ******* hh IY ih ** m ah F L aa N  IH m l EY iy IY s <space> 
+Eval:                          S                      I           D          I     D       I S    S  S      I     S            
+
+Correct               =   79.4%   27   (126)
+Substitutions         =   14.7%    5   ( 31)
+Deletions             =    5.9%    2   ( 10)
+Insertions            =   11.8%    4   (  8)
+
+Errors                =   32.4%   11   ( 49)
+
+Ref. words            =           34   (167)
+Hyp. words            =           36   (165)
+Aligned words         =           38   (175)
+
+-------------------------------------------------------------------------------
+
+id: (fcmg0-fcmg0_sx252)
+Scores: (#C #S #D #I) 26 6 1 0
+REF:  <space> dh ih <space> G aa r <space> jh ih s <space> b AH DX er f l ay ey dx ah l AA DX AH V n eh <space> t er <space> 
+HYP:  <space> dh ih <space> P aa r <space> jh ih s <space> b ** EH er f l ay ey dx ah l AY N  IH Z n eh <space> t er <space> 
+Eval:                       S                                D  S                       S  S  S  S                           
+
+Correct               =   78.8%   26   (152)
+Substitutions         =   18.2%    6   ( 37)
+Deletions             =    3.0%    1   ( 11)
+Insertions            =    0.0%    0   (  8)
+
+Errors                =   21.2%    7   ( 56)
+
+Ref. words            =           33   (200)
+Hyp. words            =           32   (197)
+Aligned words         =           33   (208)
+
+-------------------------------------------------------------------------------
+
+id: (fcmg0-fcmg0_sx342)
+Scores: (#C #S #D #I) 26 8 2 3
+REF:  <space> t ey <space> ch aa r <space> JH ih V <space> ch uw z IY ng * hh er <space> B r ay ** <space> Z <SPACE> m 
+HYP:  <space> t ey <space> ch aa r <space> T  ih * <space> ch uw z IH ng N hh er <space> P r ay EH <space> * T       m 
+Eval:                                      S     D                 S     I               S      I          D S         
+
+>> REF:  ey <space> Z <space> * G  AW n Z <space> 
+>> HYP:  ey <space> S <space> T EY AA n S <space> 
+>> Eval:            S         I S  S    S         
+
+Correct               =   72.2%   26   (178)
+Substitutions         =   22.2%    8   ( 45)
+Deletions             =    5.6%    2   ( 13)
+Insertions            =    8.3%    3   ( 11)
+
+Errors                =   36.1%   13   ( 69)
+
+Ref. words            =           36   (236)
+Hyp. words            =           37   (234)
+Aligned words         =           39   (247)
+
+-------------------------------------------------------------------------------
+
+id: (fcmg0-fcmg0_sx432)
+Scores: (#C #S #D #I) 36 11 4 6
+REF:  <space> k ** AA      f ** iy IH Z <space> g r OW n ** * AA n s <space> t iy <space> * JH ah NG <space> G L l ay 
+HYP:  <space> k AY <SPACE> f HH iy ** S <space> g r L  n AH W AH n s <space> t iy <space> T EH ah M  <space> * * l ay 
+Eval:           I  S         I     D  S             S    I  I S                           I S     S          D D      
+
+>> REF:  <space> k s l OW <space> P s ******* ih n <space> t eh m <space> p ER ih <space> Z OW n Z <space> 
+>> HYP:  <space> k s l ** <space> T s <SPACE> ih n <space> t eh m <space> p R  ih <space> S AA n S <space> 
+>> Eval:               D          S   I                                     S             S S    S         
+
+Correct               =   70.6%   36   (214)
+Substitutions         =   21.6%   11   ( 56)
+Deletions             =    7.8%    4   ( 17)
+Insertions            =   11.8%    6   ( 17)
+
+Errors                =   41.2%   21   ( 90)
+
+Ref. words            =           51   (287)
+Hyp. words            =           53   (287)
+Aligned words         =           57   (304)
+
+-------------------------------------------------------------------------------
+
+id: (fcmg0-fcmg0_sx72)
+Scores: (#C #S #D #I) 21 3 2 0
+REF:  <space> s <space> P r IH NG s <space> t r iy <space> ih s <space> t r ey DX ih hh eh <space> D <space> 
+HYP:  <space> s <space> * r EY N  s <space> t r iy <space> ih s <space> t r ey ** ih hh eh <space> T <space> 
+Eval:                   D   S  S                                               D                   S         
+
+Correct               =   80.8%   21   (235)
+Substitutions         =   11.5%    3   ( 59)
+Deletions             =    7.7%    2   ( 19)
+Insertions            =    0.0%    0   ( 17)
+
+Errors                =   19.2%    5   ( 95)
+
+Ref. words            =           26   (313)
+Hyp. words            =           24   (311)
+Aligned words         =           26   (330)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcmm0
+id: (fcmm0-fcmm0_si1083)
+Scores: (#C #S #D #I) 36 2 1 3
+REF:  <space> dh ih s ih s <space> t AH m w * er <space> k s eh z ih n ih m <space> p * er s <space> N l m ** eh 
+HYP:  <space> dh ih s ih s <space> t IH m w R er <space> k s eh z ih n ih m <space> p R er s <space> M l m AY eh 
+Eval:                                S      I                                         I              S     I     
+
+>> REF:  <space> k ih n ih z AH m <space> 
+>> HYP:  <space> k ih n ih z ** m <space> 
+>> Eval:                     D            
+
+Correct               =   92.3%   36   ( 36)
+Substitutions         =    5.1%    2   (  2)
+Deletions             =    2.6%    1   (  1)
+Insertions            =    7.7%    3   (  3)
+
+Errors                =   15.4%    6   (  6)
+
+Ref. words            =           39   ( 39)
+Hyp. words            =           41   ( 41)
+Aligned words         =           42   ( 42)
+
+-------------------------------------------------------------------------------
+
+id: (fcmm0-fcmm0_si1957)
+Scores: (#C #S #D #I) 40 14 5 3
+REF:  <space> k l AE <space> ih NG s <space> * er Z <space> t ih DH ih <space> B r AA NG <space> k HH IY s ** eh DX aa 
+HYP:  <space> k l AY <space> ih ** s <space> R er S <space> t ih M  ih <space> * r AY N  <space> k ** IH s IH eh N  aa 
+Eval:             S             D            I    S              S             D   S  S            D  S    I     S     
+
+>> REF:  f ih DX IH sh AA r ** <space> k AE n <space> T  er <space> w ih TH <space> G r OW ih NG ah l aa r m <space> 
+>> HYP:  f ih ** IY sh ** r ER <space> k EY n <space> JH er <space> w ih Z  <space> P r L  ih N  ah l aa r m <space> 
+>> Eval:      D  S     D    I            S            S                  S          S   S     S                      
+
+Correct               =   67.8%   40   ( 76)
+Substitutions         =   23.7%   14   ( 16)
+Deletions             =    8.5%    5   (  6)
+Insertions            =    5.1%    3   (  6)
+
+Errors                =   37.3%   22   ( 28)
+
+Ref. words            =           59   ( 98)
+Hyp. words            =           57   ( 98)
+Aligned words         =           62   (104)
+
+-------------------------------------------------------------------------------
+
+id: (fcmm0-fcmm0_si453)
+Scores: (#C #S #D #I) 21 3 4 2
+REF:  <space> eh V r ** iy TH iy * NG w eh N R  ih l s <space> m uw dh ih sh er IH f s eh <SPACE> <space> 
+HYP:  <space> eh * r IH iy T  iy N L  w eh * ER ih l s <space> m uw dh ih sh er ** f s eh ******* <space> 
+Eval:            D   I     S     I S       D S                                  D         D               
+
+Correct               =   75.0%   21   ( 97)
+Substitutions         =   10.7%    3   ( 19)
+Deletions             =   14.3%    4   ( 10)
+Insertions            =    7.1%    2   (  8)
+
+Errors                =   32.1%    9   ( 37)
+
+Ref. words            =           28   (126)
+Hyp. words            =           26   (124)
+Aligned words         =           30   (134)
+
+-------------------------------------------------------------------------------
+
+id: (fcmm0-fcmm0_sx183)
+Scores: (#C #S #D #I) 23 3 2 1
+REF:  <space> w ay eh l <space> s w AH <space> d AE n IY ah l AW AH dh er z <space> t ih <space> g ow * <space> 
+HYP:  <space> w ay eh l <space> s w IH <space> d EY n ** ah l ** L  dh er z <space> t ih <space> g ow L <space> 
+Eval:                               S            S    D       D  S                                    I         
+
+Correct               =   82.1%   23   (120)
+Substitutions         =   10.7%    3   ( 22)
+Deletions             =    7.1%    2   ( 12)
+Insertions            =    3.6%    1   (  9)
+
+Errors                =   21.4%    6   ( 43)
+
+Ref. words            =           28   (154)
+Hyp. words            =           27   (151)
+Aligned words         =           29   (163)
+
+-------------------------------------------------------------------------------
+
+id: (fcmm0-fcmm0_sx273)
+Scores: (#C #S #D #I) 19 9 4 2
+REF:  <space> dh IY AE NG G       r IH <space> b * OY AE n ******* s er <SPACE> <space> b AH <space> d ih <SPACE> n 
+HYP:  <space> dh IH EY N  <SPACE> r ER <space> b L AY EH n <SPACE> s er ******* <space> b IH <space> d ih ******* n 
+Eval:            S  S  S  S         S            I S  S    I            D                 S               D         
+
+>> REF:  <SPACE> l UH <space> k ah <SPACE> <space> 
+>> HYP:  IH      l ** <space> k ah ******* <space> 
+>> Eval: S         D               D               
+
+Correct               =   59.4%   19   (139)
+Substitutions         =   28.1%    9   ( 31)
+Deletions             =   12.5%    4   ( 16)
+Insertions            =    6.3%    2   ( 11)
+
+Errors                =   46.9%   15   ( 58)
+
+Ref. words            =           32   (186)
+Hyp. words            =           30   (181)
+Aligned words         =           34   (197)
+
+-------------------------------------------------------------------------------
+
+id: (fcmm0-fcmm0_sx363)
+Scores: (#C #S #D #I) 27 7 4 0
+REF:  <space> dh AH <space> k AW W aa n er <SPACE> f ER m DH ah f aa r m l AE n ih n <SPACE> b IY <space> K ey m l AA 
+HYP:  <space> dh IH <space> k ** L aa n er ******* f R  m ** ah f aa r m l EY n ih n ******* b IH <space> T ey m l L  
+Eval:            S            D  S         D         S    D                S         D         S          S        S  
+
+>> REF:  s <space> t <space> 
+>> HYP:  s <space> t <space> 
+>> Eval:                     
+
+Correct               =   71.1%   27   (166)
+Substitutions         =   18.4%    7   ( 38)
+Deletions             =   10.5%    4   ( 20)
+Insertions            =    0.0%    0   ( 11)
+
+Errors                =   28.9%   11   ( 69)
+
+Ref. words            =           38   (224)
+Hyp. words            =           34   (215)
+Aligned words         =           38   (235)
+
+-------------------------------------------------------------------------------
+
+id: (fcmm0-fcmm0_sx420)
+Scores: (#C #S #D #I) 33 8 7 4
+REF:  <space> s IY M  <SPACE> s <space> T R ih s * ih z * ih <space> T ae <space> ch Z ih <space> p er Z <space> w AH 
+HYP:  <space> s ** IH N       s <space> * * ih s T ih z S ih <space> K ae <space> ch S ih <space> p er S <space> w ** 
+Eval:           D  S  S                 D D      I      I            S               S                 S           D  
+
+>> REF:  TH ey ** TH ih m <SPACE> l <SPACE> n iy DX l ** ih n <space> TH r eh <space> <space> 
+>> HYP:  IH ey IH F  ih m ******* l ******* n iy ** l EH ih n <space> T  r eh <space> <space> 
+>> Eval: S     I  S       D         D            D    I               S                       
+
+Correct               =   68.8%   33   (199)
+Substitutions         =   16.7%    8   ( 46)
+Deletions             =   14.6%    7   ( 27)
+Insertions            =    8.3%    4   ( 15)
+
+Errors                =   39.6%   19   ( 88)
+
+Ref. words            =           48   (272)
+Hyp. words            =           45   (260)
+Aligned words         =           52   (287)
+
+-------------------------------------------------------------------------------
+
+id: (fcmm0-fcmm0_sx93)
+Scores: (#C #S #D #I) 22 2 2 2
+REF:  <SPACE> <space> k AH DX AH s <space> m * aa l <space> k aa r n er aa * f iy <space> ch eh <space> jh <space> 
+HYP:  ******* <space> k ** EH N  s <space> m L aa l <space> k aa r n er aa L f iy <space> ch eh <space> jh <space> 
+Eval: D                 D  S  S              I                             I                                       
+
+Correct               =   84.6%   22   (221)
+Substitutions         =    7.7%    2   ( 48)
+Deletions             =    7.7%    2   ( 29)
+Insertions            =    7.7%    2   ( 17)
+
+Errors                =   23.1%    6   ( 94)
+
+Ref. words            =           26   (298)
+Hyp. words            =           26   (286)
+Aligned words         =           28   (315)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcrz0
+id: (fcrz0-fcrz0_si1913)
+Scores: (#C #S #D #I) 40 12 5 4
+REF:  <space> dh ih <space> G AH N  m ah * n ** AA <space> d ih <space> D s L ih <space> P ih n ih <space> P IH 
+HYP:  <space> dh ih <space> * ** AE m ah M n AH L  <space> d ih <space> T s * ih <space> K ih n ih <space> K IY 
+Eval:                       D D  S       I   I  S                       S   D            S                 S S  
+
+>> REF:  <space> ch ER ih n <space> T  UW s <space> B r eh s <space> P aa * <space> k ih <space> s ey IH n ** ah TH iy 
+>> HYP:  <space> ch R  ih n <space> JH IH s <space> P r eh s <space> K aa L <space> k ih <space> s ey ** n EH ah V  iy 
+>> Eval:            S               S  S            S                S    I                           D    I     S     
+
+>> REF:  NG <space> 
+>> HYP:  ** <space> 
+>> Eval: D          
+
+Correct               =   70.2%   40   ( 40)
+Substitutions         =   21.1%   12   ( 12)
+Deletions             =    8.8%    5   (  5)
+Insertions            =    7.0%    4   (  4)
+
+Errors                =   36.8%   21   ( 21)
+
+Ref. words            =           57   ( 57)
+Hyp. words            =           56   ( 56)
+Aligned words         =           61   ( 61)
+
+-------------------------------------------------------------------------------
+
+id: (fcrz0-fcrz0_si2053)
+Scores: (#C #S #D #I) 25 8 0 0
+REF:  <space> hh ih s ay Z AH <space> DH ih s ih <space> ch UH W ey sh n ih n <space> ch UH <space> k ih Z HH eh 
+HYP:  <space> hh ih s ay S IH <space> K  ih s ih <space> ch UW L ey sh n ih n <space> ch IH <space> k ih S IH eh 
+Eval:                    S S          S                     S  S                         S               S S     
+
+>> REF:  <space> d <space> 
+>> HYP:  <space> d <space> 
+>> Eval:                   
+
+Correct               =   75.8%   25   ( 65)
+Substitutions         =   24.2%    8   ( 20)
+Deletions             =    0.0%    0   (  5)
+Insertions            =    0.0%    0   (  4)
+
+Errors                =   24.2%    8   ( 29)
+
+Ref. words            =           33   ( 90)
+Hyp. words            =           33   ( 89)
+Aligned words         =           33   ( 94)
+
+-------------------------------------------------------------------------------
+
+id: (fcrz0-fcrz0_si793)
+Scores: (#C #S #D #I) 19 7 1 0
+REF:  <space> ey <space> p UW l ih Z n OW <space> p l ey s f ER IH sh AH <space> t r AE <space> P <space> 
+HYP:  <space> ey <space> p ** l ih S n AH <space> p l ey s f R  EY sh EH <space> t r EH <space> T <space> 
+Eval:                      D       S   S                     S  S     S              S          S         
+
+Correct               =   70.4%   19   ( 84)
+Substitutions         =   25.9%    7   ( 27)
+Deletions             =    3.7%    1   (  6)
+Insertions            =    0.0%    0   (  4)
+
+Errors                =   29.6%    8   ( 37)
+
+Ref. words            =           27   (117)
+Hyp. words            =           26   (115)
+Aligned words         =           27   (121)
+
+-------------------------------------------------------------------------------
+
+id: (fcrz0-fcrz0_sx163)
+Scores: (#C #S #D #I) 28 6 3 1
+REF:  <space> dh EY r ih m ey n l ay f l AA ng f r ** EH n <space> D Z ih NG <space> K ih m <space> p ae n Y ih n 
+HYP:  <space> dh EH r ih m ey n l ay f l ** ng f r EY AE n <space> * S ih M  <space> P ih m <space> p ae n * ih n 
+Eval:            S                       D         I  S            D S    S          S                     D      
+
+>> REF:  <space> Z <space> 
+>> HYP:  <space> S <space> 
+>> Eval:         S         
+
+Correct               =   75.7%   28   (112)
+Substitutions         =   16.2%    6   ( 33)
+Deletions             =    8.1%    3   (  9)
+Insertions            =    2.7%    1   (  5)
+
+Errors                =   27.0%   10   ( 47)
+
+Ref. words            =           37   (154)
+Hyp. words            =           35   (150)
+Aligned words         =           38   (159)
+
+-------------------------------------------------------------------------------
+
+id: (fcrz0-fcrz0_sx253)
+Scores: (#C #S #D #I) 22 4 1 1
+REF:  <space> b ay iy DX iy * NG Y  ow <space> g er <space> y ih m ey L ih v l aa NG <space> g er <space> 
+HYP:  <space> b ay iy ** iy N IY EH ow <space> g er <space> y ih m ey N ih v l aa N  <space> g er <space> 
+Eval:                 D     I S  S                                    S           S                       
+
+Correct               =   81.5%   22   (134)
+Substitutions         =   14.8%    4   ( 37)
+Deletions             =    3.7%    1   ( 10)
+Insertions            =    3.7%    1   (  6)
+
+Errors                =   22.2%    6   ( 53)
+
+Ref. words            =           27   (181)
+Hyp. words            =           27   (177)
+Aligned words         =           28   (187)
+
+-------------------------------------------------------------------------------
+
+id: (fcrz0-fcrz0_sx343)
+Scores: (#C #S #D #I) 31 8 3 0
+REF:  <space> D  ih f r ay n <space> ch AA l <space> D w ih z <space> JH EH l ih s ih <space> D UW <space> b ay HH ih 
+HYP:  <space> DH ih f r ay n <space> ch N  l <space> * w ih z <space> T  IH l ih s ih <space> T EY <space> b ay ** ih 
+Eval:         S                         S            D                S  S                    S S               D     
+
+>> REF:  z <space> b ih <space> B r AH DH er <space> 
+>> HYP:  z <space> b ih <space> * r EH TH er <space> 
+>> Eval:                        D   S  S             
+
+Correct               =   73.8%   31   (165)
+Substitutions         =   19.0%    8   ( 45)
+Deletions             =    7.1%    3   ( 13)
+Insertions            =    0.0%    0   (  6)
+
+Errors                =   26.2%   11   ( 64)
+
+Ref. words            =           42   (223)
+Hyp. words            =           39   (216)
+Aligned words         =           42   (229)
+
+-------------------------------------------------------------------------------
+
+id: (fcrz0-fcrz0_sx433)
+Scores: (#C #S #D #I) 32 6 5 3
+REF:  <space> DH iy ** OW v er w * ey <space> CH AA r M er <space> k ih <space> D s l ih <space> p * OY z n ih N 
+HYP:  <space> ** iy EH AA v er w R ey <space> ** T  r * er <space> k ih <space> K s l ih <space> p L EY z n ih * 
+Eval:         D     I  S         I            D  S    D                         S                  I S         D 
+
+>> REF:  <space> t IH ih n iy W  ah n Z <space> t iy <space> 
+>> HYP:  <space> t ** ih n iy IH ah n S <space> t iy <space> 
+>> Eval:           D          S       S                      
+
+Correct               =   74.4%   32   (197)
+Substitutions         =   14.0%    6   ( 51)
+Deletions             =   11.6%    5   ( 18)
+Insertions            =    7.0%    3   (  9)
+
+Errors                =   32.6%   14   ( 78)
+
+Ref. words            =           43   (266)
+Hyp. words            =           41   (257)
+Aligned words         =           46   (275)
+
+-------------------------------------------------------------------------------
+
+id: (fcrz0-fcrz0_sx73)
+Scores: (#C #S #D #I) 26 5 5 0
+REF:  <space> k l IH F  s <space> D ih s <space> p l ey w ih Z <space> B ih s <space> p L ey s AA n DH s <space> K r 
+HYP:  <space> k l ** EY s <space> T ih s <space> p l ey w ih S <space> * ih s <space> p * ey s AH n ** s <space> * r 
+Eval:             D  S            S                          S         D                D      S    D            D   
+
+>> REF:  IY n <space> 
+>> HYP:  EY n <space> 
+>> Eval: S            
+
+Correct               =   72.2%   26   (223)
+Substitutions         =   13.9%    5   ( 56)
+Deletions             =   13.9%    5   ( 23)
+Insertions            =    0.0%    0   (  9)
+
+Errors                =   27.8%   10   ( 88)
+
+Ref. words            =           36   (302)
+Hyp. words            =           31   (288)
+Aligned words         =           36   (311)
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+
+                     SENTENCE LEVEL REPORT FOR THE SYSTEM:
+    Name: exp/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_seed_five_percent_decode_ctc/hyp.trn
+
+===============================================================================
+
+
+SPEAKER fcyl0
+id: (fcyl0-fcyl0_si1297)
+Scores: (#C #S #D #I) 28 7 0 1
+REF:  <space> eh <space> ih n er v l Z <space> ih n AH n l AH m N ay <space> D r eh <space> t r iy ih Z ih * SH uw 
+HYP:  <space> eh <space> ih n er v l S <space> ih n IH n l N  m L ay <space> P r eh <space> t r iy ih F ih S IY uw 
+Eval:                                S              S      S    S            S                        S    I S     
+
+>> REF:  <space> d <space> 
+>> HYP:  <space> d <space> 
+>> Eval:                   
+
+Correct               =   80.0%   28   ( 28)
+Substitutions         =   20.0%    7   (  7)
+Deletions             =    0.0%    0   (  0)
+Insertions            =    2.9%    1   (  1)
+
+Errors                =   22.9%    8   (  8)
+
+Ref. words            =           35   ( 35)
+Hyp. words            =           36   ( 36)
+Aligned words         =           36   ( 36)
+
+-------------------------------------------------------------------------------
+

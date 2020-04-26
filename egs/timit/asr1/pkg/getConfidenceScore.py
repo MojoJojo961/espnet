@@ -21,7 +21,7 @@ def main(args):
     
     with open(args.plot_dir+'/mergedDataJson.json' ,'r') as f:
         data = (json.load(f))['utts']
-        score_list = [[k, data[k]['output'][0]['score_norm_on_frame']]  for k, v in sorted(data.items())]
+        score_list = [[k, data[k]['output'][0]['score_norm_on_phone']]  for k, v in sorted(data.items())]
         """for key, value in sorted(data.items()):
             tmp = data[key]
             score = tmp['output'][0]['score']

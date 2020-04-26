@@ -27,7 +27,7 @@ decode_config=conf/decode.yaml
 recog_model=model.acc.best # set a model to be used for decoding: 'model.acc.best' or 'model.loss.best'
 
 # data
-timit=/home/sumitc/TIMIT
+timit=/home/sumit/TIMIT
 
 trans_type=phn
 

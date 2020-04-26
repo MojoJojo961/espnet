@@ -27,12 +27,17 @@ decode_config=conf/decode.yaml
 recog_model=model.acc.best # set a model to be used for decoding: 'model.acc.best' or 'model.loss.best'
 
 # data
-timit=/home/sumitc/TIMIT
+timit=/home/sumit/TIMIT
 
 trans_type=phn
 
 # exp tag
 tag="" # tag for managing experiments.
+
+train_set=train_nodev
+train_dev=train_dev
+recog_set="test bulk_two_hour"
+#recog_set=train_nodev
 
 . utils/parse_options.sh || exit 1;
 
@@ -41,11 +46,6 @@ tag="" # tag for managing experiments.
 set -e
 set -u
 set -o pipefail
-
-train_set=train_nodev
-train_dev=train_dev
-recog_set="train_nodev test"
-#recog_set=train_nodev
 
 if [ ${stage} -le -1 ] && [ ${stop_stage} -ge -1 ]; then
     local/timit_data_prep.sh ${timit} ${trans_type} || exit 1
