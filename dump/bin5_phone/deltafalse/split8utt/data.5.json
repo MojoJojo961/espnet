@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MPFU0_SI1888": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.5.ark:2449811",
+                    "name": "input1",
+                    "shape": [
+                        152,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        15,
+                        42
+                    ],
+                    "text": "sil dh r s sil ih ow sil w eh l sil m ah sil",
+                    "token": "<space> dh r s <space> ih ow <space> w eh l <space> m ah <space>",
+                    "tokenid": "2 11 30 31 2 19 27 2 38 13 23 2 24 5 2"
+                }
+            ],
+            "utt2spk": "MPFU0"
+        }
+    }
+}

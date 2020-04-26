@@ -1,0 +1,579 @@
+{
+    "utts": {
+        "FBMJ0_SX336": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:12",
+                    "name": "input1",
+                    "shape": [
+                        475,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        58,
+                        42
+                    ],
+                    "text": "sil r aa sil b sil m ey sil d hh ah ng sil g eh r ih ih n sil g uw l aa sh f ah sil d ih n er sil ih ng sil g uw s sil b eh r ih sil p ay f aa sil d ih z er sil t sil",
+                    "token": "<space> r aa <space> b <space> m ey <space> d hh ah ng <space> g eh r ih ih n <space> g uw l aa sh f ah <space> d ih n er <space> ih ng <space> g uw s <space> b eh r ih <space> p ay f aa <space> d ih z er <space> t <space>",
+                    "tokenid": "2 30 3 2 8 2 24 15 2 10 18 5 26 2 17 13 30 19 19 25 2 17 36 23 3 32 16 5 2 10 19 25 14 2 19 26 2 17 36 31 2 8 13 30 19 2 29 7 16 3 2 10 19 40 14 2 33 2"
+                }
+            ],
+            "utt2spk": "FBMJ0"
+        },
+        "FBMJ0_SX426": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:12603",
+                    "name": "input1",
+                    "shape": [
+                        318,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        35,
+                        42
+                    ],
+                    "text": "sil ah m aa th z ih sil g z ae sil d ah l aa ng dh ah sil p ae th r uw aa t ow z sil aa r dx n sil",
+                    "token": "<space> ah m aa th z ih <space> g z ae <space> d ah l aa ng dh ah <space> p ae th r uw aa t ow z <space> aa r dx n <space>",
+                    "tokenid": "2 5 24 3 34 40 19 2 17 40 4 2 10 5 23 3 26 11 5 2 29 4 34 30 36 3 33 27 40 2 3 30 12 25 2"
+                }
+            ],
+            "utt2spk": "FBMJ0"
+        },
+        "FBMJ0_SX66": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:21111",
+                    "name": "input1",
+                    "shape": [
+                        279,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        37,
+                        42
+                    ],
+                    "text": "sil w iy sil g aa sil sil d r eh n sil ch sil t f r ah m dh ih ah n ih n ih r ah sil t ih sil r ey n sil",
+                    "token": "<space> w iy <space> g aa <space> <space> d r eh n <space> ch <space> t f r ah m dh ih ah n ih n ih r ah <space> t ih <space> r ey n <space>",
+                    "tokenid": "2 38 20 2 17 3 2 2 10 30 13 25 2 9 2 33 16 30 5 24 11 19 5 25 19 25 19 30 5 2 33 19 2 30 15 25 2"
+                }
+            ],
+            "utt2spk": "FBMJ0"
+        },
+        "FCAG0_SI1503": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:28607",
+                    "name": "input1",
+                    "shape": [
+                        227,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        32,
+                        42
+                    ],
+                    "text": "sil b aa dh ah l uh sil k ah v ih m hh ih w ah z ih n sil dh ae sil f aa r sil g aa n sil",
+                    "token": "<space> b aa dh ah l uh <space> k ah v ih m hh ih w ah z ih n <space> dh ae <space> f aa r <space> g aa n <space>",
+                    "tokenid": "2 8 3 11 5 23 35 2 22 5 37 19 24 18 19 38 5 40 19 25 2 11 4 2 16 3 30 2 17 3 25 2"
+                }
+            ],
+            "utt2spk": "FCAG0"
+        },
+        "FCAG0_SI1641": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:34751",
+                    "name": "input1",
+                    "shape": [
+                        147,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        19,
+                        42
+                    ],
+                    "text": "sil w er y uw ih n l ah v w ah th ae sil g er l sil",
+                    "token": "<space> w er y uw ih n l ah v w ah th ae <space> g er l <space>",
+                    "tokenid": "2 38 14 39 36 19 25 23 5 37 38 5 34 4 2 17 14 23 2"
+                }
+            ],
+            "utt2spk": "FCAG0"
+        },
+        "FCAG0_SI2133": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:38815",
+                    "name": "input1",
+                    "shape": [
+                        207,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        28,
+                        42
+                    ],
+                    "text": "sil hh ih r dh eh dx ih sil n aa sil n iy sil t ih sil b iy ng sil g eh dx ow z sil",
+                    "token": "<space> hh ih r dh eh dx ih <space> n aa <space> n iy <space> t ih <space> b iy ng <space> g eh dx ow z <space>",
+                    "tokenid": "2 18 19 30 11 13 12 19 2 25 3 2 25 20 2 33 19 2 8 20 26 2 17 13 12 27 40 2"
+                }
+            ],
+            "utt2spk": "FCAG0"
+        },
+        "FCAG0_SX153": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:44438",
+                    "name": "input1",
+                    "shape": [
+                        322,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        45,
+                        42
+                    ],
+                    "text": "sil s sil k ah l ae s sil t ih sil k ae sil t ih sil t uw dx ih z sil jh ah sil jh sil b ay s sil t ae n er dx ay z sil t eh s sil",
+                    "token": "<space> s <space> k ah l ae s <space> t ih <space> k ae <space> t ih <space> t uw dx ih z <space> jh ah <space> jh <space> b ay s <space> t ae n er dx ay z <space> t eh s <space>",
+                    "tokenid": "2 31 2 22 5 23 4 31 2 33 19 2 22 4 2 33 19 2 33 36 12 19 40 2 21 5 2 21 2 8 7 31 2 33 4 25 14 12 7 40 2 33 13 31 2"
+                }
+            ],
+            "utt2spk": "FCAG0"
+        },
+        "FCAG0_SX243": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:53051",
+                    "name": "input1",
+                    "shape": [
+                        278,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        40,
+                        42
+                    ],
+                    "text": "sil dh ey aa l ah sil g r iy dh ih sil dh ih eh s ey ih z sil b eh r l iy ih n sil t eh l ah sil jh ih sil b l sil",
+                    "token": "<space> dh ey aa l ah <space> g r iy dh ih <space> dh ih eh s ey ih z <space> b eh r l iy ih n <space> t eh l ah <space> jh ih <space> b l <space>",
+                    "tokenid": "2 11 15 3 23 5 2 17 30 20 11 19 2 11 19 13 31 15 19 40 2 8 13 30 23 20 19 25 2 33 13 23 5 2 21 19 2 8 23 2"
+                }
+            ],
+            "utt2spk": "FCAG0"
+        },
+        "FCAG0_SX333": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:60520",
+                    "name": "input1",
+                    "shape": [
+                        387,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        48,
+                        42
+                    ],
+                    "text": "sil eh n ih sil d ah l sil m ey l sil b ae sil b uw n z sil t iy th aa r n aa s uw dx ih sil b l f er iy dx ih ng sh eh l f ih sh sil",
+                    "token": "<space> eh n ih <space> d ah l <space> m ey l <space> b ae <space> b uw n z <space> t iy th aa r n aa s uw dx ih <space> b l f er iy dx ih ng sh eh l f ih sh <space>",
+                    "tokenid": "2 13 25 19 2 10 5 23 2 24 15 23 2 8 4 2 8 36 25 40 2 33 20 34 3 30 25 3 31 36 12 19 2 8 23 16 14 20 12 19 26 32 13 23 16 19 32 2"
+                }
+            ],
+            "utt2spk": "FCAG0"
+        },
+        "FCAG0_SX423": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:70823",
+                    "name": "input1",
+                    "shape": [
+                        345,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        44,
+                        42
+                    ],
+                    "text": "sil s m ae sh l ay sil b ah sil b z ah n dh er sil k ae sh v ae y uw w l sil d ah m ih n ih sh sil t ih n ah th ih ng sil",
+                    "token": "<space> s m ae sh l ay <space> b ah <space> b z ah n dh er <space> k ae sh v ae y uw w l <space> d ah m ih n ih sh <space> t ih n ah th ih ng <space>",
+                    "tokenid": "2 31 24 4 32 23 7 2 8 5 2 8 40 5 25 11 14 2 22 4 32 37 4 39 36 38 23 2 10 5 24 19 25 19 32 2 33 19 25 5 34 19 26 2"
+                }
+            ],
+            "utt2spk": "FCAG0"
+        },
+        "FCAG0_SX63": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:80033",
+                    "name": "input1",
+                    "shape": [
+                        257,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        34,
+                        42
+                    ],
+                    "text": "sil k aa n eh n l sil d r ih f sil t ih z ih sil jh iy ih l aa sil jh ih sil k l th iy er ih sil",
+                    "token": "<space> k aa n eh n l <space> d r ih f <space> t ih z ih <space> jh iy ih l aa <space> jh ih <space> k l th iy er ih <space>",
+                    "tokenid": "2 22 3 25 13 25 23 2 10 30 19 16 2 33 19 40 19 2 21 20 19 23 3 2 21 19 2 22 23 34 20 14 19 2"
+                }
+            ],
+            "utt2spk": "FCAG0"
+        },
+        "FCAJ0_SI1479": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:86957",
+                    "name": "input1",
+                    "shape": [
+                        135,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        25,
+                        42
+                    ],
+                    "text": "sil hh ih v uw sil g aa dx ih n ah f sil b l ae ng sil k ih sil t s sil",
+                    "token": "<space> hh ih v uw <space> g aa dx ih n ah f <space> b l ae ng <space> k ih <space> t s <space>",
+                    "tokenid": "2 18 19 37 36 2 17 3 12 19 25 5 16 2 8 23 4 26 2 22 19 2 33 31 2"
+                }
+            ],
+            "utt2spk": "FCAJ0"
+        },
+        "FCAJ0_SI1804": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:90709",
+                    "name": "input1",
+                    "shape": [
+                        178,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        21,
+                        42
+                    ],
+                    "text": "sil ih dx eh sil g aa n l ay sil k l aa sil k w er sil k sil",
+                    "token": "<space> ih dx eh <space> g aa n l ay <space> k l aa <space> k w er <space> k <space>",
+                    "tokenid": "2 19 12 13 2 17 3 25 23 7 2 22 23 3 2 22 38 14 2 22 2"
+                }
+            ],
+            "utt2spk": "FCAJ0"
+        },
+        "FCAJ0_SI849": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:95578",
+                    "name": "input1",
+                    "shape": [
+                        347,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        63,
+                        42
+                    ],
+                    "text": "sil w uh dx ih sil k ae m r ah sil k l ah sil b iy y uw s f ah l ah n sil t ey sil k ih ng sil p ih sil ch er z sil p er n ih n sil t ah sil p l ae n sil t s ey f sil t iy sil",
+                    "token": "<space> w uh dx ih <space> k ae m r ah <space> k l ah <space> b iy y uw s f ah l ah n <space> t ey <space> k ih ng <space> p ih <space> ch er z <space> p er n ih n <space> t ah <space> p l ae n <space> t s ey f <space> t iy <space>",
+                    "tokenid": "2 38 35 12 19 2 22 4 24 30 5 2 22 23 5 2 8 20 39 36 31 16 5 23 5 25 2 33 15 2 22 19 26 2 29 19 2 9 14 40 2 29 14 25 19 25 2 33 5 2 29 23 4 25 2 33 31 15 16 2 33 20 2"
+                }
+            ],
+            "utt2spk": "FCAJ0"
+        },
+        "FCAJ0_SX129": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:104841",
+                    "name": "input1",
+                    "shape": [
+                        287,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        42
+                    ],
+                    "text": "sil ae n sil g aa er sil k ae sil s er f er iy er dh ih n s ay ih m iy z sil",
+                    "token": "<space> ae n <space> g aa er <space> k ae <space> s er f er iy er dh ih n s ay ih m iy z <space>",
+                    "tokenid": "2 4 25 2 17 3 14 2 22 4 2 31 14 16 14 20 14 11 19 25 31 7 19 24 20 40 2"
+                }
+            ],
+            "utt2spk": "FCAJ0"
+        },
+        "FCAJ0_SX219": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:112544",
+                    "name": "input1",
+                    "shape": [
+                        321,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        46,
+                        42
+                    ],
+                    "text": "sil n aa n sil p r aa f ah dx aa r sil g ih n ih z ey sh n z hh ae v f r iy sil k w ih n sil t f ah n d r ey z er z sil",
+                    "token": "<space> n aa n <space> p r aa f ah dx aa r <space> g ih n ih z ey sh n z hh ae v f r iy <space> k w ih n <space> t f ah n d r ey z er z <space>",
+                    "tokenid": "2 25 3 25 2 29 30 3 16 5 12 3 30 2 17 19 25 19 40 15 32 25 40 18 4 37 16 30 20 2 22 38 19 25 2 33 16 5 25 10 30 15 40 14 40 2"
+                }
+            ],
+            "utt2spk": "FCAJ0"
+        },
+        "FCAJ0_SX309": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:121131",
+                    "name": "input1",
+                    "shape": [
+                        317,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        42,
+                        42
+                    ],
+                    "text": "sil dh ah sil p r uw f ih sil jh uw aa r s iy sil k iy ng ih z sil n aa sil ah v ey l sil b l ih n sil b uh sil k s sil",
+                    "token": "<space> dh ah <space> p r uw f ih <space> jh uw aa r s iy <space> k iy ng ih z <space> n aa <space> ah v ey l <space> b l ih n <space> b uh <space> k s <space>",
+                    "tokenid": "2 11 5 2 29 30 36 16 19 2 21 36 3 30 31 20 2 22 20 26 19 40 2 25 3 2 5 37 15 23 2 8 23 19 25 2 8 35 2 22 31 2"
+                }
+            ],
+            "utt2spk": "FCAJ0"
+        },
+        "FCAJ0_SX39": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:129613",
+                    "name": "input1",
+                    "shape": [
+                        254,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        43,
+                        42
+                    ],
+                    "text": "sil b aa r sil b z sil g ow l sil b r ey s sil l ih sil w ah z ih sil g r ae sil jh uw ey sh n sil p r eh z ah n sil sil",
+                    "token": "<space> b aa r <space> b z <space> g ow l <space> b r ey s <space> l ih <space> w ah z ih <space> g r ae <space> jh uw ey sh n <space> p r eh z ah n <space> <space>",
+                    "tokenid": "2 8 3 30 2 8 40 2 17 27 23 2 8 30 15 31 2 23 19 2 38 5 40 19 2 17 30 4 2 21 36 15 32 25 2 29 30 13 40 5 25 2 2"
+                }
+            ],
+            "utt2spk": "FCAJ0"
+        },
+        "FCAJ0_SX399": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:136458",
+                    "name": "input1",
+                    "shape": [
+                        253,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        30,
+                        42
+                    ],
+                    "text": "sil dh ey ih s uw m n ow sil b er sil g l er w l eh v er eh n sil t er hh ih er sil",
+                    "token": "<space> dh ey ih s uw m n ow <space> b er <space> g l er w l eh v er eh n <space> t er hh ih er <space>",
+                    "tokenid": "2 11 15 19 31 36 24 25 27 2 8 14 2 17 23 14 38 23 13 37 14 13 25 2 33 14 18 19 14 2"
+                }
+            ],
+            "utt2spk": "FCAJ0"
+        },
+        "FCDR1_SI1186": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:143278",
+                    "name": "input1",
+                    "shape": [
+                        562,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        55,
+                        42
+                    ],
+                    "text": "sil k w eh sh sil ch ah n z sil k ey m sil t uw m iy f ah m aa l s ay z ah sil b aw m ay w er s ih dx ih z ih n sh ih sil ae sil t ih v ih dx iy s sil",
+                    "token": "<space> k w eh sh <space> ch ah n z <space> k ey m <space> t uw m iy f ah m aa l s ay z ah <space> b aw m ay w er s ih dx ih z ih n sh ih <space> ae <space> t ih v ih dx iy s <space>",
+                    "tokenid": "2 22 38 13 32 2 9 5 25 40 2 22 15 24 2 33 36 24 20 16 5 24 3 23 31 7 40 5 2 8 6 24 7 38 14 31 19 12 19 40 19 25 32 19 2 4 2 33 19 37 19 12 20 31 2"
+                }
+            ],
+            "utt2spk": "FCDR1"
+        },
+        "FCDR1_SI1816": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:158132",
+                    "name": "input1",
+                    "shape": [
+                        480,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        32,
+                        42
+                    ],
+                    "text": "sil eh n iy hh aw sil ih w ah z hh ay sil t ay m dh ah sil b oy w ah s aa l sil t ih sil sil",
+                    "token": "<space> eh n iy hh aw <space> ih w ah z hh ay <space> t ay m dh ah <space> b oy w ah s aa l <space> t ih <space> <space>",
+                    "tokenid": "2 13 25 20 18 6 2 19 38 5 40 18 7 2 33 7 24 11 5 2 8 28 38 5 31 3 23 2 33 19 2 2"
+                }
+            ],
+            "utt2spk": "FCDR1"
+        },
+        "FCDR1_SI556": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:170853",
+                    "name": "input1",
+                    "shape": [
+                        506,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        58,
+                        42
+                    ],
+                    "text": "sil w iy sil d ih sil n aa dx ah sil k s eh sil dh ah sil d ay sil n aa s ih s ae w ah n s sil sil b ah sil g r ae sh ah l iy sil w iy aa sil k ah m ih ng sil t uw sil",
+                    "token": "<space> w iy <space> d ih <space> n aa dx ah <space> k s eh <space> dh ah <space> d ay <space> n aa s ih s ae w ah n s <space> <space> b ah <space> g r ae sh ah l iy <space> w iy aa <space> k ah m ih ng <space> t uw <space>",
+                    "tokenid": "2 38 20 2 10 19 2 25 3 12 5 2 22 31 13 2 11 5 2 10 7 2 25 3 31 19 31 4 38 5 25 31 2 2 8 5 2 17 30 4 32 5 23 20 2 38 20 3 2 22 5 24 19 26 2 33 36 2"
+                }
+            ],
+            "utt2spk": "FCDR1"
+        },
+        "FCDR1_SX106": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/seed_five_percent/deltafalse/feats.5.ark:184250",
+                    "name": "input1",
+                    "shape": [
+                        313,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        30,
+                        42
+                    ],
+                    "text": "sil ey hh y uw sh sil t ae sil p ah s sil t r iy hh ah ng ih n hh er hh aa l w ey sil",
+                    "token": "<space> ey hh y uw sh <space> t ae <space> p ah s <space> t r iy hh ah ng ih n hh er hh aa l w ey <space>",
+                    "tokenid": "2 15 18 39 36 32 2 33 4 2 29 5 31 2 33 30 20 18 5 26 19 25 18 14 18 3 23 38 15 2"
+                }
+            ],
+            "utt2spk": "FCDR1"
+        }
+    }
+}

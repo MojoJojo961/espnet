@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MTRT0_SI1227": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.8.ark:1439278",
+                    "name": "input1",
+                    "shape": [
+                        497,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        56,
+                        42
+                    ],
+                    "text": "sil s r m ey sil s sil p ae n sil t s n ey l sil p ih n sil ih sil r m ay ey ih m l ih sil t ih ih ae l ah sil m m sil aa ah sil p ih sil k ay ih m ay n sil",
+                    "token": "<space> s r m ey <space> s <space> p ae n <space> t s n ey l <space> p ih n <space> ih <space> r m ay ey ih m l ih <space> t ih ih ae l ah <space> m m <space> aa ah <space> p ih <space> k ay ih m ay n <space>",
+                    "tokenid": "2 31 30 24 15 2 31 2 29 4 25 2 33 31 25 15 23 2 29 19 25 2 19 2 30 24 7 15 19 24 23 19 2 33 19 19 4 23 5 2 24 24 2 3 5 2 29 19 2 22 7 19 24 7 25 2"
+                }
+            ],
+            "utt2spk": "MTRT0"
+        }
+    }
+}

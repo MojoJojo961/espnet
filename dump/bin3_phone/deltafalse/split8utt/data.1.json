@@ -1,0 +1,54 @@
+{
+    "utts": {
+        "MCLM0_SX106": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1654891",
+                    "name": "input1",
+                    "shape": [
+                        219,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        42
+                    ],
+                    "text": "sil r ih n ih sil t sil t eh sil p s sil f r ih n l w ey sil",
+                    "token": "<space> r ih n ih <space> t <space> t eh <space> p s <space> f r ih n l w ey <space>",
+                    "tokenid": "2 30 19 25 19 2 33 2 33 13 2 29 31 2 16 30 19 25 23 38 15 2"
+                }
+            ],
+            "utt2spk": "MCLM0"
+        },
+        "MCTH0_SX39": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1924108",
+                    "name": "input1",
+                    "shape": [
+                        299,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        34,
+                        42
+                    ],
+                    "text": "sil ow sil s sil b ey sil p l ay ey s l sil w l z ih sil g r ah sil jh uw sh l sil p l s z sil",
+                    "token": "<space> ow <space> s <space> b ey <space> p l ay ey s l <space> w l z ih <space> g r ah <space> jh uw sh l <space> p l s z <space>",
+                    "tokenid": "2 27 2 31 2 8 15 2 29 23 7 15 31 23 2 38 23 40 19 2 17 30 5 2 21 36 32 23 2 29 23 31 40 2"
+                }
+            ],
+            "utt2spk": "MCTH0"
+        }
+    }
+}

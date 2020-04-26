@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MSAS0_SX26": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.7.ark:1113285",
+                    "name": "input1",
+                    "shape": [
+                        274,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        28,
+                        42
+                    ],
+                    "text": "sil n aa l sil s sil t ih l r ay z r ah l ey dx ih v r ih n l r ih n sil",
+                    "token": "<space> n aa l <space> s <space> t ih l r ay z r ah l ey dx ih v r ih n l r ih n <space>",
+                    "tokenid": "2 25 3 23 2 31 2 33 19 23 30 7 40 30 5 23 15 12 19 37 30 19 25 23 30 19 25 2"
+                }
+            ],
+            "utt2spk": "MSAS0"
+        }
+    }
+}

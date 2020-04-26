@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MTQC0_SI2071": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.8.ark:1251838",
+                    "name": "input1",
+                    "shape": [
+                        280,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        42
+                    ],
+                    "text": "sil dh ih ey sil m ey l eh dx n hh er ih sil d ah n ey dx ih sil",
+                    "token": "<space> dh ih ey <space> m ey l eh dx n hh er ih <space> d ah n ey dx ih <space>",
+                    "tokenid": "2 11 19 15 2 24 15 23 13 12 25 18 14 19 2 10 5 25 15 12 19 2"
+                }
+            ],
+            "utt2spk": "MTQC0"
+        }
+    }
+}

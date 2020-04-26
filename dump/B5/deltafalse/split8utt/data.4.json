@@ -1,0 +1,54 @@
+{
+    "utts": {
+        "MREH1_SI2229": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.6.ark:1412736",
+                    "name": "input1",
+                    "shape": [
+                        187,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        20,
+                        42
+                    ],
+                    "text": "sil ae l s sh y ih er sh s ow dh ah sil er r n ey l sil",
+                    "token": "<space> ae l s sh y ih er sh s ow dh ah <space> er r n ey l <space>",
+                    "tokenid": "2 4 23 31 32 39 19 14 32 31 27 11 5 2 14 30 25 15 23 2"
+                }
+            ],
+            "utt2spk": "MREH1"
+        },
+        "MRGM0_SX172": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.6.ark:1759771",
+                    "name": "input1",
+                    "shape": [
+                        406,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        45,
+                        42
+                    ],
+                    "text": "sil dh ih sil ch r ay m sil t ah n sil sil ih eh dx ih dx dx ih sil z ih n m ih dx sil b m ay ih iy uw ih n sil ih n m z ah m sil",
+                    "token": "<space> dh ih <space> ch r ay m <space> t ah n <space> <space> ih eh dx ih dx dx ih <space> z ih n m ih dx <space> b m ay ih iy uw ih n <space> ih n m z ah m <space>",
+                    "tokenid": "2 11 19 2 9 30 7 24 2 33 5 25 2 2 19 13 12 19 12 12 19 2 40 19 25 24 19 12 2 8 24 7 19 20 36 19 25 2 19 25 24 40 5 24 2"
+                }
+            ],
+            "utt2spk": "MRGM0"
+        }
+    }
+}

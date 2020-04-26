@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MWAR0_SX325": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.8.ark:1979897",
+                    "name": "input1",
+                    "shape": [
+                        223,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        42
+                    ],
+                    "text": "sil dh ah s f ey l ah l ng sh m sil b r ay t l iy ih sil b eh sil b ay sil",
+                    "token": "<space> dh ah s f ey l ah l ng sh m <space> b r ay t l iy ih <space> b eh <space> b ay <space>",
+                    "tokenid": "2 11 5 31 16 15 23 5 23 26 32 24 2 8 30 7 33 23 20 19 2 8 13 2 8 7 2"
+                }
+            ],
+            "utt2spk": "MWAR0"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MSRR0_SX231": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.7.ark:2092829",
+                    "name": "input1",
+                    "shape": [
+                        143,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        14,
+                        42
+                    ],
+                    "text": "sil ay dx ah m n ay n b ay l n sil sil",
+                    "token": "<space> ay dx ah m n ay n b ay l n <space> <space>",
+                    "tokenid": "2 7 12 5 24 25 7 25 8 7 23 25 2 2"
+                }
+            ],
+            "utt2spk": "MSRR0"
+        }
+    }
+}

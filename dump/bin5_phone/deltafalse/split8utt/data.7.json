@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MSMC0_SX17": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.7.ark:1835564",
+                    "name": "input1",
+                    "shape": [
+                        207,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        42
+                    ],
+                    "text": "sil k aa l l uw n sil s m ay l ay ih n l ih hh aa l m sil",
+                    "token": "<space> k aa l l uw n <space> s m ay l ay ih n l ih hh aa l m <space>",
+                    "tokenid": "2 22 3 23 23 36 25 2 31 24 7 23 7 19 25 23 19 18 3 23 24 2"
+                }
+            ],
+            "utt2spk": "MSMC0"
+        }
+    }
+}

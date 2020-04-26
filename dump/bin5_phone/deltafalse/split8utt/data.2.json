@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MFXS0_SI2225": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.3.ark:147283",
+                    "name": "input1",
+                    "shape": [
+                        160,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        19,
+                        42
+                    ],
+                    "text": "sil w r ah n sil eh aw m sil w aa m n sil p k l sil",
+                    "token": "<space> w r ah n <space> eh aw m <space> w aa m n <space> p k l <space>",
+                    "tokenid": "2 38 30 5 25 2 13 6 24 2 38 3 24 25 2 29 22 23 2"
+                }
+            ],
+            "utt2spk": "MFXS0"
+        }
+    }
+}

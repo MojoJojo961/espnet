@@ -1,0 +1,1345 @@
+# asr_recog.py --config ./conf/decode_ctc.yaml --ngpu 0 --backend pytorch --debugmode 1 --verbose 2 --recog-json dump/test/deltafalse/split8utt/data.1.json --result-label exp/seed_twenty_five_n_unlabel_pytorch_train_ground_truth_model_for_twenty_five_percent_ctc_b32/decode_test_decode_ctc/data.1.json --model exp/seed_twenty_five_n_unlabel_pytorch_train_ground_truth_model_for_twenty_five_percent_ctc_b32/results/model.loss.best 
+# Started at Thu Apr 23 09:29:16 UTC 2020
+#
+2020-04-23 09:29:16,958 (asr_recog:162) INFO: python path = (None)
+2020-04-23 09:29:16,958 (asr_recog:167) INFO: set random seed = 1
+2020-04-23 09:29:16,958 (asr_recog:175) INFO: backend = pytorch
+2020-04-23 09:29:19,720 (__init__:276) DEBUG: $HOME=/home/sumit
+2020-04-23 09:29:19,720 (__init__:276) DEBUG: CONFIGDIR=/home/sumit/.config/matplotlib
+2020-04-23 09:29:19,720 (__init__:276) DEBUG: matplotlib data path: /home/sumit/espnet/tools/venv/lib/python3.7/site-packages/matplotlib/mpl-data
+2020-04-23 09:29:19,727 (__init__:1007) DEBUG: loaded rc file /home/sumit/espnet/tools/venv/lib/python3.7/site-packages/matplotlib/mpl-data/matplotlibrc
+2020-04-23 09:29:19,730 (__init__:1644) DEBUG: matplotlib version 3.1.3
+2020-04-23 09:29:19,730 (__init__:1645) DEBUG: interactive is False
+2020-04-23 09:29:19,731 (__init__:1646) DEBUG: platform is linux
+2020-04-23 09:29:19,731 (__init__:1647) DEBUG: loaded modules: ['sys', 'builtins', '_frozen_importlib', '_imp', '_thread', '_warnings', '_weakref', 'zipimport', '_frozen_importlib_external', '_io', 'marshal', 'posix', 'encodings', 'codecs', '_codecs', 'encodings.aliases', 'encodings.utf_8', '_signal', '__main__', 'encodings.latin_1', 'io', 'abc', '_abc', 'site', 'os', 'stat', '_stat', '_collections_abc', 'posixpath', 'genericpath', 'os.path', '_sitebuiltins', '_bootlocale', '_locale', 'types', 'importlib', 'importlib._bootstrap', 'importlib._bootstrap_external', 'warnings', 'importlib.util', 'importlib.abc', 'importlib.machinery', 'contextlib', 'collections', 'operator', '_operator', 'keyword', 'heapq', '_heapq', 'itertools', 'reprlib', '_collections', 'functools', '_functools', 'mpl_toolkits', 'google', 'configargparse', 'argparse', 're', 'enum', 'sre_compile', '_sre', 'sre_parse', 'sre_constants', 'copyreg', 'gettext', 'locale', 'glob', 'fnmatch', 'logging', 'time', 'traceback', 'linecache', 'tokenize', 'token', 'weakref', '_weakrefset', 'collections.abc', 'string', '_string', 'threading', 'atexit', 'random', 'math', 'hashlib', '_hashlib', '_blake2', '_sha3', 'bisect', '_bisect', '_random', 'numpy', '__future__', 'numpy._globals', 'numpy.__config__', 'numpy.version', 'numpy._distributor_init', 'mkl', 'ctypes', '_ctypes', 'struct', '_struct', 'ctypes._endian', 'mkl._mklinit', 'mkl._py_mkl_service', 'cython_runtime', 'six', 'numpy.core', 'numpy.core.multiarray', 'numpy.core.overrides', 'textwrap', 'datetime', '_datetime', 'numpy.core._multiarray_umath', 'numpy.compat', 'numpy.compat._inspect', 'numpy.compat.py3k', 'pathlib', 'ntpath', 'errno', 'urllib', 'urllib.parse', 'pickle', '_compat_pickle', '_pickle', 'numpy.core.umath', 'numpy.core.numerictypes', 'numbers', 'numpy.core._string_helpers', 'numpy.core._type_aliases', 'numpy.core._dtype', 'numpy.core.numeric', 'numpy.core.shape_base', 'numpy.core._asarray', 'numpy.core.fromnumeric', 'numpy.core._methods', 'numpy.core._exceptions', 'numpy.core._ufunc_config', 'numpy.core.arrayprint', 'numpy.core.defchararray', 'numpy.core.records', 'numpy.core.memmap', 'numpy.core.function_base', 'numpy.core.machar', 'numpy.core.getlimits', 'numpy.core.einsumfunc', 'numpy.core._add_newdocs', 'numpy.core._multiarray_tests', 'numpy.core._dtype_ctypes', 'numpy.core._internal', 'platform', 'subprocess', 'signal', '_posixsubprocess', 'select', 'selectors', 'numpy._pytesttester', 'numpy.lib', 'numpy.lib.mixins', 'numpy.lib.scimath', 'numpy.lib.type_check', 'numpy.lib.ufunclike', 'numpy.lib.index_tricks', 'numpy.matrixlib', 'numpy.matrixlib.defmatrix', 'ast', '_ast', 'numpy.linalg', 'numpy.linalg.linalg', 'numpy.lib.twodim_base', 'numpy.linalg.lapack_lite', 'numpy.linalg._umath_linalg', 'numpy.lib.function_base', 'numpy.lib.histograms', 'numpy.lib.stride_tricks', 'numpy.lib.nanfunctions', 'numpy.lib.shape_base', 'numpy.lib.polynomial', 'numpy.lib.utils', 'numpy.lib.arraysetops', 'numpy.lib.npyio', 'numpy.lib.format', 'numpy.lib._datasource', 'shutil', 'zlib', 'bz2', '_compression', '_bz2', 'lzma', '_lzma', 'pwd', 'grp', 'numpy.lib._iotools', 'numpy.lib.financial', 'decimal', '_decimal', 'numpy.lib.arrayterator', 'numpy.lib.arraypad', 'numpy.lib._version', 'numpy.fft', 'numpy.fft._pocketfft', 'numpy.fft._pocketfft_internal', 'numpy.fft.helper', 'numpy.polynomial', 'numpy.polynomial.polynomial', 'numpy.polynomial.polyutils', 'numpy.polynomial._polybase', 'numpy.polynomial.chebyshev', 'numpy.polynomial.legendre', 'numpy.polynomial.hermite', 'numpy.polynomial.hermite_e', 'numpy.polynomial.laguerre', 'numpy.random', 'numpy.random._pickle', 'numpy.random.mtrand', 'numpy.random._bit_generator', '_cython_0_29_14', 'numpy.random._common', 'secrets', 'base64', 'binascii', 'hmac', 'numpy.random._bounded_integers', 'numpy.random._mt19937', 'numpy.random._philox', 'numpy.random._pcg64', 'numpy.random._sfc64', 'numpy.random._generator', 'numpy.ctypeslib', 'numpy.ma', 'numpy.ma.core', 'numpy.ma.extras', 'espnet', 'pkg_resources', 'zipfile', 'pkgutil', 'plistlib', 'xml', 'xml.parsers', 'xml.parsers.expat', 'pyexpat.errors', 'pyexpat.model', 'pyexpat', 'xml.parsers.expat.model', 'xml.parsers.expat.errors', 'email', 'email.parser', 'email.feedparser', 'email.errors', 'email._policybase', 'email.header', 'email.quoprimime', 'email.base64mime', 'email.charset', 'email.encoders', 'quopri', 'email.utils', 'socket', '_socket', 'email._parseaddr', 'calendar', 'tempfile', 'inspect', 'dis', 'opcode', '_opcode', 'pkg_resources.extern', 'pkg_resources._vendor', 'pkg_resources._vendor.six', 'pkg_resources.extern.six', 'pkg_resources._vendor.six.moves', 'pkg_resources.extern.six.moves', 'pkg_resources._vendor.six.moves.urllib', 'pkg_resources.py31compat', 'pkg_resources._vendor.appdirs', 'pkg_resources.extern.appdirs', 'pkg_resources._vendor.packaging', 'pkg_resources._vendor.packaging.__about__', 'pkg_resources.extern.packaging', 'pkg_resources.extern.packaging.version', 'pkg_resources.extern.packaging._structures', 'pkg_resources.extern.packaging.specifiers', 'pkg_resources.extern.packaging._compat', 'pkg_resources.extern.packaging.requirements', 'pkg_resources._vendor.pyparsing', 'copy', 'pprint', 'pkg_resources.extern.pyparsing', 'pkg_resources.extern.six.moves.urllib', 'pkg_resources.extern.packaging.markers', 'pkg_resources.py2_warn', 'sysconfig', 'espnet.utils', 'espnet.utils.cli_utils', 'distutils', 'distutils.util', 'distutils.errors', 'distutils.dep_util', 'distutils.spawn', 'distutils.debug', 'distutils.log', 'yaml', 'yaml.error', 'yaml.tokens', 'yaml.events', 'yaml.nodes', 'yaml.loader', 'yaml.reader', 'yaml.scanner', 'yaml.parser', 'yaml.composer', 'yaml.constructor', 'yaml.resolver', 'yaml.dumper', 'yaml.emitter', 'yaml.serializer', 'yaml.representer', 'espnet.asr', 'espnet.asr.pytorch_backend', 'espnet.asr.pytorch_backend.asr', 'json', 'json.decoder', 'json.scanner', '_json', 'json.encoder', 'chainer', 'chainer._version', 'chainer.backends', 'chainer.backends.cuda', 'typing', 'typing.io', 'typing.re', 'chainer._backend', 'chainer.backends._cpu', 'chainerx', 'chainer.backends.intel64', 'chainer.configuration', 'chainer.types', 'typing_extensions', 'cupy', 'cupy._version', 'cupy.core', 'cupy.core.core', '_cython_0_29_6', 'cupy.cuda', 'cupy.cuda.compiler', 'cupy.cuda.device', 'cupy.cuda.runtime', 'cupy.cuda.cublas', 'cupy.cuda.stream', 'cupy.cuda.cusparse', 'cupy.util', 'cupy.cuda.cusolver', 'cupy.cuda.function', 'cupy.cuda.memory', 'fastrlock', '_cython_0_28_5', 'fastrlock.rlock', 'cupy.cuda.memory_hook', 'gc', 'cupy.cuda.driver', 'cupy.cuda.nvrtc', 'cupy.cuda.memory_hooks', 'cupy.cuda.memory_hooks.debug_print', 'cupy.cuda.memory_hooks.line_profile', 'cupy.cuda.pinned_memory', 'cupy.core.internal', 'cupy.cuda.profiler', 'cupy.cuda.nvtx', 'cupy.cuda.thrust', 'cupy.cuda.nccl', 'cupy.core._routines_manipulation', 'cupy.core._routines_indexing', 'cupy.core._routines_math', 'cupy.core._dtype', 'cupy.core._kernel', 'cupy.core._scalar', 'cupy.core._errors', 'cupy.core._ufuncs', 'cupy.core._routines_logic', 'cupy.core._routines_sorting', 'cupy.core._routines_statistics', 'cupy.core.dlpack', 'cupy.core.flags', 'cupy.core.raw', 'cupyx', 'cupyx.rsqrt', 'cupyx.runtime', 'cupy.cuda.cudnn', 'cupyx.scatter', 'cupyx.linalg', 'cupyx.linalg.sparse', 'cupyx.linalg.sparse.solve', 'cupy.linalg', 'cupy.linalg.decomposition', 'cupy.linalg.util', 'cupy.linalg.eigenvalue', 'cupy.linalg.einsum', 'six.moves', 'cupy.linalg.einsum_opt', 'cupy.linalg.norms', 'cupy.linalg.product', 'cupy.internal', 'cupy.linalg.solve', 'cupy.sparse', 'cupyx.scipy', 'cupyx.scipy.sparse', 'cupyx.scipy.sparse.base', 'cupyx.scipy.sparse.util', 'cupyx.scipy.sparse.coo', 'scipy', 'scipy._lib', 'scipy._lib._testutils', 'scipy._lib.deprecation', 'scipy._distributor_init', 'scipy.__config__', 'scipy.version', 'scipy._lib._version', 'scipy._lib.six', 'scipy._lib._ccallback', 'scipy._lib._ccallback_c', 'scipy.fft', 'scipy.fft._basic', 'scipy._lib.uarray', 'scipy._lib._uarray', 'scipy._lib._uarray._backend', 'scipy._lib._uarray._uarray', 'scipy.fft._realtransforms', 'scipy.fft._helper', 'scipy.fft._pocketfft', 'scipy.fft._pocketfft.basic', 'scipy.fft._pocketfft.pypocketfft', 'scipy.fft._pocketfft.helper', 'scipy.fft._pocketfft.realtransforms', 'scipy.fft._backend', 'numpy.dual', 'scipy.sparse', 'scipy.sparse.base', 'scipy._lib._numpy_compat', 'numpy.testing', 'unittest', 'unittest.result', 'unittest.util', 'unittest.case', 'difflib', 'unittest.suite', 'unittest.loader', 'unittest.main', 'unittest.runner', 'unittest.signals', 'numpy.testing._private', 'numpy.testing._private.utils', 'numpy.testing._private.decorators', 'numpy.testing._private.nosetester', 'scipy.sparse.sputils', 'scipy.sparse.csr', 'scipy.sparse._sparsetools', 'scipy.sparse.compressed', 'scipy._lib._util', 'multiprocessing', 'multiprocessing.context', 'multiprocessing.process', 'multiprocessing.reduction', 'array', '__mp_main__', 'scipy.sparse.data', 'scipy.sparse.dia', 'scipy.sparse._index', 'scipy.sparse.csc', 'scipy.sparse.lil', 'scipy.sparse._csparsetools', 'scipy.sparse.dok', 'scipy.sparse.coo', 'scipy.sparse.bsr', 'scipy.sparse.construct', 'scipy.sparse.extract', 'scipy.sparse._matrix_io', 'scipy.sparse.csgraph', 'scipy.sparse.csgraph._laplacian', 'scipy.sparse.csgraph._shortest_path', 'scipy.sparse.csgraph._validation', 'scipy.sparse.csgraph._tools', 'scipy.sparse.csgraph._traversal', 'scipy.sparse.csgraph._min_spanning_tree', 'scipy.sparse.csgraph._flow', 'scipy.sparse.csgraph._matching', 'scipy.sparse.csgraph._reordering', 'cupy.cusparse', 'cupyx.scipy.sparse.csr', 'cupyx.scipy.sparse.compressed', 'cupy.creation', 'cupy.creation.basic', 'cupy.creation.from_data', 'cupy.core.fusion', 'cupy.creation.matrix', 'cupy.creation.ranges', 'cupyx.scipy.sparse.data', 'cupyx.scipy.sparse.csc', 'cupyx.scipy.sparse.dia', 'cupyx.scipy.sparse.construct', 'cupyx.scipy.sparse.sputils', 'cupyx.scipy.sparse.linalg', 'cupyx.scipy.sparse.linalg.solve', 'cupy.binary', 'cupy.binary.elementwise', 'cupy.binary.packing', 'cupy.fft', 'cupy.fft.fft', 'cupy.cuda.cufft', 'cupy.fft.config', 'cupy.indexing', 'cupy.indexing.generate', 'cupy.manipulation', 'cupy.manipulation.add_remove', 'cupy.manipulation.basic', 'cupy.sorting', 'cupy.sorting.count', 'cupy.sorting.search', 'cupy.sorting.sort', 'cupy.manipulation.dims', 'cupy.manipulation.join', 'cupy.manipulation.kind', 'cupy.manipulation.rearrange', 'cupy.manipulation.shape', 'cupy.manipulation.split', 'cupy.manipulation.tiling', 'cupy.manipulation.transpose', 'cupy.indexing.indexing', 'cupy.indexing.insert', 'cupy.io', 'cupy.io.formatting', 'cupy.io.npz', 'cupy.io.rawfile', 'cupy.io.text', 'cupy.padding', 'cupy.padding.pad', 'cupy.random', 'cupy.random.distributions', 'cupy.random.generator', 'cupy.cuda.curand', 'cupy.random._kernels', 'cupy.random.permutations', 'cupy.random.sample', 'cupy.statistics', 'cupy.statistics.correlation', 'cupy.statistics.histogram', 'cupy.statistics.meanvar', 'cupy.statistics.order', 'cupy.logic', 'cupy.logic.comparison', 'cupy.logic.content', 'cupy.logic.ops', 'cupy.logic.truth', 'cupy.logic.type_test', 'cupy.testing', 'cupy.testing.array', 'cupy.testing.attr', 'cupy.testing.helper', 'cupy.testing.parameterized', 'cupy.testing.random', 'cupy.lib', 'cupy.math', 'cupy.math.arithmetic', 'cupy.math.explog', 'cupy.math.ufunc', 'cupy.math.floating', 'cupy.math.hyperbolic', 'cupy.math.misc', 'cupy.math.rounding', 'cupy.math.special', 'cupy.math.sumprod', 'cupy.math.trigonometric', 'cupy.math.window', 'cupy.ext', 'cupy.ext.scatter', 'cupyx.scipy.linalg', 'cupyx.scipy.linalg.solve_triangular', 'cupyx.scipy.linalg.decomp_lu', 'cupyx.scipy.special', 'cupyx.scipy.special.bessel', 'cupyx.scipy.special.polygamma', 'cupyx.scipy.special.digamma', 'cupyx.scipy.special.gamma', 'cupyx.scipy.special.zeta', 'cupyx.scipy.special.gammaln', 'cupyx.scipy.special.statistics', 'cupyx.scipy.special.erf', 'cupy.cudnn', 'chainer.dataset', 'chainer.dataset.convert', 'chainer.backend', 'chainer.backends._chainerx', 'chainer.dataset.dataset_mixin', 'chainer.dataset.download', 'filelock', 'fcntl', 'six.moves.urllib', 'chainer.utils', 'chainer.utils.array', 'chainer.utils.conv', 'chainer.utils.error', 'chainer.utils.experimental', 'chainer.utils.meta', 'chainer.utils.nondeterministic', 'chainer.utils.sparse', 'chainer.dataset.iterator', 'chainer.datasets', 'chainer.datasets.cifar', 'tarfile', 'six.moves.cPickle', 'chainer.datasets.tuple_dataset', 'chainer.datasets.concatenated_dataset', 'chainer.datasets.dict_dataset', 'chainer.datasets.fashion_mnist', 'chainer.datasets._mnist_helper', 'gzip', 'chainer.datasets.image_dataset', 'PIL', 'PIL._version', 'PIL.Image', 'PIL.ImageMode', 'PIL.TiffTags', 'PIL._binary', 'PIL._util', 'PIL._imaging', 'cffi', 'cffi.api', 'cffi.lock', 'cffi.error', 'cffi.model', 'chainer.datasets.kuzushiji_mnist', 'chainer.datasets.mnist', 'chainer.datasets.pickle_dataset', 'chainer.datasets.ptb', 'chainer.datasets.sub_dataset', 'chainer.datasets.svhn', 'scipy.io', 'scipy.io.matlab', 'scipy.io.matlab.mio', 'scipy.io.matlab.miobase', 'scipy._lib.doccer', 'scipy.io.matlab.byteordercodes', 'scipy.io.matlab.mio4', 'scipy.io.matlab.mio_utils', 'scipy.io.matlab.mio5', 'scipy.io.matlab.mio5_utils', 'scipy.io.matlab.streams', 'scipy.io.matlab.mio5_params', 'scipy.io.netcdf', 'mmap', 'scipy.io._fortran', 'scipy.io.mmio', 'scipy.io.idl', 'scipy.io.harwell_boeing', 'scipy.io.harwell_boeing.hb', 'scipy.io.harwell_boeing._fortran_format_parser', 'chainer.datasets.text_dataset', 'chainer.datasets.transform_dataset', 'chainer.distributions', 'chainer.distributions.bernoulli', 'chainer.distribution', 'chainer.distributions.utils', 'chainer.functions', 'chainer.functions.activation', 'chainer.functions.activation.clipped_relu', 'chainer.function_node', 'chainer._backprop_utils', 'chainer.function_hook', 'chainer.graph_optimizations', 'chainer.graph_optimizations.static_graph_utilities', 'chainer.utils.type_check', 'chainer.variable', 'chainer.initializers', 'chainer.initializers.constant', 'chainer.initializer', 'chainer.initializers.normal', 'chainer.initializers.orthogonal', 'chainer.initializers.uniform', 'chainer.utils._collections', 'chainer.utils.argument', 'chainer.functions.activation.crelu', 'chainer.functions.activation.elu', 'chainer.functions.activation.hard_sigmoid', 'chainer.functions.activation.leaky_relu', 'chainer.functions.activation.log_softmax', 'chainer.functions.activation.lstm', 'chainer.function', 'chainer.functions.activation.maxout', 'chainer.functions.array', 'chainer.functions.array.reshape', 'chainer.functions.math', 'chainer.functions.math.minmax', 'chainer.functions.activation.prelu', 'chainer.functions.activation.relu', 'chainer.functions.activation.rrelu', 'chainer.functions.activation.selu', 'chainer.functions.activation.sigmoid', 'chainer.functions.activation.slstm', 'chainer.functions.activation.softmax', 'chainer.functions.activation.softplus', 'chainer.functions.activation.swish', 'chainer.functions.activation.tanh', 'chainer.functions.activation.tree_lstm', 'chainer.functions.array.as_strided', 'chainer.functions.array.broadcast', 'chainer.functions.array.cast', 'chainer.functions.array.concat', 'chainer.functions.array.copy', 'chainer.functions.array.depth2space', 'chainer.functions.array.diagonal', 'chainer.functions.array.dstack', 'chainer.functions.array.expand_dims', 'chainer.functions.array.flatten', 'chainer.functions.array.flip', 'chainer.functions.array.fliplr', 'chainer.functions.array.flipud', 'chainer.functions.array.get_item', 'chainer.functions.array.hstack', 'chainer.functions.array.im2col', 'chainer.functions.array.moveaxis', 'chainer.functions.array.pad', 'chainer.functions.array.pad_sequence', 'chainer.functions.array.permutate', 'chainer.functions.array.repeat', 'chainer.functions.array.resize_images', 'chainer.functions.array.rollaxis', 'chainer.functions.array.scatter_add', 'chainer.functions.array.select_item', 'chainer.functions.array.separate', 'chainer.functions.array.stack', 'chainer.functions.array.space2depth', 'chainer.functions.array.spatial_transformer_grid', 'chainer.functions.array.spatial_transformer_sampler', 'chainer.functions.array.split_axis', 'chainer.functions.array.squeeze', 'chainer.functions.array.swapaxes', 'chainer.functions.array.tile', 'chainer.functions.array.transpose', 'chainer.functions.array.transpose_sequence', 'chainer.functions.array.vstack', 'chainer.functions.array.where', 'chainer.functions.connection', 'chainer.functions.connection.bilinear', 'chainer.functions.connection.convolution_2d', 'chainer.functions.connection.convolution_nd', 'chainer.utils.conv_nd', 'chainer.utils.conv_nd_kernel', 'chainer.functions.connection.deconvolution_2d', 'chainer.functions.connection.deconvolution_nd', 'chainer.functions.connection.deformable_convolution_2d_sampler', 'chainer.functions.math.matmul', 'chainer.functions.connection.depthwise_convolution_2d', 'chainer.functions.connection.dilated_convolution_2d', 'chainer.functions.connection.embed_id', 'chainer.functions.connection.linear', 'chainer.functions.connection.local_convolution_2d', 'chainer.functions.connection.n_step_gru', 'chainer.functions.connection.n_step_rnn', 'chainer.functions.noise', 'chainer.functions.noise.dropout', 'chainer.functions.connection.n_step_lstm', 'chainer.functions.connection.shift', 'chainer.functions.evaluation', 'chainer.functions.evaluation.accuracy', 'chainer.functions.evaluation.binary_accuracy', 'chainer.functions.evaluation.classification_summary', 'chainer.functions.evaluation.r2_score', 'chainer.functions.loss', 'chainer.functions.loss.absolute_error', 'chainer.functions.loss.black_out', 'chainer.functions.math.average', 'chainer.functions.math.sum', 'chainer.functions.math.exponential', 'chainer.functions.math.logsumexp', 'chainer.functions.loss.contrastive', 'chainer.functions.loss.crf1d', 'chainer.functions.loss.cross_covariance', 'chainer.functions.loss.ctc', 'chainer.functions.loss.decov', 'chainer.functions.loss.discriminative_loss', 'chainer.functions.math.basic_math', 'chainer.functions.math.floor', 'chainer.functions.math.sqrt', 'chainer.functions.loss.hinge', 'chainer.functions.loss.huber_loss', 'chainer.functions.loss.mean_absolute_error', 'chainer.functions.loss.mean_squared_error', 'chainer.functions.loss.negative_sampling', 'chainer.functions.loss.sigmoid_cross_entropy', 'chainer.functions.loss.softmax_cross_entropy', 'chainer.functions.loss.squared_error', 'chainer.functions.loss.triplet', 'chainer.functions.loss.vae', 'chainer.functions.math.batch_l2_norm_squared', 'chainer.functions.math.bias', 'chainer.functions.math.ceil', 'chainer.functions.math.clip', 'chainer.functions.math.cumprod', 'chainer.functions.math.cumsum', 'chainer.functions.math.det', 'chainer.utils.precision', 'chainer.functions.math.digamma', 'chainer.functions.math.einsum', 'chainer.functions.math.erf', 'chainer.functions.math.erfc', 'chainer.functions.math.erfcinv', 'scipy.special', 'scipy.special.sf_error', 'scipy.special._ufuncs', 'scipy.special._ufuncs_cxx', 'scipy.special._basic', 'scipy.special.specfun', 'scipy.special.orthogonal', 'scipy.linalg', 'scipy.linalg.linalg_version', 'scipy.linalg.misc', 'scipy.linalg.blas', 'scipy.linalg._fblas', 'scipy.linalg.lapack', 'scipy.linalg._flapack', 'scipy.linalg.basic', 'scipy.linalg.flinalg', 'scipy.linalg._flinalg', 'scipy.linalg.decomp', 'scipy.linalg.decomp_svd', 'scipy.linalg._solve_toeplitz', 'scipy.linalg.decomp_lu', 'scipy.linalg._decomp_ldl', 'scipy.linalg.decomp_cholesky', 'scipy.linalg.decomp_qr', 'scipy.linalg._decomp_qz', 'scipy.linalg.decomp_schur', 'scipy.linalg._decomp_polar', 'scipy.linalg.matfuncs', 'scipy.linalg.special_matrices', 'scipy.linalg._expm_frechet', 'scipy.linalg._matfuncs_sqrtm', 'scipy.linalg._solvers', 'scipy.linalg._procrustes', 'scipy.linalg._decomp_update', 'scipy.linalg.cython_blas', 'scipy.linalg.cython_lapack', 'scipy.linalg._sketches', 'scipy.special._comb', 'scipy.special._logsumexp', 'scipy.special.spfun_stats', 'scipy.special._ellip_harm', 'scipy.special._ellip_harm_2', 'scipy.special.lambertw', 'scipy.special._spherical_bessel', 'chainer.functions.math.erfcx', 'chainer.functions.math.erfinv', 'chainer.functions.math.exponential_m1', 'chainer.functions.math.fft', 'chainer.functions.math.fix', 'chainer.functions.math.fmod', 'chainer.functions.math.hyperbolic', 'chainer.functions.math.identity', 'chainer.functions.math.inv', 'chainer.functions.math.lgamma', 'chainer.functions.math.linear_interpolate', 'chainer.functions.math.log_ndtr', 'chainer.functions.math.logarithm_1p', 'chainer.functions.math.maximum', 'chainer.functions.math.minimum', 'chainer.functions.math.ndtr', 'chainer.functions.math.ndtri', 'chainer.functions.math.polygamma', 'chainer.functions.math.prod', 'chainer.functions.math.scale', 'chainer.functions.math.sign', 'chainer.functions.math.sparse_matmul', 'chainer.functions.math.square', 'chainer.functions.math.squared_difference', 'chainer.functions.math.tensordot', 'chainer.functions.math.trigonometric', 'chainer.functions.noise.gaussian', 'chainer.functions.noise.gumbel_softmax', 'chainer.functions.noise.simplified_dropconnect', 'chainer.functions.noise.zoneout', 'chainer.functions.normalization', 'chainer.functions.normalization.batch_normalization', 'chainer.functions.normalization.batch_renormalization', 'chainer.functions.normalization.decorrelated_batch_normalization', 'chainer.functions.normalization.group_normalization', 'chainer.functions.normalization.l2_normalization', 'chainer.functions.normalization.layer_normalization', 'chainer.functions.normalization.local_response_normalization', 'chainer.functions.pooling', 'chainer.functions.pooling.average_pooling_2d', 'chainer.functions.pooling.average_pooling_nd', 'chainer.functions.pooling.average_pooling_nd_kernel', 'chainer.functions.pooling.pooling_nd_kernel', 'chainer.functions.pooling.pooling_nd', 'chainer.functions.pooling.pooling_2d', 'chainer.functions.pooling.max_pooling_2d', 'chainer.functions.pooling.max_pooling_nd', 'chainer.functions.pooling.max_pooling_nd_kernel', 'chainer.functions.pooling.roi_average_align_2d', 'chainer.functions.pooling.roi_average_pooling_2d', 'chainer.functions.pooling.roi_pooling_2d', 'chainer.functions.pooling.roi_max_align_2d', 'chainer.functions.pooling.roi_max_pooling_2d', 'chainer.functions.pooling.spatial_pyramid_pooling_2d', 'chainer.functions.pooling.unpooling_2d', 'cupy.lib.stride_tricks', 'chainer.functions.pooling.unpooling_nd', 'chainer.functions.pooling.upsampling_2d', 'chainer.functions.util', 'chainer.functions.util.forget', 'chainer.utils.cache', 'chainer.distributions.beta', 'chainer.distributions.categorical', 'chainer.distributions.cauchy', 'chainer.distributions.chisquare', 'chainer.distributions.dirichlet', 'chainer.distributions.exponential', 'chainer.distributions.gamma', 'chainer.distributions.geometric', 'chainer.distributions.gumbel', 'chainer.distributions.independent', 'chainer.distributions.laplace', 'chainer.distributions.log_normal', 'chainer.distributions.multivariate_normal', 'chainer.distributions.normal', 'chainer.distributions.one_hot_categorical', 'chainer.distributions.pareto', 'chainer.distributions.poisson', 'chainer.distributions.uniform', 'chainer.function_hooks', 'chainer.function_hooks.cuda_profile', 'chainer.function_hooks.cupy_memory_profile', 'chainer.function_hooks.debug_print', 'chainer.function_hooks.timer', 'chainer.iterators', 'chainer.iterators.multiprocess_iterator', 'multiprocessing.sharedctypes', 'multiprocessing.heap', 'multiprocessing.util', 'chainer.iterators._statemachine', 'chainer.iterators.order_samplers', 'chainer.iterators.multithread_iterator', 'multiprocessing.pool', 'queue', '_queue', 'chainer.iterators.serial_iterator', 'chainer.iterators.dali_iterator', 'chainer.links', 'chainer.links.activation', 'chainer.links.activation.maxout', 'chainer.link', 'chainer.device_resident', 'chainer.link_hook', 'chainer.links.connection', 'chainer.links.connection.linear', 'chainer.links.activation.prelu', 'chainer.links.activation.simplified_dropconnect', 'chainer.links.activation.swish', 'chainer.links.connection.bias', 'chainer.links.connection.bilinear', 'chainer.links.connection.convolution_2d', 'chainer.links.connection.convolution_nd', 'chainer.links.connection.deconvolution_2d', 'chainer.links.connection.deconvolution_nd', 'chainer.links.connection.deformable_convolution_2d', 'chainer.links.connection.depthwise_convolution_2d', 'chainer.links.connection.dilated_convolution_2d', 'chainer.links.connection.embed_id', 'chainer.links.connection.gru', 'chainer.links.connection.highway', 'chainer.links.connection.inception', 'chainer.links.connection.inceptionbn', 'chainer.links.normalization', 'chainer.links.normalization.batch_normalization', 'chainer.links.connection.local_convolution_2d', 'chainer.links.connection.lstm', 'chainer.links.connection.mgu', 'chainer.links.connection.mlp_convolution_2d', 'chainer.links.connection.n_step_gru', 'chainer.links.connection.n_step_rnn', 'chainer.links.connection.n_step_lstm', 'chainer.links.connection.parameter', 'chainer.links.connection.peephole', 'chainer.links.connection.scale', 'chainer.links.connection.tree_lstm', 'chainer.links.connection.zoneoutlstm', 'chainer.links.loss', 'chainer.links.loss.black_out', 'chainer.utils.walker_alias', 'chainer.links.loss.crf1d', 'chainer.links.loss.hierarchical_softmax', 'chainer.links.loss.negative_sampling', 'chainer.links.model', 'chainer.links.model.classifier', 'chainer.reporter', 'chainer.serializer', 'chainer.links.model.vision', 'chainer.links.model.vision.googlenet', 'chainer.serializers', 'chainer.serializers.hdf5', 'h5py', 'h5py._errors', 'h5py._hl', 'h5py._hl.compat', 'h5py.version', 'h5py.h5', '_cython_0_29_13', 'h5py.defs', 'h5py._objects', 'h5py._conv', 'h5py.h5r', 'h5py.h5t', 'h5py.utils', 'h5py.h5py_warnings', 'h5py.h5z', 'h5py.h5a', 'h5py.h5s', 'h5py.h5p', 'h5py.h5ac', 'h5py._proxy', 'h5py.h5d', 'h5py.h5ds', 'h5py.h5f', 'h5py.h5g', 'h5py.h5i', 'h5py.h5fd', 'h5py.h5pl', 'h5py._hl.filters', 'h5py._hl.base', 'h5py._hl.files', 'h5py._hl.group', 'h5py.h5o', 'h5py.h5l', 'h5py._hl.dataset', 'h5py._hl.selections', 'h5py._hl.selections2', 'h5py._hl.datatype', 'h5py._hl.vds', 'h5py._hl.attrs', 'uuid', 'chainer.serializers.npz', 'chainer.utils.imgproc', 'chainer.links.model.vision.resnet', 'chainer.links.model.vision.vgg', 'chainer.links.normalization.batch_renormalization', 'chainer.links.normalization.decorrelated_batch_normalization', 'chainer.links.normalization.group_normalization', 'chainer.links.normalization.layer_normalization', 'chainer.links.theano', 'chainer.links.theano.theano_function', 'chainer.functions.theano', 'chainer.functions.theano.theano_function', 'chainer.optimizers', 'chainer.optimizers.ada_delta', 'chainer.optimizer', 'chainer.optimizer_hooks', 'chainer.optimizer_hooks.gradient_clipping', 'chainer.cuda', 'chainer.optimizer_hooks.gradient_hard_clipping', 'chainer.optimizer_hooks.gradient_lars', 'chainer.optimizer_hooks.gradient_noise', 'chainer.optimizer_hooks.lasso', 'chainer.optimizer_hooks.weight_decay', 'chainer.optimizers.ada_grad', 'chainer.optimizers.adam', 'chainer.optimizers.corrected_momentum_sgd', 'chainer.optimizers.momentum_sgd', 'chainer.optimizers.msvag', 'chainer.optimizers.nesterov_ag', 'chainer.optimizers.rmsprop', 'chainer.optimizers.rmsprop_graves', 'chainer.optimizers.sgd', 'chainer.optimizers.smorms3', 'chainer.training', 'chainer.training.extensions', 'chainer.training.extensions._snapshot', 'chainer.training.extension', 'chainer.training.extensions.snapshot_writers', 'chainer.training.extensions.computational_graph', 'chainer.computational_graph', 'chainer.training.extensions.evaluator', 'chainer.training.extensions.exponential_shift', 'chainer.training.extensions.fail_on_nonnumber', 'chainer.training.extensions.inverse_shift', 'chainer.training.extensions.linear_shift', 'chainer.training.extensions.log_report', 'chainer.training.trigger', 'chainer.training.triggers', 'chainer.training.triggers.early_stopping_trigger', 'chainer.training.util', 'chainer.training.triggers.interval_trigger', 'chainer.training.triggers.manual_schedule_trigger', 'chainer.training.triggers.minmax_value_trigger', 'chainer.training.triggers.once_trigger', 'chainer.training.triggers.time_trigger', 'chainer.training.extensions.micro_average', 'chainer.training.extensions.multistep_shift', 'chainer.training.extensions.parameter_statistics', 'chainer.training.extensions.plot_report', 'chainer.training.extensions.polynomial_shift', 'chainer.training.extensions.print_report', 'chainer.training.extensions.util', 'chainer.training.extensions.progress_bar', 'chainer.training.extensions.step_shift', 'chainer.training.extensions.value_observation', 'chainer.training.extensions.variable_statistics_plot', 'chainer.training.extensions.variable_unchain', 'chainer.training.extensions.warmup_shift', 'chainer.training.updaters', 'chainer.training.updaters.multiprocess_parallel_updater', 'chainer.training.updaters.standard_updater', 'chainer.training._updater', 'chainer.training.updaters.parallel_updater', 'chainer.training.trainer', 'chainer.training.updater', 'chainer.warnings', 'chainer._runtime_info', 'chainer.graph_optimizations.static_graph', 'chainer.sequential', 'chainer._environment_check', 'numpy.distutils', 'numpy.distutils.ccompiler', 'shlex', 'distutils.ccompiler', 'distutils.file_util', 'distutils.dir_util', 'distutils.sysconfig', 'distutils.version', 'numpy.distutils.log', 'numpy.distutils.misc_util', 'numpy.distutils.compat', 'numpy.distutils.exec_command', 'numpy.distutils.unixccompiler', 'distutils.unixccompiler', 'numpy.distutils.npy_pkg_config', 'configparser', 'numpy.distutils.__config__', 'numpy.distutils.system_info', 'distutils.dist', 'distutils.fancy_getopt', 'getopt', 'numpy.distutils.command', 'distutils.command', 'distutils.command.clean', 'distutils.core', 'distutils.cmd', 'distutils.archive_util', 'distutils.config', 'distutils.extension', 'distutils.command.install_scripts', 'distutils.command.bdist', 'distutils.command.bdist_dumb', 'distutils.command.bdist_wininst', 'numpy.distutils.command.config', 'distutils.command.config', 'numpy.distutils.mingw32ccompiler', 'distutils.cygwinccompiler', 'distutils.msvccompiler', 'numpy.distutils.command.autodist', 'numpy.distutils._shell_utils', '_sysconfigdata_m_linux_x86_64-linux-gnu', 'email.message', 'uu', 'email._encoded_words', 'email.iterators', 'tensorboardX', 'tensorboardX.record_writer', 'tensorboardX.crc32c', 'tensorboardX.torchvis', 'tensorboardX.writer', 'tensorboardX.embedding', 'tensorboardX.event_file_writer', 'tensorboardX.proto', 'tensorboardX.proto.event_pb2', 'google.protobuf', 'google.protobuf.descriptor', 'google.protobuf.internal', 'google.protobuf.internal.api_implementation', 'google.protobuf.internal._api_implementation', 'google.protobuf.pyext', 'google.protobuf.internal.containers', 'google.protobuf.internal.enum_type_wrapper', 'google.protobuf.message', 'google.protobuf.pyext._message', 'google.protobuf.reflection', 'google.protobuf.message_factory', 'google.protobuf.descriptor_pool', 'google.protobuf.descriptor_database', 'google.protobuf.text_encoding', 'google.protobuf.pyext.cpp_message', 'google.protobuf.symbol_database', 'tensorboardX.proto.summary_pb2', 'tensorboardX.proto.tensor_pb2', 'tensorboardX.proto.resource_handle_pb2', 'google.protobuf.internal.well_known_types', 'tensorboardX.proto.tensor_shape_pb2', 'tensorboardX.proto.types_pb2', 'tensorboardX.onnx_graph', 'tensorboardX.proto.graph_pb2', 'tensorboardX.proto.node_def_pb2', 'tensorboardX.proto.attr_value_pb2', 'tensorboardX.proto.versions_pb2', 'tensorboardX.openvino_graph', 'tensorboardX.pytorch_graph', 'tensorboardX.proto.step_stats_pb2', 'tensorboardX.proto_graph', 'tensorboardX.utils', 'tensorboardX.summary', 'tensorboardX.proto.plugin_pr_curve_pb2', 'tensorboardX.proto.plugin_text_pb2', 'tensorboardX.proto.plugin_mesh_pb2', 'tensorboardX.proto.layout_pb2', 'tensorboardX.x2num', 'tensorboardX.visdom_writer', 'torch', 'torch._utils', 'torch._utils_internal', 'torch.version', 'torch._six', 'torch._nvrtc', 'torch._C._onnx', 'torch._C._jit_tree_views', 'torch._C._jit', 'torch._C', 'torch.random', 'torch.serialization', 'torch._tensor_str', 'torch.tensor', 'torch.utils', 'torch.utils.hooks', 'torch.storage', 'torch.cuda', 'torch.cuda._utils', 'torch.cuda.random', 'torch.cuda.sparse', 'torch.cuda.profiler', 'torch.cuda.nvtx', 'torch.cuda.streams', 'torch.sparse', 'torch.functional', 'torch.nn', 'torch.nn.modules', 'torch.nn.modules.module', 'torch.nn.backends', 'torch.nn.backends.thnn', 'torch.nn.backends.backend', 'torch.nn._functions', 'torch.nn._functions.thnn', 'torch.nn._functions.thnn.auto', 'torch._thnn', 'torch._thnn.utils', 'torch.autograd', 'torch.autograd.variable', 'torch.autograd.function', 'torch.autograd.gradcheck', 'torch.testing', 'torch.autograd.grad_mode', 'torch.autograd.anomaly_mode', 'torch.autograd.profiler', 'torch.nn._functions.thnn.auto_double_backwards', 'torch.nn._functions.thnn.auto_symbolic', 'torch.autograd._functions', 'torch.autograd._functions.tensor', 'torch.autograd._functions.utils', 'torch.nn._functions.thnn.normalization', 'torch.nn._functions.thnn.fold', 'torch.nn._functions.thnn.sparse', 'torch.nn.parameter', 'torch.nn.modules.linear', 'torch.nn.functional', 'torch.nn._reduction', 'torch._jit_internal', 'torch.nn.modules.utils', 'torch.nn._functions.vision', 'torch.backends', 'torch.backends.cudnn', 'torch.nn.grad', 'torch.nn._VF', 'torch.nn.init', 'torch.nn.modules.conv', 'torch.nn.modules.activation', 'torch.nn.modules.loss', 'torch.nn.modules.container', 'torch.nn.modules.pooling', 'torch.nn.modules.batchnorm', 'torch.nn.modules.instancenorm', 'torch.nn.modules.normalization', 'torch.nn.modules.dropout', 'torch.nn.modules.padding', 'torch.nn.modules.sparse', 'torch.nn.modules.rnn', 'torch.nn.utils', 'torch.nn.utils.rnn', 'torch.nn.utils.clip_grad', 'torch.nn.utils.weight_norm', 'torch.nn.utils.convert_parameters', 'torch.nn.utils.spectral_norm', 'torch.nn.modules.pixelshuffle', 'torch.nn.modules.upsampling', 'torch.nn.modules.distance', 'torch.nn.modules.fold', 'torch.nn.modules.adaptive', 'torch.nn.parallel', 'torch.nn.parallel.parallel_apply', 'torch.nn.parallel.replicate', 'torch.cuda.comm', 'torch.cuda.nccl', 'torch.nn.parallel.data_parallel', 'torch.nn.parallel.scatter_gather', 'torch.nn.parallel._functions', 'torch.nn.parallel.distributed', 'torch.distributed', 'torch.distributed.distributed_c10d', 'torch.distributed.rendezvous', 'torch.nn.parallel.distributed_cpu', 'torch.nn.parallel.deprecated', 'torch.nn.parallel.deprecated.distributed', 'torch.distributed.deprecated', 'torch.nn.parallel.deprecated.distributed_cpu', 'torch.optim', 'torch.optim.adadelta', 'torch.optim.optimizer', 'torch.optim.adagrad', 'torch.optim.adam', 'torch.optim.sparse_adam', 'torch.optim.adamax', 'torch.optim.asgd', 'torch.optim.sgd', 'torch.optim.rprop', 'torch.optim.rmsprop', 'torch.optim.lbfgs', 'torch.optim.lr_scheduler', 'torch.multiprocessing', 'torch.multiprocessing.reductions', 'multiprocessing.resource_sharer', 'torch.multiprocessing.spawn', 'multiprocessing.connection', '_multiprocessing', 'torch.utils.backcompat', 'torch.onnx', 'torch.jit', 'torch.jit.frontend', 'torch.jit.annotations', 'torch.distributions', 'torch.distributions.bernoulli', 'torch.distributions.constraints', 'torch.distributions.exp_family', 'torch.distributions.distribution', 'torch.distributions.utils', 'torch.distributions.beta', 'torch.distributions.dirichlet', 'torch.distributions.binomial', 'torch.distributions.categorical', 'torch.distributions.cauchy', 'torch.distributions.chi2', 'torch.distributions.gamma', 'torch.distributions.constraint_registry', 'torch.distributions.transforms', 'torch.distributions.exponential', 'torch.distributions.fishersnedecor', 'torch.distributions.geometric', 'torch.distributions.gumbel', 'torch.distributions.uniform', 'torch.distributions.transformed_distribution', 'torch.distributions.half_cauchy', 'torch.distributions.half_normal', 'torch.distributions.normal', 'torch.distributions.independent', 'torch.distributions.kl', 'torch.distributions.laplace', 'torch.distributions.logistic_normal', 'torch.distributions.lowrank_multivariate_normal', 'torch.distributions.multivariate_normal', 'torch.distributions.one_hot_categorical', 'torch.distributions.pareto', 'torch.distributions.poisson', 'torch.distributions.log_normal', 'torch.distributions.multinomial', 'torch.distributions.negative_binomial', 'torch.distributions.relaxed_bernoulli', 'torch.distributions.relaxed_categorical', 'torch.distributions.studentT', 'torch.distributions.weibull', 'torch.backends.cuda', 'torch.backends.mkl', 'torch._torch_docs', 'torch._tensor_docs', 'torch._storage_docs', 'torch._ops', 'espnet.asr.asr_utils', 'matplotlib', 'matplotlib.cbook', 'matplotlib.cbook.deprecation', 'matplotlib.rcsetup', 'matplotlib.fontconfig_pattern', 'pyparsing', 'matplotlib.colors', 'matplotlib._color_data', 'cycler', 'matplotlib._version', 'matplotlib.ft2font', 'dateutil', 'dateutil._version', 'kiwisolver']
+/home/sumit/espnet/tools/venv/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+2020-04-23 09:29:21,630 (deterministic_utils:24) INFO: torch type check is disabled
+2020-04-23 09:29:21,630 (asr_utils:439) INFO: reading a config file from exp/seed_twenty_five_n_unlabel_pytorch_train_ground_truth_model_for_twenty_five_percent_ctc_b32/results/model.json
+2020-04-23 09:29:21,631 (asr_init:128) WARNING: reading model parameters from exp/seed_twenty_five_n_unlabel_pytorch_train_ground_truth_model_for_twenty_five_percent_ctc_b32/results/model.loss.best
+2020-04-23 09:29:21,631 (nets_utils:405) INFO: subsample: 1 2 2 1
+/home/sumit/espnet/tools/venv/lib/python3.7/site-packages/torch/nn/modules/rnn.py:46: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.1 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+2020-04-23 09:29:21,841 (encoders:239) INFO: BLSTM with every-layer projection for encoder
+2020-04-23 09:29:22,804 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 85.
+2020-04-23 09:29:22,805 (decoders:536) INFO: max output length: 85
+2020-04-23 09:29:22,805 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:22,805 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:22,805 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:22,810 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:22,945 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:23,073 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:23,140 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:23,207 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:23,274 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:23,340 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:23,446 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:23,526 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:23,634 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:23,704 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:23,767 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:23,833 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:23,895 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:23,957 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:24,021 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:24,098 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:24,198 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:24,241 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:24,268 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:24,311 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:24,355 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:24,431 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:24,474 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:24,534 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:24,592 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:24,649 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:24,695 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:24,748 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:24,806 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:24,846 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:24,901 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:24,959 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:25,015 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:25,056 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:25,096 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:25,152 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:25,192 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:25,248 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:25,287 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:25,325 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:25,379 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:25,416 (decoders:588) DEBUG: position 42
+2020-04-23 09:29:25,471 (decoders:588) DEBUG: position 43
+2020-04-23 09:29:25,507 (decoders:588) DEBUG: position 44
+2020-04-23 09:29:25,552 (decoders:588) DEBUG: position 45
+2020-04-23 09:29:25,588 (decoders:588) DEBUG: position 46
+2020-04-23 09:29:25,641 (decoders:588) DEBUG: position 47
+2020-04-23 09:29:25,677 (decoders:588) DEBUG: position 48
+2020-04-23 09:29:25,712 (decoders:588) DEBUG: position 49
+2020-04-23 09:29:25,748 (decoders:588) DEBUG: position 50
+2020-04-23 09:29:25,800 (decoders:588) DEBUG: position 51
+2020-04-23 09:29:25,835 (decoders:588) DEBUG: position 52
+2020-04-23 09:29:25,873 (decoders:588) DEBUG: position 53
+2020-04-23 09:29:25,911 (decoders:588) DEBUG: position 54
+2020-04-23 09:29:25,963 (decoders:588) DEBUG: position 55
+2020-04-23 09:29:25,999 (decoders:588) DEBUG: position 56
+2020-04-23 09:29:26,036 (decoders:588) DEBUG: position 57
+2020-04-23 09:29:26,089 (decoders:588) DEBUG: position 58
+2020-04-23 09:29:26,126 (decoders:588) DEBUG: position 59
+2020-04-23 09:29:26,162 (decoders:588) DEBUG: position 60
+2020-04-23 09:29:26,198 (decoders:588) DEBUG: position 61
+2020-04-23 09:29:26,251 (asr_utils:626) INFO: groundtruth: sil v ih sh uw ah l iy dh iy z ih sil p r aa sil k s ih m ey dx ih sil w ah dx iy w ih s f iy l iy n w ih sil th ih n ih m s eh l f sil
+2020-04-23 09:29:26,251 (asr_utils:627) INFO: prediction :  dihnshuwihliyvbiyzih braa ksihmeydxih gwuhdxiywihsfiyliywih thihnihmsehlv <eos>
+2020-04-23 09:29:26,703 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 56.
+2020-04-23 09:29:26,703 (decoders:536) INFO: max output length: 56
+2020-04-23 09:29:26,703 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:26,704 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:26,704 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:26,706 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:26,770 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:26,809 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:26,864 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:26,906 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:26,957 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:27,003 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:27,057 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:27,094 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:27,131 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:27,184 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:27,221 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:27,258 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:27,294 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:27,346 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:27,374 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:27,409 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:27,456 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:27,490 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:27,524 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:27,558 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:27,608 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:27,674 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:27,708 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:27,743 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:27,778 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:27,828 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:27,861 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:27,901 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:27,942 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:28,009 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:28,042 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:28,076 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:28,092 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:28,109 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:28,126 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:28,143 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:28,160 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:28,177 (asr_utils:626) INFO: groundtruth: sil y uw s aa dh ah m aa w iy z sil t ih sil g eh dh er sil dh ow z y ih er z sil
+2020-04-23 09:29:28,177 (asr_utils:627) INFO: prediction :  yiysaadhihnaawiyz tihgehdhih dowzhhyuwerz <eos>
+2020-04-23 09:29:28,805 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 71.
+2020-04-23 09:29:28,805 (decoders:536) INFO: max output length: 71
+2020-04-23 09:29:28,805 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:28,806 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:28,806 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:28,809 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:28,880 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:28,940 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:29,002 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:29,058 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:29,093 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:29,205 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:29,281 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:29,344 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:29,385 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:29,443 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:29,509 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:29,574 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:29,617 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:29,642 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:29,707 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:29,768 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:29,808 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:29,864 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:29,907 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:29,962 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:30,002 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:30,049 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:30,104 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:30,143 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:30,197 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:30,235 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:30,272 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:30,326 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:30,363 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:30,412 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:30,448 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:30,485 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:30,522 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:30,575 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:30,612 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:30,650 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:30,703 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:30,741 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:30,796 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:30,825 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:30,884 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:30,923 (decoders:588) DEBUG: position 42
+2020-04-23 09:29:30,961 (decoders:588) DEBUG: position 43
+2020-04-23 09:29:31,014 (decoders:588) DEBUG: position 44
+2020-04-23 09:29:31,050 (decoders:588) DEBUG: position 45
+2020-04-23 09:29:31,104 (asr_utils:626) INFO: groundtruth: sil b ah sil t s ah sil ch sil k ey s ih z sil w er ih n dh ah sil p ae s sil t ah n y uw sh uw l sil
+2020-04-23 09:29:31,104 (asr_utils:627) INFO: prediction :  beh seh ch keysihzwererihndhih paes tehnyuwshihaal <eos>
+2020-04-23 09:29:31,691 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 76.
+2020-04-23 09:29:31,692 (decoders:536) INFO: max output length: 76
+2020-04-23 09:29:31,692 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:31,692 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:31,692 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:31,695 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:31,780 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:31,852 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:31,916 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:31,978 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:32,039 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:32,099 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:32,153 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:32,197 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:32,257 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:32,317 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:32,376 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:32,419 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:32,477 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:32,536 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:32,578 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:32,637 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:32,679 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:32,748 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:32,806 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:32,847 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:32,906 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:32,946 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:33,003 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:33,060 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:33,100 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:33,156 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:33,190 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:33,230 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:33,270 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:33,325 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:33,363 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:33,418 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:33,469 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:33,539 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:33,610 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:33,656 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:33,709 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:33,745 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:33,781 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:33,816 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:33,873 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:33,942 (decoders:588) DEBUG: position 42
+2020-04-23 09:29:34,009 (decoders:588) DEBUG: position 43
+2020-04-23 09:29:34,052 (decoders:588) DEBUG: position 44
+2020-04-23 09:29:34,088 (decoders:588) DEBUG: position 45
+2020-04-23 09:29:34,141 (decoders:588) DEBUG: position 46
+2020-04-23 09:29:34,176 (decoders:588) DEBUG: position 47
+2020-04-23 09:29:34,212 (decoders:588) DEBUG: position 48
+2020-04-23 09:29:34,281 (asr_utils:626) INFO: groundtruth: sil dh ih m ih s sil k w ow w ih z r iy sil t r ae sil t ih sil d w ih sil th ih n ah sil p aa l ih sil jh iy sil
+2020-04-23 09:29:34,281 (asr_utils:627) INFO: prediction :  dhihmihs klow wihzriy trae tih wih thihnih pllih jhiy <eos>
+2020-04-23 09:29:34,713 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 64.
+2020-04-23 09:29:34,714 (decoders:536) INFO: max output length: 64
+2020-04-23 09:29:34,714 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:34,714 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:34,714 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:34,717 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:34,808 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:34,878 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:34,952 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:35,017 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:35,059 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:35,083 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:35,108 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:35,132 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:35,155 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:35,178 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:35,217 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:35,277 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:35,349 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:35,425 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:35,448 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:35,470 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:35,492 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:35,515 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:35,536 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:35,557 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:35,595 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:35,631 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:35,698 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:35,756 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:35,793 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:35,829 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:35,848 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:35,868 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:35,887 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:35,906 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:35,925 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:35,943 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:35,978 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:36,010 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:36,045 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:36,081 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:36,133 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:36,168 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:36,204 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:36,255 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:36,291 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:36,326 (decoders:588) DEBUG: position 42
+2020-04-23 09:29:36,362 (asr_utils:626) INFO: groundtruth: sil m ay sil k l sil k ah l er sil dh ih sil b eh sil d r uw m w aa l w ih th sil k r ey aa n s sil
+2020-04-23 09:29:36,362 (asr_utils:627) INFO: prediction :  may kl kahliher dhih beh jhermaalihth kreyaynz <eos>
+2020-04-23 09:29:36,858 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 63.
+2020-04-23 09:29:36,858 (decoders:536) INFO: max output length: 63
+2020-04-23 09:29:36,858 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:36,859 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:36,859 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:36,862 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:36,933 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:36,988 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:37,043 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:37,116 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:37,189 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:37,263 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:37,304 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:37,329 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:37,351 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:37,375 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:37,396 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:37,420 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:37,459 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:37,509 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:37,580 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:37,626 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:37,680 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:37,701 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:37,722 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:37,742 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:37,761 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:37,781 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:37,800 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:37,818 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:37,870 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:37,901 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:37,969 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:38,011 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:38,045 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:38,107 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:38,148 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:38,209 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:38,243 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:38,270 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:38,335 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:38,383 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:38,416 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:38,449 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:38,467 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:38,483 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:38,498 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:38,516 (decoders:588) DEBUG: position 42
+2020-04-23 09:29:38,532 (decoders:588) DEBUG: position 43
+2020-04-23 09:29:38,549 (decoders:588) DEBUG: position 44
+2020-04-23 09:29:38,565 (asr_utils:626) INFO: groundtruth: sil hh eh l sil p sil g r ey sil t ih sil p ih sil k ih sil p eh sil k ih v sil p ih sil t ey dx ow z sil
+2020-04-23 09:29:38,565 (asr_utils:627) INFO: prediction :  hhehl grey dih pih kih beh kihv bih teydxihnz <eos>
+2020-04-23 09:29:39,121 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 80.
+2020-04-23 09:29:39,121 (decoders:536) INFO: max output length: 80
+2020-04-23 09:29:39,122 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:39,122 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:39,122 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:39,125 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:39,248 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:39,327 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:39,397 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:39,499 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:39,570 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:39,616 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:39,645 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:39,676 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:39,705 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:39,734 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:39,813 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:39,885 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:39,955 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:39,999 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:40,027 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:40,054 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:40,080 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:40,106 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:40,149 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:40,228 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:40,302 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:40,341 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:40,406 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:40,464 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:40,518 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:40,592 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:40,665 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:40,729 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:40,769 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:40,826 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:40,866 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:40,919 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:40,958 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:41,014 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:41,055 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:41,110 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:41,148 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:41,202 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:41,240 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:41,277 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:41,331 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:41,369 (decoders:588) DEBUG: position 42
+2020-04-23 09:29:41,414 (decoders:588) DEBUG: position 43
+2020-04-23 09:29:41,468 (decoders:588) DEBUG: position 44
+2020-04-23 09:29:41,506 (decoders:588) DEBUG: position 45
+2020-04-23 09:29:41,542 (decoders:588) DEBUG: position 46
+2020-04-23 09:29:41,596 (decoders:588) DEBUG: position 47
+2020-04-23 09:29:41,635 (asr_utils:626) INFO: groundtruth: sil sh ey v iy n sil k r iy m ih z ih sil p aa sil p y uw l er ay dx eh m aa n hh aa l ah w iy n sil
+2020-04-23 09:29:41,635 (asr_utils:627) INFO: prediction :  shiymihng kriymihzih plaa piyihleraydxihmaynhhowlihwiyn <eos>
+2020-04-23 09:29:42,129 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 61.
+2020-04-23 09:29:42,129 (decoders:536) INFO: max output length: 61
+2020-04-23 09:29:42,129 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:42,130 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:42,130 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:42,132 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:42,205 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:42,262 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:42,310 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:42,366 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:42,390 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:42,469 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:42,510 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:42,568 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:42,607 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:42,662 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:42,734 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:42,805 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:42,879 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:42,950 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:42,996 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:43,050 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:43,071 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:43,090 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:43,110 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:43,130 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:43,149 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:43,168 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:43,187 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:43,222 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:43,269 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:43,336 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:43,378 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:43,424 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:43,485 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:43,527 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:43,581 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:43,614 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:43,666 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:43,708 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:43,750 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:43,807 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:43,857 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:43,913 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:43,965 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:43,998 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:44,027 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:44,069 (asr_utils:626) INFO: groundtruth: sil dh ey ow n ah sil b ih sil hh aw s ih n dh ah r er m ow sil k ah n sil t r iy s ay sil d sil
+2020-04-23 09:29:44,069 (asr_utils:627) INFO: prediction :  beyahdxih bihnghhawsihndherrermow kehn triysay d <eos>
+2020-04-23 09:29:45,207 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 138.
+2020-04-23 09:29:45,207 (decoders:536) INFO: max output length: 138
+2020-04-23 09:29:45,208 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:45,208 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:45,208 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:45,213 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:45,385 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:45,434 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:45,484 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:45,603 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:45,734 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:45,869 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:45,974 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:46,123 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:46,224 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:46,348 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:46,412 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:46,460 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:46,509 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:46,627 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:46,747 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:46,875 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:46,970 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:47,072 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:47,167 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:47,259 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:47,356 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:47,456 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:47,569 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:47,688 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:47,817 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:47,916 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:48,008 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:48,097 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:48,171 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:48,298 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:48,388 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:48,431 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:48,488 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:48,597 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:48,654 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:48,694 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:48,784 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:48,880 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:48,954 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:49,041 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:49,119 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:49,191 (decoders:588) DEBUG: position 42
+2020-04-23 09:29:49,263 (decoders:588) DEBUG: position 43
+2020-04-23 09:29:49,349 (decoders:588) DEBUG: position 44
+2020-04-23 09:29:49,436 (decoders:588) DEBUG: position 45
+2020-04-23 09:29:49,542 (decoders:588) DEBUG: position 46
+2020-04-23 09:29:49,651 (decoders:588) DEBUG: position 47
+2020-04-23 09:29:49,720 (decoders:588) DEBUG: position 48
+2020-04-23 09:29:49,807 (decoders:588) DEBUG: position 49
+2020-04-23 09:29:49,882 (decoders:588) DEBUG: position 50
+2020-04-23 09:29:49,950 (decoders:588) DEBUG: position 51
+2020-04-23 09:29:50,035 (decoders:588) DEBUG: position 52
+2020-04-23 09:29:50,103 (decoders:588) DEBUG: position 53
+2020-04-23 09:29:50,170 (decoders:588) DEBUG: position 54
+2020-04-23 09:29:50,237 (decoders:588) DEBUG: position 55
+2020-04-23 09:29:50,316 (decoders:588) DEBUG: position 56
+2020-04-23 09:29:50,398 (decoders:588) DEBUG: position 57
+2020-04-23 09:29:50,512 (decoders:588) DEBUG: position 58
+2020-04-23 09:29:50,577 (decoders:588) DEBUG: position 59
+2020-04-23 09:29:50,643 (decoders:588) DEBUG: position 60
+2020-04-23 09:29:50,733 (decoders:588) DEBUG: position 61
+2020-04-23 09:29:50,814 (decoders:588) DEBUG: position 62
+2020-04-23 09:29:50,896 (decoders:588) DEBUG: position 63
+2020-04-23 09:29:51,004 (decoders:588) DEBUG: position 64
+2020-04-23 09:29:51,067 (decoders:588) DEBUG: position 65
+2020-04-23 09:29:51,128 (decoders:588) DEBUG: position 66
+2020-04-23 09:29:51,189 (decoders:588) DEBUG: position 67
+2020-04-23 09:29:51,254 (decoders:588) DEBUG: position 68
+2020-04-23 09:29:51,314 (decoders:588) DEBUG: position 69
+2020-04-23 09:29:51,379 (decoders:588) DEBUG: position 70
+2020-04-23 09:29:51,463 (decoders:588) DEBUG: position 71
+2020-04-23 09:29:51,527 (decoders:588) DEBUG: position 72
+2020-04-23 09:29:51,591 (decoders:588) DEBUG: position 73
+2020-04-23 09:29:51,656 (asr_utils:626) INFO: groundtruth: sil ih n w ey sil jh n ih sil g ow sh iy ey sh ih n s sil dh iy ih n sil d ih s sil t r iy sil b aa r sil g ih n z eh z ey y uw n ih w ih dh ih s ih ng sil g l y uw n y ih n sil
+2020-04-23 09:29:51,656 (asr_utils:627) INFO: prediction :  ihnwey jh nih gowshiyeyshihnsiyihn dihs triy baar gihnsihzihyuwdxihn wahdxihsihngglyihnyihn <eos>
+2020-04-23 09:29:52,500 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 85.
+2020-04-23 09:29:52,501 (decoders:536) INFO: max output length: 85
+2020-04-23 09:29:52,501 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:52,501 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:52,501 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:52,505 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:52,605 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:52,701 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:52,765 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:52,829 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:52,892 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:52,960 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:53,031 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:53,135 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:53,222 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:53,325 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:53,403 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:53,505 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:53,566 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:53,627 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:53,695 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:53,763 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:53,808 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:53,868 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:53,928 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:53,971 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:54,029 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:54,088 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:54,130 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:54,188 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:54,246 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:54,288 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:54,346 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:54,405 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:54,462 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:54,520 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:54,546 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:54,603 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:54,661 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:54,701 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:54,758 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:54,799 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:54,854 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:54,895 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:54,951 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:54,990 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:55,046 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:55,086 (decoders:588) DEBUG: position 42
+2020-04-23 09:29:55,141 (decoders:588) DEBUG: position 43
+2020-04-23 09:29:55,181 (decoders:588) DEBUG: position 44
+2020-04-23 09:29:55,236 (decoders:588) DEBUG: position 45
+2020-04-23 09:29:55,288 (asr_utils:626) INFO: groundtruth: sil hh iy v aa n ow z r ow sil p s sil dh ih sil b ow sil s sil k ah m ah n s sil t ah sil k sil
+2020-04-23 09:29:55,288 (asr_utils:627) INFO: prediction :  hhiyvaandowz row s dhah bow s kahmahms tah k <eos>
+2020-04-23 09:29:56,183 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 105.
+2020-04-23 09:29:56,212 (decoders:536) INFO: max output length: 105
+2020-04-23 09:29:56,212 (decoders:537) INFO: min output length: 0
+2020-04-23 09:29:56,212 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:29:56,212 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:29:56,217 (decoders:588) DEBUG: position 0
+2020-04-23 09:29:56,320 (decoders:588) DEBUG: position 1
+2020-04-23 09:29:56,408 (decoders:588) DEBUG: position 2
+2020-04-23 09:29:56,479 (decoders:588) DEBUG: position 3
+2020-04-23 09:29:56,567 (decoders:588) DEBUG: position 4
+2020-04-23 09:29:56,636 (decoders:588) DEBUG: position 5
+2020-04-23 09:29:56,695 (decoders:588) DEBUG: position 6
+2020-04-23 09:29:56,793 (decoders:588) DEBUG: position 7
+2020-04-23 09:29:56,862 (decoders:588) DEBUG: position 8
+2020-04-23 09:29:56,930 (decoders:588) DEBUG: position 9
+2020-04-23 09:29:57,015 (decoders:588) DEBUG: position 10
+2020-04-23 09:29:57,083 (decoders:588) DEBUG: position 11
+2020-04-23 09:29:57,155 (decoders:588) DEBUG: position 12
+2020-04-23 09:29:57,241 (decoders:588) DEBUG: position 13
+2020-04-23 09:29:57,310 (decoders:588) DEBUG: position 14
+2020-04-23 09:29:57,395 (decoders:588) DEBUG: position 15
+2020-04-23 09:29:57,449 (decoders:588) DEBUG: position 16
+2020-04-23 09:29:57,532 (decoders:588) DEBUG: position 17
+2020-04-23 09:29:57,601 (decoders:588) DEBUG: position 18
+2020-04-23 09:29:57,687 (decoders:588) DEBUG: position 19
+2020-04-23 09:29:57,747 (decoders:588) DEBUG: position 20
+2020-04-23 09:29:57,846 (decoders:588) DEBUG: position 21
+2020-04-23 09:29:57,951 (decoders:588) DEBUG: position 22
+2020-04-23 09:29:58,017 (decoders:588) DEBUG: position 23
+2020-04-23 09:29:58,089 (decoders:588) DEBUG: position 24
+2020-04-23 09:29:58,141 (decoders:588) DEBUG: position 25
+2020-04-23 09:29:58,218 (decoders:588) DEBUG: position 26
+2020-04-23 09:29:58,329 (decoders:588) DEBUG: position 27
+2020-04-23 09:29:58,393 (decoders:588) DEBUG: position 28
+2020-04-23 09:29:58,423 (decoders:588) DEBUG: position 29
+2020-04-23 09:29:58,453 (decoders:588) DEBUG: position 30
+2020-04-23 09:29:58,483 (decoders:588) DEBUG: position 31
+2020-04-23 09:29:58,538 (decoders:588) DEBUG: position 32
+2020-04-23 09:29:58,617 (decoders:588) DEBUG: position 33
+2020-04-23 09:29:58,691 (decoders:588) DEBUG: position 34
+2020-04-23 09:29:58,764 (decoders:588) DEBUG: position 35
+2020-04-23 09:29:58,838 (decoders:588) DEBUG: position 36
+2020-04-23 09:29:58,930 (decoders:588) DEBUG: position 37
+2020-04-23 09:29:58,990 (decoders:588) DEBUG: position 38
+2020-04-23 09:29:59,064 (decoders:588) DEBUG: position 39
+2020-04-23 09:29:59,123 (decoders:588) DEBUG: position 40
+2020-04-23 09:29:59,200 (decoders:588) DEBUG: position 41
+2020-04-23 09:29:59,274 (decoders:588) DEBUG: position 42
+2020-04-23 09:29:59,342 (decoders:588) DEBUG: position 43
+2020-04-23 09:29:59,424 (decoders:588) DEBUG: position 44
+2020-04-23 09:29:59,501 (decoders:588) DEBUG: position 45
+2020-04-23 09:29:59,574 (decoders:588) DEBUG: position 46
+2020-04-23 09:29:59,617 (decoders:588) DEBUG: position 47
+2020-04-23 09:29:59,676 (decoders:588) DEBUG: position 48
+2020-04-23 09:29:59,737 (decoders:588) DEBUG: position 49
+2020-04-23 09:29:59,798 (decoders:588) DEBUG: position 50
+2020-04-23 09:29:59,859 (decoders:588) DEBUG: position 51
+2020-04-23 09:29:59,922 (decoders:588) DEBUG: position 52
+2020-04-23 09:29:59,966 (decoders:588) DEBUG: position 53
+2020-04-23 09:30:00,027 (decoders:588) DEBUG: position 54
+2020-04-23 09:30:00,106 (asr_utils:626) INFO: groundtruth: sil m ih sil t ih r iy ih l s sil s er r ae m ih sil m aa dx l ih ng sil k l ey sil r eh sil d w ay sil aa r sil b aa f sil
+2020-04-23 09:30:00,107 (asr_utils:627) INFO: prediction :  dhih tihriyihls serrehmih mowlihng kley reh dwey aar gahf <eos>
+2020-04-23 09:30:00,857 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 73.
+2020-04-23 09:30:00,858 (decoders:536) INFO: max output length: 73
+2020-04-23 09:30:00,858 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:00,859 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:00,859 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:00,882 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:00,952 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:01,015 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:01,078 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:01,141 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:01,201 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:01,245 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:01,306 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:01,374 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:01,457 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:01,514 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:01,574 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:01,637 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:01,702 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:01,752 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:01,793 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:01,842 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:01,913 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:01,970 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:02,010 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:02,058 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:02,101 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:02,137 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:02,210 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:02,241 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:02,295 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:02,333 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:02,371 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:02,429 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:02,462 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:02,499 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:02,537 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:02,590 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:02,655 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:02,724 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:02,790 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:02,860 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:02,906 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:02,970 (asr_utils:626) INFO: groundtruth: sil aa r dx ih f ih sh l ih n sil t eh l ih sil jh ih n s ih z f er r iy l sil
+2020-04-23 09:30:02,971 (asr_utils:627) INFO: prediction :  aardxihfihshlih tehlih jhihn sihzferriyl <eos>
+2020-04-23 09:30:03,532 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 55.
+2020-04-23 09:30:03,533 (decoders:536) INFO: max output length: 55
+2020-04-23 09:30:03,533 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:03,533 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:03,534 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:03,560 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:03,634 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:03,690 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:03,729 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:03,789 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:03,827 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:03,887 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:03,954 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:03,992 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:04,045 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:04,082 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:04,119 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:04,170 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:04,206 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:04,249 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:04,289 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:04,316 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:04,375 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:04,412 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:04,447 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:04,483 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:04,513 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:04,564 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:04,599 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:04,634 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:04,677 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:04,715 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:04,743 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:04,776 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:04,840 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:04,881 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:04,915 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:04,957 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:05,026 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:05,060 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:05,092 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:05,124 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:05,156 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:05,187 (asr_utils:626) INFO: groundtruth: sil dh ah s sil m aa l sil b oy sil p uh sil dh ah w er m ah n dh ah hh uh sil k sil
+2020-04-23 09:30:05,188 (asr_utils:627) INFO: prediction :  dhahs maal boy pwuh dahwaarmahnhhuh kr <eos>
+2020-04-23 09:30:05,759 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 62.
+2020-04-23 09:30:05,760 (decoders:536) INFO: max output length: 62
+2020-04-23 09:30:05,760 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:05,760 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:05,761 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:05,763 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:05,830 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:05,888 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:05,940 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:05,981 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:06,038 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:06,078 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:06,133 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:06,186 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:06,224 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:06,263 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:06,301 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:06,356 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:06,402 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:06,455 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:06,492 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:06,528 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:06,565 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:06,618 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:06,655 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:06,692 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:06,740 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:06,778 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:06,814 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:06,849 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:06,884 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:06,919 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:06,987 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:07,023 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:07,058 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:07,090 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:07,157 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:07,199 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:07,234 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:07,254 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:07,271 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:07,290 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:07,310 (asr_utils:626) INFO: groundtruth: sil ah sil ch ow z ih n f y uw w l sil b iy sil k ah m sil jh eh n er l s sil
+2020-04-23 09:30:07,310 (asr_utils:627) INFO: prediction :  ah chuwznfyuwwl biy kahm jhehnerls <eos>
+2020-04-23 09:30:08,083 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 88.
+2020-04-23 09:30:08,084 (decoders:536) INFO: max output length: 88
+2020-04-23 09:30:08,084 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:08,084 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:08,084 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:08,088 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:08,183 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:08,277 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:08,376 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:08,458 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:08,540 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:08,604 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:08,667 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:08,711 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:08,798 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:08,862 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:08,926 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:08,983 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:09,046 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:09,108 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:09,168 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:09,231 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:09,294 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:09,359 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:09,416 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:09,461 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:09,521 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:09,580 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:09,636 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:09,696 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:09,746 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:09,805 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:09,847 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:09,914 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:10,008 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:10,082 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:10,156 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:10,198 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:10,255 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:10,324 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:10,401 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:10,474 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:10,535 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:10,572 (decoders:588) DEBUG: position 38
+2020-04-23 09:30:10,596 (decoders:588) DEBUG: position 39
+2020-04-23 09:30:10,619 (decoders:588) DEBUG: position 40
+2020-04-23 09:30:10,643 (decoders:588) DEBUG: position 41
+2020-04-23 09:30:10,682 (decoders:588) DEBUG: position 42
+2020-04-23 09:30:10,738 (decoders:588) DEBUG: position 43
+2020-04-23 09:30:10,778 (decoders:588) DEBUG: position 44
+2020-04-23 09:30:10,817 (decoders:588) DEBUG: position 45
+2020-04-23 09:30:10,872 (decoders:588) DEBUG: position 46
+2020-04-23 09:30:10,910 (decoders:588) DEBUG: position 47
+2020-04-23 09:30:10,958 (decoders:588) DEBUG: position 48
+2020-04-23 09:30:10,996 (decoders:588) DEBUG: position 49
+2020-04-23 09:30:11,051 (decoders:588) DEBUG: position 50
+2020-04-23 09:30:11,090 (decoders:588) DEBUG: position 51
+2020-04-23 09:30:11,129 (decoders:588) DEBUG: position 52
+2020-04-23 09:30:11,199 (decoders:588) DEBUG: position 53
+2020-04-23 09:30:11,271 (asr_utils:626) INFO: groundtruth: sil ow n l ih dh ih m ow s sil t ih sil k aa m sil p l ih sh sil aa r dx ih s ah sil t ey n sil p aa sil p ih l eh er dx iy sil
+2020-04-23 09:30:11,271 (asr_utils:627) INFO: prediction :  ownliy dihmows tih kaa plihshaardxahsah teyn paa pihleherdxiy <eos>
+2020-04-23 09:30:12,234 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 95.
+2020-04-23 09:30:12,235 (decoders:536) INFO: max output length: 95
+2020-04-23 09:30:12,235 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:12,235 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:12,235 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:12,240 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:12,338 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:12,435 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:12,523 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:12,589 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:12,666 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:12,743 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:12,829 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:12,897 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:12,964 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:13,031 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:13,092 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:13,194 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:13,299 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:13,408 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:13,488 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:13,584 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:13,688 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:13,786 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:13,857 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:13,968 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:14,069 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:14,184 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:14,265 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:14,373 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:14,430 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:14,460 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:14,521 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:14,597 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:14,669 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:14,713 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:14,772 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:14,843 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:14,912 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:14,992 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:15,036 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:15,095 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:15,155 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:15,198 (decoders:588) DEBUG: position 38
+2020-04-23 09:30:15,257 (decoders:588) DEBUG: position 39
+2020-04-23 09:30:15,315 (decoders:588) DEBUG: position 40
+2020-04-23 09:30:15,355 (decoders:588) DEBUG: position 41
+2020-04-23 09:30:15,412 (decoders:588) DEBUG: position 42
+2020-04-23 09:30:15,452 (decoders:588) DEBUG: position 43
+2020-04-23 09:30:15,496 (decoders:588) DEBUG: position 44
+2020-04-23 09:30:15,551 (decoders:588) DEBUG: position 45
+2020-04-23 09:30:15,590 (decoders:588) DEBUG: position 46
+2020-04-23 09:30:15,653 (decoders:588) DEBUG: position 47
+2020-04-23 09:30:15,716 (decoders:588) DEBUG: position 48
+2020-04-23 09:30:15,754 (decoders:588) DEBUG: position 49
+2020-04-23 09:30:15,812 (decoders:588) DEBUG: position 50
+2020-04-23 09:30:15,851 (decoders:588) DEBUG: position 51
+2020-04-23 09:30:15,905 (decoders:588) DEBUG: position 52
+2020-04-23 09:30:15,944 (decoders:588) DEBUG: position 53
+2020-04-23 09:30:15,982 (decoders:588) DEBUG: position 54
+2020-04-23 09:30:16,036 (decoders:588) DEBUG: position 55
+2020-04-23 09:30:16,074 (decoders:588) DEBUG: position 56
+2020-04-23 09:30:16,129 (decoders:588) DEBUG: position 57
+2020-04-23 09:30:16,168 (decoders:588) DEBUG: position 58
+2020-04-23 09:30:16,206 (decoders:588) DEBUG: position 59
+2020-04-23 09:30:16,261 (decoders:588) DEBUG: position 60
+2020-04-23 09:30:16,299 (decoders:588) DEBUG: position 61
+2020-04-23 09:30:16,351 (asr_utils:626) INFO: groundtruth: sil dh ih f ih sh sil b ih sil g ae n sil t ih l iy sil f r ae n sil t ih sil k l iy ah n dh ah s er f ah s ah v dh ih s m aa l ey sil k sil
+2020-04-23 09:30:16,351 (asr_utils:627) INFO: prediction :  dhihfihsh pih gaen tihliy prehn tih kliyahndhservahsihnvdhahs maalleh  <eos>
+2020-04-23 09:30:17,145 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 85.
+2020-04-23 09:30:17,146 (decoders:536) INFO: max output length: 85
+2020-04-23 09:30:17,146 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:17,146 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:17,146 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:17,150 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:17,294 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:17,361 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:17,436 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:17,548 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:17,626 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:17,701 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:17,782 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:17,848 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:17,940 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:18,043 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:18,109 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:18,216 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:18,287 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:18,348 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:18,406 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:18,464 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:18,526 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:18,588 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:18,632 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:18,693 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:18,754 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:18,815 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:18,875 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:18,915 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:18,974 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:19,072 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:19,146 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:19,214 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:19,255 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:19,310 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:19,350 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:19,397 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:19,453 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:19,491 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:19,547 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:19,586 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:19,634 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:19,672 (decoders:588) DEBUG: position 38
+2020-04-23 09:30:19,727 (decoders:588) DEBUG: position 39
+2020-04-23 09:30:19,766 (decoders:588) DEBUG: position 40
+2020-04-23 09:30:19,822 (decoders:588) DEBUG: position 41
+2020-04-23 09:30:19,861 (decoders:588) DEBUG: position 42
+2020-04-23 09:30:19,917 (decoders:588) DEBUG: position 43
+2020-04-23 09:30:19,957 (decoders:588) DEBUG: position 44
+2020-04-23 09:30:20,012 (decoders:588) DEBUG: position 45
+2020-04-23 09:30:20,064 (asr_utils:626) INFO: groundtruth: sil n aa sil s ih sil p r aa z ih ng l iy sil dh ih s ah sil p r ow sil ch sil d ih sil d n aa w er sil k sil
+2020-04-23 09:30:20,065 (asr_utils:627) INFO: prediction :  naa sah prayzihngliy dihsih prah ch dih naaweher k <eos>
+2020-04-23 09:30:20,657 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 79.
+2020-04-23 09:30:20,658 (decoders:536) INFO: max output length: 79
+2020-04-23 09:30:20,658 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:20,658 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:20,659 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:20,662 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:20,783 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:20,826 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:20,855 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:20,910 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:21,012 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:21,073 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:21,109 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:21,199 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:21,243 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:21,318 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:21,375 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:21,446 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:21,503 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:21,567 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:21,627 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:21,653 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:21,681 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:21,706 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:21,764 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:21,801 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:21,871 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:21,935 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:22,032 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:22,073 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:22,131 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:22,171 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:22,211 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:22,266 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:22,338 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:22,430 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:22,502 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:22,549 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:22,607 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:22,677 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:22,749 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:22,818 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:22,863 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:22,900 (decoders:588) DEBUG: position 38
+2020-04-23 09:30:22,921 (decoders:588) DEBUG: position 39
+2020-04-23 09:30:22,941 (decoders:588) DEBUG: position 40
+2020-04-23 09:30:22,963 (decoders:588) DEBUG: position 41
+2020-04-23 09:30:22,985 (decoders:588) DEBUG: position 42
+2020-04-23 09:30:23,023 (decoders:588) DEBUG: position 43
+2020-04-23 09:30:23,065 (decoders:588) DEBUG: position 44
+2020-04-23 09:30:23,130 (decoders:588) DEBUG: position 45
+2020-04-23 09:30:23,183 (decoders:588) DEBUG: position 46
+2020-04-23 09:30:23,231 (decoders:588) DEBUG: position 47
+2020-04-23 09:30:23,285 (asr_utils:626) INFO: groundtruth: sil w ah n th ih ng sil k hh ih th aa sil sil n ow sil b ah dx iy n ow z ah sil b aw dx ih y eh sil sil
+2020-04-23 09:30:23,285 (asr_utils:627) INFO: prediction :  wehn taeng khhiy thaa nahblehdxiyng owzah baedxihyae <eos>
+2020-04-23 09:30:24,299 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 101.
+2020-04-23 09:30:24,300 (decoders:536) INFO: max output length: 101
+2020-04-23 09:30:24,300 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:24,301 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:24,301 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:24,305 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:24,432 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:24,542 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:24,636 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:24,714 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:24,783 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:24,880 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:24,947 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:25,031 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:25,099 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:25,167 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:25,234 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:25,300 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:25,383 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:25,446 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:25,510 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:25,574 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:25,639 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:25,704 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:25,768 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:25,833 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:25,898 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:25,970 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:26,065 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:26,128 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:26,184 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:26,247 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:26,310 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:26,372 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:26,434 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:26,495 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:26,556 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:26,618 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:26,680 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:26,747 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:26,826 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:26,913 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:26,976 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:27,039 (decoders:588) DEBUG: position 38
+2020-04-23 09:30:27,083 (decoders:588) DEBUG: position 39
+2020-04-23 09:30:27,143 (decoders:588) DEBUG: position 40
+2020-04-23 09:30:27,203 (decoders:588) DEBUG: position 41
+2020-04-23 09:30:27,263 (decoders:588) DEBUG: position 42
+2020-04-23 09:30:27,307 (decoders:588) DEBUG: position 43
+2020-04-23 09:30:27,368 (decoders:588) DEBUG: position 44
+2020-04-23 09:30:27,428 (decoders:588) DEBUG: position 45
+2020-04-23 09:30:27,489 (decoders:588) DEBUG: position 46
+2020-04-23 09:30:27,547 (decoders:588) DEBUG: position 47
+2020-04-23 09:30:27,600 (decoders:588) DEBUG: position 48
+2020-04-23 09:30:27,655 (decoders:588) DEBUG: position 49
+2020-04-23 09:30:27,736 (asr_utils:626) INFO: groundtruth: sil ih n sh aa r sil eh n sil t ih sil b aa r ah n aa r sil b er l f r ey z sil s l ae sh sil t ih m sil b er sil
+2020-04-23 09:30:27,736 (asr_utils:627) INFO: prediction :  ihnshaarehn tih baarihnaar brlfreyz slaesh tiym ber <eos>
+2020-04-23 09:30:28,450 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 85.
+2020-04-23 09:30:28,450 (decoders:536) INFO: max output length: 85
+2020-04-23 09:30:28,451 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:28,451 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:28,451 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:28,455 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:28,503 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:28,572 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:28,640 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:28,690 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:28,724 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:28,758 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:28,790 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:28,820 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:28,850 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:28,880 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:28,927 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:28,990 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:29,073 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:29,138 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:29,191 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:29,251 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:29,291 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:29,368 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:29,428 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:29,471 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:29,531 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:29,591 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:29,633 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:29,692 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:29,742 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:29,784 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:29,841 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:29,882 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:29,940 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:30,012 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:30,085 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:30,157 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:30,214 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:30,255 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:30,311 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:30,351 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:30,390 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:30,448 (decoders:588) DEBUG: position 38
+2020-04-23 09:30:30,503 (decoders:588) DEBUG: position 39
+2020-04-23 09:30:30,543 (decoders:588) DEBUG: position 40
+2020-04-23 09:30:30,582 (decoders:588) DEBUG: position 41
+2020-04-23 09:30:30,639 (decoders:588) DEBUG: position 42
+2020-04-23 09:30:30,678 (decoders:588) DEBUG: position 43
+2020-04-23 09:30:30,736 (decoders:588) DEBUG: position 44
+2020-04-23 09:30:30,791 (decoders:588) DEBUG: position 45
+2020-04-23 09:30:30,831 (decoders:588) DEBUG: position 46
+2020-04-23 09:30:30,891 (decoders:588) DEBUG: position 47
+2020-04-23 09:30:30,949 (asr_utils:626) INFO: groundtruth: sil dh ah s aw n sil d ih v sil jh ih n ih f er z sil b y uw sil g l s sil k eh r sil dh eh ae n ah l ow sil p sil
+2020-04-23 09:30:30,949 (asr_utils:627) INFO: prediction :  dhihsaen ihv jhihdxihfersh giy ls kehr dhdaenahlaa <eos>
+2020-04-23 09:30:31,481 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 63.
+2020-04-23 09:30:31,481 (decoders:536) INFO: max output length: 63
+2020-04-23 09:30:31,482 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:31,482 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:31,482 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:31,485 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:31,551 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:31,593 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:31,649 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:31,689 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:31,744 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:31,797 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:31,836 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:31,890 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:31,929 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:31,967 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:32,020 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:32,057 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:32,095 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:32,149 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:32,185 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:32,222 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:32,275 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:32,311 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:32,339 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:32,392 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:32,428 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:32,480 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:32,515 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:32,552 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:32,587 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:32,639 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:32,676 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:32,711 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:32,755 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:32,792 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:32,827 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:32,863 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:32,900 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:32,938 (asr_utils:626) INFO: groundtruth: sil hh aa w ey ih n sil f r iy w ey m iy n ih s ey m sil th ae ng sil
+2020-04-23 09:30:32,939 (asr_utils:627) INFO: prediction :  hhawleyihnfriyweymiyndhihseym tehng <eos>
+2020-04-23 09:30:33,529 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 71.
+2020-04-23 09:30:33,529 (decoders:536) INFO: max output length: 71
+2020-04-23 09:30:33,530 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:33,530 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:33,530 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:33,533 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:33,612 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:33,668 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:33,711 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:33,768 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:33,826 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:33,885 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:33,952 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:34,031 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:34,089 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:34,130 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:34,188 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:34,230 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:34,288 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:34,341 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:34,382 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:34,422 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:34,478 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:34,518 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:34,574 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:34,613 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:34,668 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:34,707 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:34,760 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:34,799 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:34,852 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:34,890 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:34,926 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:34,962 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:35,014 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:35,050 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:35,086 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:35,122 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:35,181 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:35,217 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:35,251 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:35,287 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:35,339 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:35,358 (decoders:588) DEBUG: position 38
+2020-04-23 09:30:35,394 (decoders:588) DEBUG: position 39
+2020-04-23 09:30:35,450 (decoders:588) DEBUG: position 40
+2020-04-23 09:30:35,485 (decoders:588) DEBUG: position 41
+2020-04-23 09:30:35,521 (decoders:588) DEBUG: position 42
+2020-04-23 09:30:35,557 (decoders:588) DEBUG: position 43
+2020-04-23 09:30:35,608 (decoders:588) DEBUG: position 44
+2020-04-23 09:30:35,648 (asr_utils:626) INFO: groundtruth: sil dh ah f aa sil p r ih v ih n ih sil dh ih m f r ah m er r aa v ih ng aa n sil t aa m sil
+2020-04-23 09:30:35,648 (asr_utils:627) INFO: prediction :  dhahfaal pkrihviynih gihmzermahraeviyngaan taym <eos>
+2020-04-23 09:30:36,349 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 85.
+2020-04-23 09:30:36,350 (decoders:536) INFO: max output length: 85
+2020-04-23 09:30:36,350 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:36,350 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:36,350 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:36,354 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:36,450 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:36,518 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:36,600 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:36,662 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:36,737 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:36,785 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:36,849 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:36,912 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:36,971 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:37,034 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:37,095 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:37,156 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:37,217 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:37,270 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:37,322 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:37,383 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:37,430 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:37,490 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:37,551 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:37,612 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:37,672 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:37,716 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:37,788 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:37,830 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:37,896 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:37,940 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:37,998 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:38,057 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:38,099 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:38,157 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:38,210 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:38,251 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:38,306 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:38,363 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:38,404 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:38,442 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:38,489 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:38,544 (decoders:588) DEBUG: position 38
+2020-04-23 09:30:38,582 (decoders:588) DEBUG: position 39
+2020-04-23 09:30:38,637 (decoders:588) DEBUG: position 40
+2020-04-23 09:30:38,675 (decoders:588) DEBUG: position 41
+2020-04-23 09:30:38,729 (decoders:588) DEBUG: position 42
+2020-04-23 09:30:38,766 (decoders:588) DEBUG: position 43
+2020-04-23 09:30:38,819 (decoders:588) DEBUG: position 44
+2020-04-23 09:30:38,858 (decoders:588) DEBUG: position 45
+2020-04-23 09:30:38,896 (decoders:588) DEBUG: position 46
+2020-04-23 09:30:38,950 (decoders:588) DEBUG: position 47
+2020-04-23 09:30:38,989 (decoders:588) DEBUG: position 48
+2020-04-23 09:30:39,043 (decoders:588) DEBUG: position 49
+2020-04-23 09:30:39,080 (decoders:588) DEBUG: position 50
+2020-04-23 09:30:39,114 (decoders:588) DEBUG: position 51
+2020-04-23 09:30:39,151 (decoders:588) DEBUG: position 52
+2020-04-23 09:30:39,192 (decoders:588) DEBUG: position 53
+2020-04-23 09:30:39,246 (asr_utils:626) INFO: groundtruth: sil d ae f sil n iy s w ih dx ih sh sil n iy sil d l sil p oy n sil t s sil k aa r f sil m ae sil ch sil t hh er s sil k er sil sil
+2020-04-23 09:30:39,246 (asr_utils:627) INFO: prediction :  dhaefthiys wiydxihsh niy dxah plih s kaarf mae s ters ker <eos>
+2020-04-23 09:30:40,049 (decoders:510) INFO: Number of Encoder:1; enc1: input lengths: 77.
+2020-04-23 09:30:40,050 (decoders:536) INFO: max output length: 77
+2020-04-23 09:30:40,050 (decoders:537) INFO: min output length: 0
+2020-04-23 09:30:40,050 (decoders:567) INFO: <sos> index: 41
+2020-04-23 09:30:40,050 (decoders:568) INFO: <sos> mark: <eos>
+2020-04-23 09:30:40,053 (decoders:588) DEBUG: position 0
+2020-04-23 09:30:40,141 (decoders:588) DEBUG: position 1
+2020-04-23 09:30:40,186 (decoders:588) DEBUG: position 2
+2020-04-23 09:30:40,250 (decoders:588) DEBUG: position 3
+2020-04-23 09:30:40,311 (decoders:588) DEBUG: position 4
+2020-04-23 09:30:40,372 (decoders:588) DEBUG: position 5
+2020-04-23 09:30:40,432 (decoders:588) DEBUG: position 6
+2020-04-23 09:30:40,491 (decoders:588) DEBUG: position 7
+2020-04-23 09:30:40,533 (decoders:588) DEBUG: position 8
+2020-04-23 09:30:40,593 (decoders:588) DEBUG: position 9
+2020-04-23 09:30:40,653 (decoders:588) DEBUG: position 10
+2020-04-23 09:30:40,697 (decoders:588) DEBUG: position 11
+2020-04-23 09:30:40,750 (decoders:588) DEBUG: position 12
+2020-04-23 09:30:40,806 (decoders:588) DEBUG: position 13
+2020-04-23 09:30:40,865 (decoders:588) DEBUG: position 14
+2020-04-23 09:30:40,907 (decoders:588) DEBUG: position 15
+2020-04-23 09:30:40,933 (decoders:588) DEBUG: position 16
+2020-04-23 09:30:40,959 (decoders:588) DEBUG: position 17
+2020-04-23 09:30:40,985 (decoders:588) DEBUG: position 18
+2020-04-23 09:30:41,010 (decoders:588) DEBUG: position 19
+2020-04-23 09:30:41,034 (decoders:588) DEBUG: position 20
+2020-04-23 09:30:41,059 (decoders:588) DEBUG: position 21
+2020-04-23 09:30:41,084 (decoders:588) DEBUG: position 22
+2020-04-23 09:30:41,110 (decoders:588) DEBUG: position 23
+2020-04-23 09:30:41,134 (decoders:588) DEBUG: position 24
+2020-04-23 09:30:41,158 (decoders:588) DEBUG: position 25
+2020-04-23 09:30:41,182 (decoders:588) DEBUG: position 26
+2020-04-23 09:30:41,228 (decoders:588) DEBUG: position 27
+2020-04-23 09:30:41,282 (decoders:588) DEBUG: position 28
+2020-04-23 09:30:41,316 (decoders:588) DEBUG: position 29
+2020-04-23 09:30:41,378 (decoders:588) DEBUG: position 30
+2020-04-23 09:30:41,427 (decoders:588) DEBUG: position 31
+2020-04-23 09:30:41,485 (decoders:588) DEBUG: position 32
+2020-04-23 09:30:41,517 (decoders:588) DEBUG: position 33
+2020-04-23 09:30:41,582 (decoders:588) DEBUG: position 34
+2020-04-23 09:30:41,619 (decoders:588) DEBUG: position 35
+2020-04-23 09:30:41,672 (decoders:588) DEBUG: position 36
+2020-04-23 09:30:41,708 (decoders:588) DEBUG: position 37
+2020-04-23 09:30:41,758 (decoders:588) DEBUG: position 38
+2020-04-23 09:30:41,795 (decoders:588) DEBUG: position 39
+2020-04-23 09:30:41,830 (decoders:588) DEBUG: position 40
+2020-04-23 09:30:41,866 (decoders:588) DEBUG: position 41
+2020-04-23 09:30:41,902 (decoders:588) DEBUG: position 42
+2020-04-23 09:30:41,922 (decoders:588) DEBUG: position 43
+2020-04-23 09:30:41,941 (decoders:588) DEBUG: position 44
+2020-04-23 09:30:41,961 (decoders:588) DEBUG: position 45
+2020-04-23 09:30:41,981 (decoders:588) DEBUG: position 46
+2020-04-23 09:30:42,001 (decoders:588) DEBUG: position 47
+2020-04-23 09:30:42,020 (decoders:588) DEBUG: position 48
+2020-04-23 09:30:42,040 (decoders:588) DEBUG: position 49
+2020-04-23 09:30:42,061 (asr_utils:626) INFO: groundtruth: sil iy v ih n ah s ih m sil p l v ah sil k ae sil b y ih l eh r iy sil k ah n sil t ey n sil t s ih m sil b l z sil
+2020-04-23 09:30:42,061 (asr_utils:627) INFO: prediction :  iyvwihnihsihm flvow kae bihlehriy kihn teyng siymlz <eos>
+# Accounting: time=86 threads=1
+# Ended (code 0) at Thu Apr 23 09:30:42 UTC 2020, elapsed time 86 seconds

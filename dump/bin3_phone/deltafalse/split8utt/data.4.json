@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MTML0_SX165": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.8.ark:805501",
+                    "name": "input1",
+                    "shape": [
+                        339,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        38,
+                        42
+                    ],
+                    "text": "sil dh ih dx uw iy ih sil d ah n m z n ow sil t er s sil k r l aa f s f r aa l sil p l r er sil jh sil",
+                    "token": "<space> dh ih dx uw iy ih <space> d ah n m z n ow <space> t er s <space> k r l aa f s f r aa l <space> p l r er <space> jh <space>",
+                    "tokenid": "2 11 19 12 36 20 19 2 10 5 25 24 40 25 27 2 33 14 31 2 22 30 23 3 16 31 16 30 3 23 2 29 23 30 14 2 21 2"
+                }
+            ],
+            "utt2spk": "MTML0"
+        }
+    }
+}

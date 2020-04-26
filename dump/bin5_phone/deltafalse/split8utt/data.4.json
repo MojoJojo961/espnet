@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MMDM0_SX231": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.5.ark:1098894",
+                    "name": "input1",
+                    "shape": [
+                        160,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        14,
+                        42
+                    ],
+                    "text": "sil dh l ow r ah l ow ng v w l l sil",
+                    "token": "<space> dh l ow r ah l ow ng v w l l <space>",
+                    "tokenid": "2 11 23 27 30 5 23 27 26 37 38 23 23 2"
+                }
+            ],
+            "utt2spk": "MMDM0"
+        }
+    }
+}

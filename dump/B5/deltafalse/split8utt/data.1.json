@@ -1,0 +1,54 @@
+{
+    "utts": {
+        "MCLM0_SI2086": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1638003",
+                    "name": "input1",
+                    "shape": [
+                        273,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        24,
+                        42
+                    ],
+                    "text": "sil s z sil hh eh sil k f w ih sh n sil p aa r dx ih l ay sil t sil",
+                    "token": "<space> s z <space> hh eh <space> k f w ih sh n <space> p aa r dx ih l ay <space> t <space>",
+                    "tokenid": "2 31 40 2 18 13 2 22 16 38 19 32 25 2 29 3 30 12 19 23 7 2 33 2"
+                }
+            ],
+            "utt2spk": "MCLM0"
+        },
+        "MDLH0_SX340": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.2.ark:768067",
+                    "name": "input1",
+                    "shape": [
+                        323,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        34,
+                        42
+                    ],
+                    "text": "sil dh eh sil t s ae sil l oy sil d f ey iy sil sil b ae sil k er f s l s f ey dh ih er f s sil",
+                    "token": "<space> dh eh <space> t s ae <space> l oy <space> d f ey iy <space> <space> b ae <space> k er f s l s f ey dh ih er f s <space>",
+                    "tokenid": "2 11 13 2 33 31 4 2 23 28 2 10 16 15 20 2 2 8 4 2 22 14 16 31 23 31 16 15 11 19 14 16 31 2"
+                }
+            ],
+            "utt2spk": "MDLH0"
+        }
+    }
+}

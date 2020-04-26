@@ -1,0 +1,704 @@
+{
+    "utts": {
+        "MAKR0_SI722": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:12",
+                    "name": "input1",
+                    "shape": [
+                        203,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        42
+                    ],
+                    "text": "sil dh ih s sil t ey ih z dh ih f aa n m ih sil t ih n m ah sil f oy ay ih sh ih n sil",
+                    "token": "<space> dh ih s <space> t ey ih z dh ih f aa n m ih <space> t ih n m ah <space> f oy ay ih sh ih n <space>",
+                    "tokenid": "2 11 19 31 2 33 15 19 40 11 19 16 3 25 24 19 2 33 19 25 24 5 2 16 28 7 19 32 19 25 2"
+                }
+            ],
+            "utt2spk": "MAKR0"
+        },
+        "MARC0_SI1188": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:104943",
+                    "name": "input1",
+                    "shape": [
+                        141,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        13,
+                        42
+                    ],
+                    "text": "sil eh sil g ey l s ey sil k ih s sil",
+                    "token": "<space> eh <space> g ey l s ey <space> k ih s <space>",
+                    "tokenid": "2 13 2 17 15 23 31 15 2 22 19 31 2"
+                }
+            ],
+            "utt2spk": "MARC0"
+        },
+        "MBBR0_SX155": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:311395",
+                    "name": "input1",
+                    "shape": [
+                        309,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        38,
+                        42
+                    ],
+                    "text": "sil aa dx er sil hh ih n sil t ey ng sil t ih n ah sil jh sil k l aa ey n ih n s sil t ah n hh ih z ay z sil",
+                    "token": "<space> aa dx er <space> hh ih n <space> t ey ng <space> t ih n ah <space> jh <space> k l aa ey n ih n s <space> t ah n hh ih z ay z <space>",
+                    "tokenid": "2 3 12 14 2 18 19 25 2 33 15 26 2 33 19 25 5 2 21 2 22 23 3 15 25 19 25 31 2 33 5 25 18 19 40 7 40 2"
+                }
+            ],
+            "utt2spk": "MBBR0"
+        },
+        "MBBR0_SX425": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:337156",
+                    "name": "input1",
+                    "shape": [
+                        189,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        42
+                    ],
+                    "text": "sil m uw m ih z n eh n r er eh dx iy n eh f ih l n z sil",
+                    "token": "<space> m uw m ih z n eh n r er eh dx iy n eh f ih l n z <space>",
+                    "tokenid": "2 24 36 24 19 40 25 13 25 30 14 13 12 20 25 13 16 19 23 25 40 2"
+                }
+            ],
+            "utt2spk": "MBBR0"
+        },
+        "MBCG0_SX237": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:378226",
+                    "name": "input1",
+                    "shape": [
+                        166,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        16,
+                        42
+                    ],
+                    "text": "sil dh ih sil k aa n er r z ih sil d eh er sil",
+                    "token": "<space> dh ih <space> k aa n er r z ih <space> d eh er <space>",
+                    "tokenid": "2 11 19 2 22 3 25 14 30 40 19 2 10 13 14 2"
+                }
+            ],
+            "utt2spk": "MBCG0"
+        },
+        "MBEF0_SI1911": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:417132",
+                    "name": "input1",
+                    "shape": [
+                        233,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        29,
+                        42
+                    ],
+                    "text": "sil t eh n er z sil g r ow dx ih sil b l aa sil t s aa aa sil d ih sil ch ih s sil",
+                    "token": "<space> t eh n er z <space> g r ow dx ih <space> b l aa <space> t s aa aa <space> d ih <space> ch ih s <space>",
+                    "tokenid": "2 33 13 25 14 40 2 17 30 27 12 19 2 8 23 3 2 33 31 3 3 2 10 19 2 9 19 31 2"
+                }
+            ],
+            "utt2spk": "MBEF0"
+        },
+        "MBEF0_SX381": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:455835",
+                    "name": "input1",
+                    "shape": [
+                        189,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        22,
+                        42
+                    ],
+                    "text": "sil w aa sil k m ey n ih n ih s sil t ih m z ih sil sh er sil",
+                    "token": "<space> w aa <space> k m ey n ih n ih s <space> t ih m z ih <space> sh er <space>",
+                    "tokenid": "2 38 3 2 22 24 15 25 19 25 19 31 2 33 19 24 40 19 2 32 14 2"
+                }
+            ],
+            "utt2spk": "MBEF0"
+        },
+        "MBML0_SI1169": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:720075",
+                    "name": "input1",
+                    "shape": [
+                        208,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        16,
+                        42
+                    ],
+                    "text": "sil dh ey sil ih s sil b ay ih sh f n dh er sil",
+                    "token": "<space> dh ey <space> ih s <space> b ay ih sh f n dh er <space>",
+                    "tokenid": "2 11 15 2 19 31 2 8 7 19 32 16 25 11 14 2"
+                }
+            ],
+            "utt2spk": "MBML0"
+        },
+        "MBML0_SX269": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:747560",
+                    "name": "input1",
+                    "shape": [
+                        234,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        27,
+                        42
+                    ],
+                    "text": "sil dh ih m ey sil t ih sil p ih sil p ah f l ah z sil p r ay l sil t s sil",
+                    "token": "<space> dh ih m ey <space> t ih <space> p ih <space> p ah f l ah z <space> p r ay l <space> t s <space>",
+                    "tokenid": "2 11 19 24 15 2 33 19 2 29 19 2 29 5 16 23 5 40 2 29 30 7 23 2 33 31 2"
+                }
+            ],
+            "utt2spk": "MBML0"
+        },
+        "MBOM0_SI2274": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:793390",
+                    "name": "input1",
+                    "shape": [
+                        250,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        32,
+                        42
+                    ],
+                    "text": "sil n eh dx iy sil d ih sil n ow v er sil ih iy ih sil ih n eh n sil p er sil p ih sil g er sil",
+                    "token": "<space> n eh dx iy <space> d ih <space> n ow v er <space> ih iy ih <space> ih n eh n <space> p er <space> p ih <space> g er <space>",
+                    "tokenid": "2 25 13 12 20 2 10 19 2 25 27 37 14 2 19 20 19 2 19 25 13 25 2 29 14 2 29 19 2 17 14 2"
+                }
+            ],
+            "utt2spk": "MBOM0"
+        },
+        "MBOM0_SX114": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:800131",
+                    "name": "input1",
+                    "shape": [
+                        237,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        42
+                    ],
+                    "text": "sil dh er sil p er sil t uw f ih sil t ih z m ah s sil g r eh sil p er sil t aa sil l sil",
+                    "token": "<space> dh er <space> p er <space> t uw f ih <space> t ih z m ah s <space> g r eh <space> p er <space> t aa <space> l <space>",
+                    "tokenid": "2 11 14 2 29 14 2 33 36 16 19 2 33 19 40 24 5 31 2 17 30 13 2 29 14 2 33 3 2 23 2"
+                }
+            ],
+            "utt2spk": "MBOM0"
+        },
+        "MBOM0_SX204": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:806534",
+                    "name": "input1",
+                    "shape": [
+                        210,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        28,
+                        42
+                    ],
+                    "text": "sil y ih r ih n ay sil t ih z w ay sil t ih sil p m ah sil b ih sil b l z sil",
+                    "token": "<space> y ih r ih n ay <space> t ih z w ay <space> t ih <space> p m ah <space> b ih <space> b l z <space>",
+                    "tokenid": "2 39 19 30 19 25 7 2 33 19 40 38 7 2 33 19 2 29 24 5 2 8 19 2 8 23 40 2"
+                }
+            ],
+            "utt2spk": "MBOM0"
+        },
+        "MBSB0_SX363": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:871110",
+                    "name": "input1",
+                    "shape": [
+                        229,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        25,
+                        42
+                    ],
+                    "text": "sil dh sil k ae l ah f m ah f aa n ah eh dx er sil k ih l s sil t sil",
+                    "token": "<space> dh <space> k ae l ah f m ah f aa n ah eh dx er <space> k ih l s <space> t <space>",
+                    "tokenid": "2 11 2 22 4 23 5 16 24 5 16 3 25 5 13 12 14 2 22 19 23 31 2 33 2"
+                }
+            ],
+            "utt2spk": "MBSB0"
+        },
+        "MCAL0_SI1768": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1112372",
+                    "name": "input1",
+                    "shape": [
+                        158,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        18,
+                        42
+                    ],
+                    "text": "sil dh ih sil k aa sil s aa ih z s f aa sil p er sil",
+                    "token": "<space> dh ih <space> k aa <space> s aa ih z s f aa <space> p er <space>",
+                    "tokenid": "2 11 19 2 22 3 2 31 3 19 40 31 16 3 2 29 14 2"
+                }
+            ],
+            "utt2spk": "MCAL0"
+        },
+        "MCAL0_SI508": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1116721",
+                    "name": "input1",
+                    "shape": [
+                        175,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        20,
+                        42
+                    ],
+                    "text": "sil l eh l s sil s aa r sil k f ih s sil m sil p l sil",
+                    "token": "<space> l eh l s <space> s aa r <space> k f ih s <space> m <space> p l <space>",
+                    "tokenid": "2 23 13 23 31 2 31 3 30 2 22 16 19 31 2 24 2 29 23 2"
+                }
+            ],
+            "utt2spk": "MCAL0"
+        },
+        "MCDD0_SX163": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1246608",
+                    "name": "input1",
+                    "shape": [
+                        267,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        35,
+                        42
+                    ],
+                    "text": "sil dh ah r ih m ey sil d ah l eh f l sil f l ey n l z w ih sil k ih sil p ey dx ih n sil s sil",
+                    "token": "<space> dh ah r ih m ey <space> d ah l eh f l <space> f l ey n l z w ih <space> k ih <space> p ey dx ih n <space> s <space>",
+                    "tokenid": "2 11 5 30 19 24 15 2 10 5 23 13 16 23 2 16 23 15 25 23 40 38 19 2 22 19 2 29 15 12 19 25 2 31 2"
+                }
+            ],
+            "utt2spk": "MCDD0"
+        },
+        "MCEF0_SX145": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1380986",
+                    "name": "input1",
+                    "shape": [
+                        254,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        37,
+                        42
+                    ],
+                    "text": "sil t ih m aa sil ch sil ch r iy ih aa s ih dx iy sil k ih ng sil ih sil ch uw m ih sil t ih sil k ah sil l sil",
+                    "token": "<space> t ih m aa <space> ch <space> ch r iy ih aa s ih dx iy <space> k ih ng <space> ih <space> ch uw m ih <space> t ih <space> k ah <space> l <space>",
+                    "tokenid": "2 33 19 24 3 2 9 2 9 30 20 19 3 31 19 12 20 2 22 19 26 2 19 2 9 36 24 19 2 33 19 2 22 5 2 23 2"
+                }
+            ],
+            "utt2spk": "MCEF0"
+        },
+        "MCPM0_SX114": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1714774",
+                    "name": "input1",
+                    "shape": [
+                        266,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        42
+                    ],
+                    "text": "sil k r sil t ih n f iy sil t ih z ih n m ah s sil r eh sil m ih sil t ae sil p l sil",
+                    "token": "<space> k r <space> t ih n f iy <space> t ih z ih n m ah s <space> r eh <space> m ih <space> t ae <space> p l <space>",
+                    "tokenid": "2 22 30 2 33 19 25 16 20 2 33 19 40 19 25 24 5 31 2 30 13 2 24 19 2 33 4 2 29 23 2"
+                }
+            ],
+            "utt2spk": "MCPM0"
+        },
+        "MCRE0_SI1121": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1745281",
+                    "name": "input1",
+                    "shape": [
+                        366,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        42,
+                        42
+                    ],
+                    "text": "sil ih m iy ih sil t ey ih s sil ih dx ih n eh sil p r ih sh ih sil d ih sil p b ae sil k ih sil t ih sil t ih s iy l sil",
+                    "token": "<space> ih m iy ih <space> t ey ih s <space> ih dx ih n eh <space> p r ih sh ih <space> d ih <space> p b ae <space> k ih <space> t ih <space> t ih s iy l <space>",
+                    "tokenid": "2 19 24 20 19 2 33 15 19 31 2 19 12 19 25 13 2 29 30 19 32 19 2 10 19 2 29 8 4 2 22 19 2 33 19 2 33 19 31 20 23 2"
+                }
+            ],
+            "utt2spk": "MCRE0"
+        },
+        "MCRE0_SI1725": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:1755039",
+                    "name": "input1",
+                    "shape": [
+                        157,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        15,
+                        42
+                    ],
+                    "text": "sil w eh ih sil t uw ih sil dh ih n iy z sil",
+                    "token": "<space> w eh ih <space> t uw ih <space> dh ih n iy z <space>",
+                    "tokenid": "2 38 13 19 2 33 36 19 2 11 19 25 20 40 2"
+                }
+            ],
+            "utt2spk": "MCRE0"
+        },
+        "MCXM0_SX91": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:2058363",
+                    "name": "input1",
+                    "shape": [
+                        255,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        36,
+                        42
+                    ],
+                    "text": "sil dh m ih s sil k r ah m sil p er aa sil p er m er m iy sil d ih sil sil b ih s sil k aa n m er sil",
+                    "token": "<space> dh m ih s <space> k r ah m <space> p er aa <space> p er m er m iy <space> d ih <space> <space> b ih s <space> k aa n m er <space>",
+                    "tokenid": "2 11 24 19 31 2 22 30 5 24 2 29 14 3 2 29 14 24 14 24 20 2 10 19 2 2 8 19 31 2 22 3 25 24 14 2"
+                }
+            ],
+            "utt2spk": "MCXM0"
+        },
+        "MDAC0_SX91": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:2126072",
+                    "name": "input1",
+                    "shape": [
+                        229,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        32,
+                        42
+                    ],
+                    "text": "sil dh ih m ih s sil p r ih sil t l sil t er m dx iy ih sil d ah s sil k l ey sil k er sil",
+                    "token": "<space> dh ih m ih s <space> p r ih <space> t l <space> t er m dx iy ih <space> d ah s <space> k l ey <space> k er <space>",
+                    "tokenid": "2 11 19 24 19 31 2 29 30 19 2 33 23 2 33 14 24 12 20 19 2 10 5 31 2 22 23 15 2 22 14 2"
+                }
+            ],
+            "utt2spk": "MDAC0"
+        },
+        "MDAS0_SX21": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:2166408",
+                    "name": "input1",
+                    "shape": [
+                        178,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        20,
+                        42
+                    ],
+                    "text": "sil l aa f eh l f ow ih s ow l sil l ih f aa r ih sil",
+                    "token": "<space> l aa f eh l f ow ih s ow l <space> l ih f aa r ih <space>",
+                    "tokenid": "2 23 3 16 13 23 16 27 19 31 27 23 2 23 19 16 3 30 19 2"
+                }
+            ],
+            "utt2spk": "MDAS0"
+        },
+        "MDBB1_SI1636": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:2201516",
+                    "name": "input1",
+                    "shape": [
+                        180,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        24,
+                        42
+                    ],
+                    "text": "sil dh ih s sil k ow l ih sil k s aa sil p er r ey sil hh iy sil d sil",
+                    "token": "<space> dh ih s <space> k ow l ih <space> k s aa <space> p er r ey <space> hh iy <space> d <space>",
+                    "tokenid": "2 11 19 31 2 22 27 23 19 2 22 31 3 2 29 14 30 15 2 18 20 2 10 2"
+                }
+            ],
+            "utt2spk": "MDBB1"
+        },
+        "MDCM0_SI2110": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:2394894",
+                    "name": "input1",
+                    "shape": [
+                        299,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        30,
+                        42
+                    ],
+                    "text": "sil w ah th ey dx ih n aa sil k dx ih sil ih n ih z ih f ay dx ih f l er sil p ay sil",
+                    "token": "<space> w ah th ey dx ih n aa <space> k dx ih <space> ih n ih z ih f ay dx ih f l er <space> p ay <space>",
+                    "tokenid": "2 38 5 34 15 12 19 25 3 2 22 12 19 2 19 25 19 40 19 16 7 12 19 16 23 14 2 29 7 2"
+                }
+            ],
+            "utt2spk": "MDCM0"
+        },
+        "MDDC0_SX249": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:2479732",
+                    "name": "input1",
+                    "shape": [
+                        243,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        24,
+                        42
+                    ],
+                    "text": "sil l ay iy sil eh v r iy l ey sh sil er l n aa r z sil p l ey sil",
+                    "token": "<space> l ay iy <space> eh v r iy l ey sh <space> er l n aa r z <space> p l ey <space>",
+                    "tokenid": "2 23 7 20 2 13 37 30 20 23 15 32 2 14 23 25 3 30 40 2 29 23 15 2"
+                }
+            ],
+            "utt2spk": "MDDC0"
+        },
+        "MDDC0_SX429": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:2492226",
+                    "name": "input1",
+                    "shape": [
+                        264,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        31,
+                        42
+                    ],
+                    "text": "sil ey sil t uw sil p ey z sil t uw sil sh ih sil b ih s sil w iy f aa n ih ah sil b aa sil",
+                    "token": "<space> ey <space> t uw <space> p ey z <space> t uw <space> sh ih <space> b ih s <space> w iy f aa n ih ah <space> b aa <space>",
+                    "tokenid": "2 15 2 33 36 2 29 15 40 2 33 36 2 32 19 2 8 19 31 2 38 20 16 3 25 19 5 2 8 3 2"
+                }
+            ],
+            "utt2spk": "MDDC0"
+        },
+        "MDEF0_SI1563": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.2.ark:82238",
+                    "name": "input1",
+                    "shape": [
+                        271,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        32,
+                        42
+                    ],
+                    "text": "sil ih l s z ih sil p r sil t ih eh s sil t ey ih f aa ah sh ih sil k s r ih sil t l sil",
+                    "token": "<space> ih l s z ih <space> p r <space> t ih eh s <space> t ey ih f aa ah sh ih <space> k s r ih <space> t l <space>",
+                    "tokenid": "2 19 23 31 40 19 2 29 30 2 33 19 13 31 2 33 15 19 16 3 5 32 19 2 22 31 30 19 2 33 23 2"
+                }
+            ],
+            "utt2spk": "MDEF0"
+        }
+    }
+}

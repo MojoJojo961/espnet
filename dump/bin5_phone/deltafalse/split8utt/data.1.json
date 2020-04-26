@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MDDC0_SI2049": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.1.ark:2458755",
+                    "name": "input1",
+                    "shape": [
+                        139,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        18,
+                        42
+                    ],
+                    "text": "sil jh sh ae l b ih sil t iy sh ih n sil z ah m sil",
+                    "token": "<space> jh sh ae l b ih <space> t iy sh ih n <space> z ah m <space>",
+                    "tokenid": "2 21 32 4 23 8 19 2 33 20 32 19 25 2 40 5 24 2"
+                }
+            ],
+            "utt2spk": "MDDC0"
+        }
+    }
+}

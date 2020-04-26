@@ -1,0 +1,54 @@
+{
+    "utts": {
+        "MFRM0_SI1785": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.3.ark:33556",
+                    "name": "input1",
+                    "shape": [
+                        277,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        35,
+                        42
+                    ],
+                    "text": "sil l ow sil dh ah sil b eh n er f l sil w er z ih n ey ih n l ih ih f ih ih sh z sil d ih l sil",
+                    "token": "<space> l ow <space> dh ah <space> b eh n er f l <space> w er z ih n ey ih n l ih ih f ih ih sh z <space> d ih l <space>",
+                    "tokenid": "2 23 27 2 11 5 2 8 13 25 14 16 23 2 38 14 40 19 25 15 19 25 23 19 19 16 19 19 32 40 2 10 19 23 2"
+                }
+            ],
+            "utt2spk": "MFRM0"
+        },
+        "MJAE0_SI1524": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.3.ark:1600265",
+                    "name": "input1",
+                    "shape": [
+                        322,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        42,
+                        42
+                    ],
+                    "text": "sil n ae sh s ih s sil p ay n aw r ih f ih sh ih sil p ey n m n ae f er ih n sil ih sil p r ah sil d ih dx ae f sil",
+                    "token": "<space> n ae sh s ih s <space> p ay n aw r ih f ih sh ih <space> p ey n m n ae f er ih n <space> ih <space> p r ah <space> d ih dx ae f <space>",
+                    "tokenid": "2 25 4 32 31 19 31 2 29 7 25 6 30 19 16 19 32 19 2 29 15 25 24 25 4 16 14 19 25 2 19 2 29 30 5 2 10 19 12 4 16 2"
+                }
+            ],
+            "utt2spk": "MJAE0"
+        }
+    }
+}

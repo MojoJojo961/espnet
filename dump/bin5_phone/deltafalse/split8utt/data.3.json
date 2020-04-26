@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MJDC0_SI2165": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.3.ark:1859775",
+                    "name": "input1",
+                    "shape": [
+                        182,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        19,
+                        42
+                    ],
+                    "text": "sil ow w iy ey l ih n aa n ih iy z l ey ih n sil sil",
+                    "token": "<space> ow w iy ey l ih n aa n ih iy z l ey ih n <space> <space>",
+                    "tokenid": "2 27 38 20 15 23 19 25 3 25 19 20 40 23 15 19 25 2 2"
+                }
+            ],
+            "utt2spk": "MJDC0"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "utts": {
+        "MRLK0_SI2140": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.6.ark:2555467",
+                    "name": "input1",
+                    "shape": [
+                        388,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        56,
+                        42
+                    ],
+                    "text": "sil w r f ih dx ih er ih s sil t eh dx f aa l uw ih f ah m uw ah aa sil sh sil t ih n ih er dx ih sil jh ih uw ah s ih sil w l sil t w ih ih sil f s t ih sil",
+                    "token": "<space> w r f ih dx ih er ih s <space> t eh dx f aa l uw ih f ah m uw ah aa <space> sh <space> t ih n ih er dx ih <space> jh ih uw ah s ih <space> w l <space> t w ih ih <space> f s t ih <space>",
+                    "tokenid": "2 38 30 16 19 12 19 14 19 31 2 33 13 12 16 3 23 36 19 16 5 24 36 5 3 2 32 2 33 19 25 19 14 12 19 2 21 19 36 5 31 19 2 38 23 2 33 38 19 19 2 16 31 33 19 2"
+                }
+            ],
+            "utt2spk": "MRLK0"
+        }
+    }
+}

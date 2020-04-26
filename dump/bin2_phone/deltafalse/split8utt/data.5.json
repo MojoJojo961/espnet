@@ -1,0 +1,79 @@
+{
+    "utts": {
+        "MPFU0_SI1888": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.5.ark:2449811",
+                    "name": "input1",
+                    "shape": [
+                        152,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        14,
+                        42
+                    ],
+                    "text": "sil dh r s sil ih sil w eh l sil m ah sil",
+                    "token": "<space> dh r s <space> ih <space> w eh l <space> m ah <space>",
+                    "tokenid": "2 11 30 31 2 19 2 38 13 23 2 24 5 2"
+                }
+            ],
+            "utt2spk": "MPFU0"
+        },
+        "MPGR1_SX59": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.6.ark:117380",
+                    "name": "input1",
+                    "shape": [
+                        184,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        24,
+                        42
+                    ],
+                    "text": "sil s ih m ih n s ih n m n er ih l eh l s sil p ih n sil t sil",
+                    "token": "<space> s ih m ih n s ih n m n er ih l eh l s <space> p ih n <space> t <space>",
+                    "tokenid": "2 31 19 24 19 25 31 19 25 24 25 14 19 23 13 23 31 2 29 19 25 2 33 2"
+                }
+            ],
+            "utt2spk": "MPGR1"
+        },
+        "MREW1_SX240": {
+            "input": [
+                {
+                    "feat": "/home/sumit/espnet/egs/timit/asr1/dump/bulk_two_hour/deltafalse/feats.6.ark:1564216",
+                    "name": "input1",
+                    "shape": [
+                        287,
+                        26
+                    ]
+                }
+            ],
+            "output": [
+                {
+                    "name": "target1",
+                    "shape": [
+                        36,
+                        42
+                    ],
+                    "text": "sil dh ih s sil ay iy z iy ih sil t ih sil p r m ey dx n l ah m ey dx iy iy ih sil k s ae sil l s sil",
+                    "token": "<space> dh ih s <space> ay iy z iy ih <space> t ih <space> p r m ey dx n l ah m ey dx iy iy ih <space> k s ae <space> l s <space>",
+                    "tokenid": "2 11 19 31 2 7 20 40 20 19 2 33 19 2 29 30 24 15 12 25 23 5 24 15 12 20 20 19 2 22 31 4 2 23 31 2"
+                }
+            ],
+            "utt2spk": "MREW1"
+        }
+    }
+}
