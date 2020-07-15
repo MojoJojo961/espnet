@@ -1,12 +1,12 @@
 exp="seed_five_percent"
 exp_name="seed_model_five_percent"
-model_no="AM1_2_phone"
+model_no="AM1_1_phone"
 model="${exp}_pytorch_train_${exp_name}_ctc_b32_${model_no}"
 bin=bin1
 bin_no=1
 recog_bin_dir=bin1_phone
-prev_epoch=300
-for i in 3 4; do
+prev_epoch=200
+for i in 2 3 4; do
     tag="train_${exp_name}_ctc_b32_${model_no::-8}_${i}_phone"
     new_epoch=$(($prev_epoch + 100))
     train_conf="./conf/train_batch-size32_epochs${new_epoch}.yaml"
