@@ -1,0 +1,51 @@
+## Configuration
+
+The conf folder includes all the configuration files. 
+We have worked with a batch size of 32 and epochs of 100 per iteration.
+So the base configuration is train_batch-size32_epochs100.yaml for training and decode_ctc.yaml for decoding.
+
+## Plots
+
+All the code for plots are in pkg folder.
+This is being called upon in the recipe as Stage-5 starting from getScatterPlot.sh.
+For normalisation, phone normalisation is being used and it can be tweaked with the parameter "score_norm_on_frame" instead of "score_norm_on_phone" in line 24 in file getConfidenceScore.py
+========================================************************========================================
+  score_list = [[k, data[k]['output'][0]['score_norm_on_phone']]  for k, v in sorted(data.items())]
+========================================************************========================================
+All the plots are kept in the directory scatter_plots/exp under their experiment names. 
+
+## Data Creation/Partition
+
+dataCreation.sh contains the code for partitioning the data into seed and unlabeled and combining various amounts of seed data with unlabeled data.
+This will create different folders in the data related directory.
+
+## Training and Re-training
+  
+  Base model and Ground Truth model recipe with the parameters are given in any of seed_bin_experiments_for_5_seed_n_bin.sh or such files.
+  The first line represents to the ground truth model and the second represents to the baseline seed model.
+  
+  ## Creation of Bin Data
+  
+  After training of the seed model, go to the scatter_plots/exp/{exp_name_folder}/decode_bulk_two_hour_decode_ctc/createNewFeats.py.
+  By use of the parameter "sort_on" on line 51, you can change it to either phone or frame based sorting.
+  Running this file will give you 5 json files corresponding to the decoded data in each bin grouped according to their decoding score/confidence measure. For more on this see scatter_plots/exp/base/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32/decode_bulk_two_hour_decode_ctc/createNewFeats.py. 
+  Tweak the lines from 83-87 to get seed data + bin data upto that bin by replacing the orig_feats by the previous output variable "seed_b1" and such. For more on this see scatter_plots/exp/base/seed_twenty_five_percent_pytorch_train_seed_model_twenty_five_percent_ctc_b32/decode_bulk_two_hour_decode_ctc/createNewFeats.py.
+  Copy these 5 files of just bin data and seed data+bin data(if necessary for the experiment) inside dump directory dump/{exp_name}/deltafalse. 
+  Additionally, copy the bin json data to the dump/{bin_dir}/deltafalse and rename this file to data.json. For e.g., bin1.json goes to dump/bin1/deltafalse and renamed to data.json (This step is needed for the iterative approach).
+  
+  ## Non-Iterative 
+  
+  Run the seed_bin_experiments_for_5_seed_n_bin.sh for the non-iterative procedure of retraining the seed + bin from the seed model. 
+  The first two lines correspond to the ground and seed baseline model training and the subsequent lines corresponds to different bin retrained models.
+  
+  ## Iterative
+  
+  You train the first AM1 model using the procedures listed before and use this to decoded the bin1 data in dump/bin1/deltafalse folder(data.json). 
+  This decoded data is then appended to the seed data. See scatter_plots/exp/non-iter/5/seed_data/seed_five_percent_pytorch_train_seed_model_five_percent_ctc_b32_with_B1_and_seed_phone/decode_bin1_phone_decode_ctc/createNewFeats.py.
+  The 2 files generated are again kept at their proper locations in the dump folder.
+  For the next iterations, run the iter_run.sh. The params to be changed are:-
+    model_no = # AM model no from which to carry forward the iteration
+    bin = ## which bin data is being iterated upon
+    prev_epoch = ## the last epoch of model given in the model_no
+    exp = ## experiment name already used in the base models, this is generally given as same as the data set
+    exp_name = ## experiment model name already used in the base models
